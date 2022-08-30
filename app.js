@@ -10,6 +10,7 @@ dotenv.config();
 const cors = require("koa2-cors");
 const koajwt = require("koa-jwt");
 const config = require("./config");
+const AccessLogMiddleware = require("./middlewares/AccessLogMiddleware");
 const resReturn = require("./utils/resReturn");
 const index = require("./routes/index");
 const user = require("./routes/user");
@@ -40,6 +41,7 @@ app.use(
     })
 );
 app.use(json());
+app.use(AccessLogMiddleware);
 app.use(logger());
 app.use(require("koa-static")(__dirname + "/public"));
 
