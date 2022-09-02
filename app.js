@@ -9,6 +9,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 const cors = require("koa2-cors");
 const koajwt = require("koa-jwt");
+require('./db');
 const config = require("./config");
 const AccessLogMiddleware = require("./middlewares/AccessLogMiddleware");
 const resReturn = require("./utils/resReturn");
@@ -56,7 +57,7 @@ app.use(async (ctx, next) => {
         if (err.status === 401) {
             // 自定义返回结果
             ctx.status = 401;
-            ctx.body = resReturn.error(err.name + ":" + err.message, "The token is invalid", resReturn.CODE.AUTH_ERROR);
+            ctx.body = resReturn.error(resReturn.CODE.AUTH_ERROR, err.name + ":" + err.message, "The token is invalid");
         } else {
             throw err;
         }

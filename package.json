@@ -32,7 +32,9 @@
     "koa-views": "^6.2.0",
     "koa2-cors": "^2.0.6",
     "log4js": "^6.6.1",
-    "pug": "^2.0.3"
+    "mysql2": "^2.3.3",
+    "pug": "^2.0.3",
+    "sequelize": "^6.21.4"
   },
   "devDependencies": {
     "nodemon": "^1.19.1"
