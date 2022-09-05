@@ -1,6 +1,8 @@
 //db.js
+const path  = require('path')
 const Sequelize = require("sequelize");
 const config = require("../config");
+const Logger = require("../logger");
 const db = {
     database: config.db.db_name, // 使用哪个数据库
     username: config.db.db_user, // 用户名
@@ -17,6 +19,7 @@ const sequelize = new Sequelize(db.database, db.username, db.password, {
         min: 0,
         idle: 30000,
     },
+    logging: (...msg) => Logger("db").info(msg),
     //解决中文输入问题
     define: {
         charset: "utf8",
@@ -24,14 +27,20 @@ const sequelize = new Sequelize(db.database, db.username, db.password, {
             collate: "utf8_general_ci",
         },
     },
+    models:[path.join(__dirname,'..',',model/**/*.js')]
 });
 
-// 测试连接是否成功
-sequelize
-    .authenticate()
-    .then(() => {
-        console.log("Connection has been established successfully.");
-    })
-    .catch((err) => {
-        console.log("Unable to connect to the database", err);
-    });
+module.exports = {
+    sequelize,
+    connect: () => {
+        // 测试连接是否成功
+        sequelize
+            .authenticate()
+            .then(() => {
+                console.log("Connection has been established successfully.");
+            })
+            .catch((err) => {
+                console.log("Unable to connect to the database", err);
+            });
+    },
+};

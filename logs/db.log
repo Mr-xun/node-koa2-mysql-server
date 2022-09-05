@@ -1,0 +1,3904 @@
+[2022-09-04T16:36:58.296] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T16:38:08.485] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T16:42:22.273] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T16:47:11.845] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T16:47:20.826] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T16:47:39.653] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T16:48:07.803] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T16:48:18.958] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T16:48:22.920] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T16:50:04.600] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T16:51:21.701] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T16:51:47.041] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T16:54:13.611] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T16:54:20.445] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T16:57:12.257] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T16:57:33.687] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T16:58:14.989] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T16:59:50.981] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T16:59:57.516] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:00:00.202] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:00:10.825] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:00:22.759] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:01:49.362] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:01:51.724] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:01:54.014] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:02:01.118] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:02:09.213] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:02:44.443] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:02:54.104] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:03:19.919] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:04:05.520] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:05:06.450] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:05:10.937] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:05:57.348] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:06:37.131] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:06:46.538] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:09:13.882] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:09:16.106] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:09:29.704] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:09:33.102] [INFO] db - [
+  'Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updatedAt` FROM `Admins` AS `Admin` LIMIT 1;',
+  {
+    plain: true,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    limit: 1,
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    attributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    tableNames: [ 'Admins' ],
+    type: 'SELECT',
+    model: Admin
+  }
+]
+[2022-09-04T17:09:38.483] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:09:49.686] [INFO] db - [
+  'Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updatedAt` FROM `Admins` AS `Admin` LIMIT 1;',
+  {
+    plain: true,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    limit: 1,
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    attributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    tableNames: [ 'Admins' ],
+    type: 'SELECT',
+    model: Admin
+  }
+]
+[2022-09-04T17:10:28.774] [INFO] db - [
+  'Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updatedAt` FROM `Admins` AS `Admin` LIMIT 1;',
+  {
+    plain: true,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    limit: 1,
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    attributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    tableNames: [ 'Admins' ],
+    type: 'SELECT',
+    model: Admin
+  }
+]
+[2022-09-04T17:13:41.444] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:13:41.449] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Admins' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-04T17:13:41.466] [INFO] db - [
+  'Executing (default): CREATE TABLE IF NOT EXISTS `Admins` (`id` INTEGER NOT NULL auto_increment , `firstName` VARCHAR(255) NOT NULL, `lastName` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    uniqueKeys: {},
+    type: 'RAW'
+  }
+]
+[2022-09-04T17:13:41.527] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `Admins`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-09-04T17:13:47.675] [INFO] db - [
+  'Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updatedAt` FROM `Admins` AS `Admin` LIMIT 1;',
+  {
+    plain: true,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    limit: 1,
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    attributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    tableNames: [ 'Admins' ],
+    type: 'SELECT',
+    model: Admin
+  }
+]
+[2022-09-04T17:14:18.820] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:14:18.825] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Admins' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-04T17:14:18.833] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `Admins`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-09-04T17:14:20.093] [INFO] db - [
+  'Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updatedAt` FROM `Admins` AS `Admin` LIMIT 1;',
+  {
+    plain: true,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    limit: 1,
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    attributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    tableNames: [ 'Admins' ],
+    type: 'SELECT',
+    model: Admin
+  }
+]
+[2022-09-04T17:14:21.139] [INFO] db - [
+  'Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updatedAt` FROM `Admins` AS `Admin` LIMIT 1;',
+  {
+    plain: true,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    limit: 1,
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    attributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    tableNames: [ 'Admins' ],
+    type: 'SELECT',
+    model: Admin
+  }
+]
+[2022-09-04T17:14:53.167] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:14:53.174] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Admins' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-04T17:14:53.181] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `Admins`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-09-04T17:14:55.046] [INFO] db - [
+  'Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updatedAt` FROM `Admins` AS `Admin` LIMIT 1;',
+  {
+    plain: true,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    limit: 1,
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    attributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    tableNames: [ 'Admins' ],
+    type: 'SELECT',
+    model: Admin
+  }
+]
+[2022-09-04T17:14:58.330] [INFO] db - [
+  'Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updatedAt` FROM `Admins` AS `Admin` LIMIT 1;',
+  {
+    plain: true,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    limit: 1,
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    attributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    tableNames: [ 'Admins' ],
+    type: 'SELECT',
+    model: Admin
+  }
+]
+[2022-09-04T17:15:39.642] [INFO] db - [
+  'Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updatedAt` FROM `Admins` AS `Admin` LIMIT 1;',
+  {
+    plain: true,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    limit: 1,
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    attributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    tableNames: [ 'Admins' ],
+    type: 'SELECT',
+    model: Admin
+  }
+]
+[2022-09-04T17:15:44.133] [INFO] db - [
+  'Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updatedAt` FROM `Admins` AS `Admin` LIMIT 1;',
+  {
+    plain: true,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    limit: 1,
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    attributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    tableNames: [ 'Admins' ],
+    type: 'SELECT',
+    model: Admin
+  }
+]
+[2022-09-04T17:16:14.188] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:16:14.194] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Admins' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-04T17:16:14.207] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `Admins`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-09-04T17:16:16.464] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:16:16.470] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Admins' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-04T17:16:16.476] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `Admins`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-09-04T17:16:17.357] [INFO] db - [
+  'Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updatedAt` FROM `Admins` AS `Admin` LIMIT 1;',
+  {
+    plain: true,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    limit: 1,
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    attributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    tableNames: [ 'Admins' ],
+    type: 'SELECT',
+    model: Admin
+  }
+]
+[2022-09-04T17:18:56.792] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:18:56.798] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Admins' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-04T17:18:56.804] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `Admins`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-09-04T17:19:08.907] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:19:08.914] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Admins' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-04T17:19:08.922] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `Admins`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-09-04T17:19:09.674] [INFO] db - [
+  'Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updatedAt` FROM `Admins` AS `Admin` LIMIT 1;',
+  {
+    plain: true,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    limit: 1,
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    attributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    tableNames: [ 'Admins' ],
+    type: 'SELECT',
+    model: Admin
+  }
+]
+[2022-09-04T17:19:10.932] [INFO] db - [
+  'Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updatedAt` FROM `Admins` AS `Admin` LIMIT 1;',
+  {
+    plain: true,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    limit: 1,
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    attributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    tableNames: [ 'Admins' ],
+    type: 'SELECT',
+    model: Admin
+  }
+]
+[2022-09-04T17:19:14.611] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:19:14.617] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Admins' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-04T17:19:14.623] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `Admins`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-09-04T17:19:14.703] [INFO] db - [
+  'Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updatedAt` FROM `Admins` AS `Admin` LIMIT 1;',
+  {
+    plain: true,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    limit: 1,
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    attributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    tableNames: [ 'Admins' ],
+    type: 'SELECT',
+    model: Admin
+  }
+]
+[2022-09-04T17:19:20.358] [INFO] db - [
+  'Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updatedAt` FROM `Admins` AS `Admin` LIMIT 1;',
+  {
+    plain: true,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    limit: 1,
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    attributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    tableNames: [ 'Admins' ],
+    type: 'SELECT',
+    model: Admin
+  }
+]
+[2022-09-04T17:19:29.263] [INFO] db - [
+  'Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updatedAt` FROM `Admins` AS `Admin` LIMIT 1;',
+  {
+    plain: true,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    limit: 1,
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    attributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    tableNames: [ 'Admins' ],
+    type: 'SELECT',
+    model: Admin
+  }
+]
+[2022-09-04T17:19:34.068] [INFO] db - [
+  'Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updatedAt` FROM `Admins` AS `Admin` LIMIT 1;',
+  {
+    plain: true,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    limit: 1,
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    attributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    tableNames: [ 'Admins' ],
+    type: 'SELECT',
+    model: Admin
+  }
+]
+[2022-09-04T17:19:44.648] [INFO] db - [
+  'Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updatedAt` FROM `Admins` AS `Admin` LIMIT 1;',
+  {
+    plain: true,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    limit: 1,
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    attributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    tableNames: [ 'Admins' ],
+    type: 'SELECT',
+    model: Admin
+  }
+]
+[2022-09-04T17:19:55.685] [INFO] db - [
+  'Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updatedAt` FROM `Admins` AS `Admin` LIMIT 1;',
+  {
+    plain: true,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    limit: 1,
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    attributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    tableNames: [ 'Admins' ],
+    type: 'SELECT',
+    model: Admin
+  }
+]
+[2022-09-04T17:20:09.310] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:20:09.315] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Admins' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-04T17:20:09.322] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `Admins`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-09-04T17:20:29.483] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:20:29.489] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Admins' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-04T17:20:29.496] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `Admins`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-09-04T17:20:39.483] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:20:39.488] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Admins' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-04T17:20:39.495] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `Admins`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-09-04T17:20:47.421] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:20:47.427] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Admins' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-04T17:20:47.434] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `Admins`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-09-04T17:20:50.256] [INFO] db - [
+  'Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updatedAt` FROM `Admins` AS `Admin` LIMIT 1;',
+  {
+    plain: true,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    limit: 1,
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    attributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    tableNames: [ 'Admins' ],
+    type: 'SELECT',
+    model: Admin
+  }
+]
+[2022-09-04T17:21:10.141] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:21:10.146] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Admins' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-04T17:21:10.154] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `Admins`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-09-04T17:21:46.279] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:21:46.285] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Admins' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-04T17:21:46.292] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `Admins`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-09-04T17:21:50.085] [INFO] db - [
+  'Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updatedAt` FROM `Admins` AS `Admins` LIMIT 1;',
+  {
+    plain: true,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    limit: 1,
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    attributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    tableNames: [ 'Admins' ],
+    type: 'SELECT',
+    model: Admins
+  }
+]
+[2022-09-04T17:22:07.824] [INFO] db - [
+  'Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updatedAt` FROM `Admins` AS `Admins` LIMIT 1;',
+  {
+    plain: true,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    limit: 1,
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    attributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    tableNames: [ 'Admins' ],
+    type: 'SELECT',
+    model: Admins
+  }
+]
+[2022-09-04T17:23:33.098] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:23:33.104] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Admins' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-04T17:23:33.112] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `Admins`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-09-04T17:24:04.023] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:24:04.029] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Admins' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-04T17:24:04.037] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `Admins`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-09-04T17:24:05.291] [INFO] db - [
+  'Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updatedAt` FROM `Admins` AS `Admin`;',
+  {
+    plain: false,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    attributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    tableNames: [ 'Admins' ],
+    type: 'SELECT',
+    model: Admin
+  }
+]
+[2022-09-04T17:25:39.355] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:25:39.361] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Admins' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-04T17:25:39.369] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `Admins`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-09-04T17:25:40.690] [INFO] db - [
+  'Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updatedAt` FROM `Admins` AS `Admin`;',
+  {
+    plain: false,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    attributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    tableNames: [ 'Admins' ],
+    type: 'SELECT',
+    model: Admin
+  }
+]
+[2022-09-04T17:25:56.029] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:25:56.035] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Admins' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-04T17:25:56.043] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `Admins`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-09-04T17:26:17.303] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:26:17.308] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Admins' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-04T17:26:17.315] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `Admins`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-09-04T17:26:44.018] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:26:44.023] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Admins' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-04T17:26:44.029] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `Admins`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-09-04T17:26:47.096] [INFO] db - [
+  'Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updatedAt` FROM `Admins` AS `Admin`;',
+  {
+    plain: false,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    attributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    tableNames: [ 'Admins' ],
+    type: 'SELECT',
+    model: Admin
+  }
+]
+[2022-09-04T17:27:01.829] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:27:01.835] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Admins' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-04T17:27:01.841] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `Admins`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-09-04T17:27:03.180] [INFO] db - [
+  'Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updatedAt` FROM `Admins` AS `Admin`;',
+  {
+    plain: false,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    attributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    tableNames: [ 'Admins' ],
+    type: 'SELECT',
+    model: Admin
+  }
+]
+[2022-09-04T17:27:38.448] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:27:38.454] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Admins' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-04T17:27:38.461] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `Admins`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-09-04T17:28:03.835] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:28:03.841] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Admins' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-04T17:28:03.847] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `Admins`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-09-04T17:28:06.758] [INFO] db - [
+  'Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updatedAt` FROM `Admins` AS `Admin`;',
+  {
+    plain: false,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    attributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    tableNames: [ 'Admins' ],
+    type: 'SELECT',
+    model: Admin
+  }
+]
+[2022-09-04T17:28:06.769] [INFO] db - [
+  'Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updatedAt` FROM `Admins` AS `Admin`;',
+  {
+    plain: false,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    attributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    tableNames: [ 'Admins' ],
+    type: 'SELECT',
+    model: Admin
+  }
+]
+[2022-09-04T17:28:16.049] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:28:16.056] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Admins' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-04T17:28:16.063] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `Admins`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-09-04T17:28:16.509] [INFO] db - [
+  'Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updatedAt` FROM `Admins` AS `Admin`;',
+  {
+    plain: false,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    attributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    tableNames: [ 'Admins' ],
+    type: 'SELECT',
+    model: Admin
+  }
+]
+[2022-09-04T17:28:16.518] [INFO] db - [
+  'Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updatedAt` FROM `Admins` AS `Admin`;',
+  {
+    plain: false,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    attributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    tableNames: [ 'Admins' ],
+    type: 'SELECT',
+    model: Admin
+  }
+]
+[2022-09-04T17:28:29.167] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:28:29.175] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Admins' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-04T17:28:29.183] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `Admins`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-09-04T17:28:29.563] [INFO] db - [
+  'Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updatedAt` FROM `Admins` AS `Admin`;',
+  {
+    plain: false,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    attributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    tableNames: [ 'Admins' ],
+    type: 'SELECT',
+    model: Admin
+  }
+]
+[2022-09-04T17:28:40.045] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:28:40.053] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Admins' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-04T17:28:40.062] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `Admins`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-09-04T17:29:10.909] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:29:10.914] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Admins' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-04T17:29:10.920] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `Admins`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-09-04T17:29:15.876] [INFO] db - [
+  'Executing (default): INSERT INTO `Admins` (`id`,`firstName`,`lastName`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?);',
+  {
+    plain: false,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    validate: true,
+    fields: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    defaultFields: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    returning: true,
+    hasTrigger: undefined,
+    dialect: 'mysql',
+    dialectModule: null,
+    dialectModulePath: null,
+    host: 'localhost',
+    protocol: 'tcp',
+    define: { charset: 'utf8', dialectOptions: [Object] },
+    query: {},
+    sync: {},
+    timezone: '+00:00',
+    standardConformingStrings: true,
+    omitNull: false,
+    native: false,
+    replication: false,
+    ssl: undefined,
+    pool: { max: 5, min: 0, idle: 30000 },
+    quoteIdentifiers: true,
+    retry: { max: 5, match: [Array] },
+    transactionType: 'DEFERRED',
+    isolationLevel: null,
+    databaseVersion: '8.0.29',
+    typeValidation: false,
+    benchmark: false,
+    minifyAliases: false,
+    logQueryParameters: false,
+    operatorAliases: false,
+    models: [
+      'C:\\Job\\SelfStudy\\github\\node-koa2-mysql-server\\,model\\**\\*.js'
+    ],
+    type: 'INSERT',
+    instance: Admin {
+      dataValues: [Object],
+      _previousDataValues: [Object],
+      uniqno: 1,
+      _changed: [Set],
+      _options: [Object],
+      isNewRecord: true
+    },
+    model: Admin,
+    bind: [ 'Jane', 'Doe', '2022-09-04 09:29:15', '2022-09-04 09:29:15' ]
+  }
+]
+[2022-09-04T17:29:15.922] [INFO] db - [
+  'Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updatedAt` FROM `Admins` AS `Admin`;',
+  {
+    plain: false,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    attributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    tableNames: [ 'Admins' ],
+    type: 'SELECT',
+    model: Admin
+  }
+]
+[2022-09-04T17:29:38.993] [INFO] db - [
+  'Executing (default): INSERT INTO `Admins` (`id`,`firstName`,`lastName`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?);',
+  {
+    plain: false,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    validate: true,
+    fields: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    defaultFields: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    returning: true,
+    hasTrigger: undefined,
+    dialect: 'mysql',
+    dialectModule: null,
+    dialectModulePath: null,
+    host: 'localhost',
+    protocol: 'tcp',
+    define: { charset: 'utf8', dialectOptions: [Object] },
+    query: {},
+    sync: {},
+    timezone: '+00:00',
+    standardConformingStrings: true,
+    omitNull: false,
+    native: false,
+    replication: false,
+    ssl: undefined,
+    pool: { max: 5, min: 0, idle: 30000 },
+    quoteIdentifiers: true,
+    retry: { max: 5, match: [Array] },
+    transactionType: 'DEFERRED',
+    isolationLevel: null,
+    databaseVersion: '8.0.29',
+    typeValidation: false,
+    benchmark: false,
+    minifyAliases: false,
+    logQueryParameters: false,
+    operatorAliases: false,
+    models: [
+      'C:\\Job\\SelfStudy\\github\\node-koa2-mysql-server\\,model\\**\\*.js'
+    ],
+    type: 'INSERT',
+    instance: Admin {
+      dataValues: [Object],
+      _previousDataValues: [Object],
+      uniqno: 1,
+      _changed: [Set],
+      _options: [Object],
+      isNewRecord: true
+    },
+    model: Admin,
+    bind: [ 'Jane', 'Doe', '2022-09-04 09:29:38', '2022-09-04 09:29:38' ]
+  }
+]
+[2022-09-04T17:29:39.004] [INFO] db - [
+  'Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updatedAt` FROM `Admins` AS `Admin`;',
+  {
+    plain: false,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    attributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    tableNames: [ 'Admins' ],
+    type: 'SELECT',
+    model: Admin
+  }
+]
+[2022-09-04T17:29:39.886] [INFO] db - [
+  'Executing (default): INSERT INTO `Admins` (`id`,`firstName`,`lastName`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?);',
+  {
+    plain: false,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    validate: true,
+    fields: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    defaultFields: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    returning: true,
+    hasTrigger: undefined,
+    dialect: 'mysql',
+    dialectModule: null,
+    dialectModulePath: null,
+    host: 'localhost',
+    protocol: 'tcp',
+    define: { charset: 'utf8', dialectOptions: [Object] },
+    query: {},
+    sync: {},
+    timezone: '+00:00',
+    standardConformingStrings: true,
+    omitNull: false,
+    native: false,
+    replication: false,
+    ssl: undefined,
+    pool: { max: 5, min: 0, idle: 30000 },
+    quoteIdentifiers: true,
+    retry: { max: 5, match: [Array] },
+    transactionType: 'DEFERRED',
+    isolationLevel: null,
+    databaseVersion: '8.0.29',
+    typeValidation: false,
+    benchmark: false,
+    minifyAliases: false,
+    logQueryParameters: false,
+    operatorAliases: false,
+    models: [
+      'C:\\Job\\SelfStudy\\github\\node-koa2-mysql-server\\,model\\**\\*.js'
+    ],
+    type: 'INSERT',
+    instance: Admin {
+      dataValues: [Object],
+      _previousDataValues: [Object],
+      uniqno: 1,
+      _changed: [Set],
+      _options: [Object],
+      isNewRecord: true
+    },
+    model: Admin,
+    bind: [ 'Jane', 'Doe', '2022-09-04 09:29:39', '2022-09-04 09:29:39' ]
+  }
+]
+[2022-09-04T17:29:39.913] [INFO] db - [
+  'Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updatedAt` FROM `Admins` AS `Admin`;',
+  {
+    plain: false,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    attributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    tableNames: [ 'Admins' ],
+    type: 'SELECT',
+    model: Admin
+  }
+]
+[2022-09-04T17:30:08.016] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:30:08.023] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Admins' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-04T17:30:08.035] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `Admins`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-09-04T17:30:08.380] [INFO] db - [
+  'Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updatedAt` FROM `Admins` AS `Admin`;',
+  {
+    plain: false,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    attributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    tableNames: [ 'Admins' ],
+    type: 'SELECT',
+    model: Admin
+  }
+]
+[2022-09-04T17:30:14.940] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:30:14.945] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Admins' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-04T17:30:14.952] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `Admins`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-09-04T17:30:15.020] [INFO] db - [
+  'Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updatedAt` FROM `Admins` AS `Admin` LIMIT 1;',
+  {
+    plain: true,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    limit: 1,
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    attributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    tableNames: [ 'Admins' ],
+    type: 'SELECT',
+    model: Admin
+  }
+]
+[2022-09-04T17:30:21.922] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:30:21.929] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Admins' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-04T17:30:21.936] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `Admins`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-09-04T17:30:48.491] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:30:48.498] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Admins' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-04T17:30:48.507] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `Admins`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-09-04T17:31:12.683] [INFO] db - [
+  'Executing (default): SELECT `id`, `firstName`, `lastName`, `createdAt`, `updatedAt` FROM `Admins` AS `Admin` LIMIT 1;',
+  {
+    plain: true,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    limit: 1,
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    attributes: [ 'id', 'firstName', 'lastName', 'createdAt', 'updatedAt' ],
+    tableNames: [ 'Admins' ],
+    type: 'SELECT',
+    model: Admin
+  }
+]
+[2022-09-04T17:31:24.769] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T17:31:24.776] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Admins' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-04T17:31:24.787] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `Admins`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]

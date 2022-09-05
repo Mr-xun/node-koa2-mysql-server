@@ -9,12 +9,17 @@ const dotenv = require("dotenv");
 dotenv.config();
 const cors = require("koa2-cors");
 const koajwt = require("koa-jwt");
-require('./db');
+const DB = require("./db");
+//连接数据库
+DB.connect();
+
 const config = require("./config");
 const AccessLogMiddleware = require("./middlewares/AccessLogMiddleware");
 const resReturn = require("./utils/resReturn");
 const index = require("./routes/index");
 const user = require("./routes/user");
+const admin = require("./routes/admin");
+
 app.use(
     cors({
         origin: (ctx) => {
@@ -83,6 +88,7 @@ app.use(async (ctx, next) => {
 // routes
 app.use(index.routes(), index.allowedMethods());
 app.use(user.routes(), user.allowedMethods());
+app.use(admin.routes(), admin.allowedMethods());
 
 // error-handling
 app.on("error", (err, ctx) => {

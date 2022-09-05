@@ -14,20 +14,19 @@ module.exports = {
         signKey: "mrxun-server-jwt", // token密钥
         signTime: 3600 * 24 * 7, //过期时间  七天
         //不需要验证的路由 用户登录、用户注册
-        unRoute: [/^\/user\/login/, /^\/user\/register/],
+        unRoute: [/^\/user\/login/, /^\/user\/register/, /^\/admin\/findOne/],
     },
     //日志
     logger: {
         appenders: {
             cheese: { type: "file", filename: `logs/cheese.log` },
-            access: {
-                type: "file",
-                filename: `logs/access.log`,
-            },
+            access: { type: "file", filename: `logs/access.log` },
+            db: { type: "file", filename: `logs/db.log` },
         },
         categories: {
             default: { appenders: ["cheese"], level: "info" },
             access: { appenders: ["access"], level: "info" },
+            db: { appenders: ["db"], level: "info" },
         },
     },
 };

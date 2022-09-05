@@ -48,3 +48,33 @@
 [2022-08-30T13:49:28.127] [WARN] default - Cheese is quite smelly.
 [2022-08-30T13:49:28.127] [ERROR] default - Cheese is too ripe!
 [2022-08-30T13:49:28.127] [FATAL] default - Cheese was breeding ground for listeria.
+[2022-09-04T16:36:25.183] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T16:36:40.222] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-04T16:36:47.617] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
