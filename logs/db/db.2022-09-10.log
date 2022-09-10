@@ -284,3 +284,87 @@
     model: Admin
   }
 ]
+[2022-09-10T17:40:49.594] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-10T17:40:49.598] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Admins' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-10T17:40:49.604] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `Admins`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
