@@ -12,10 +12,9 @@ const koajwt = require("koa-jwt");
 const DB = require("./db");
 //连接数据库
 DB.connect();
-
 const config = require("./config");
 const AccessLogMiddleware = require("./middlewares/AccessLogMiddleware");
-const resReturn = require("./utils/resReturn");
+const response = require("./utils/response");
 const index = require("./routes/index");
 const user = require("./routes/user");
 const admin = require("./routes/admin");
@@ -62,7 +61,7 @@ app.use(async (ctx, next) => {
         if (err.status === 401) {
             // 自定义返回结果
             ctx.status = 401;
-            ctx.body = resReturn.error(resReturn.CODE.AUTH_ERROR, err.name + ":" + err.message, "The token is invalid");
+            response.error(ctx, `The token is invalid`, `${err.name}:${err.message}`, response.CODE.AUTH_ERROR);
         } else {
             throw err;
         }
