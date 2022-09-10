@@ -19,9 +19,9 @@ module.exports = {
     //日志
     logger: {
         appenders: {
-            cheese: { type: "file", filename: `logs/cheese.log` },
-            access: { type: "file", filename: `logs/access.log` },
-            db: { type: "file", filename: `logs/db.log` },
+            cheese: { type: "dateFile", filename: `logs/cheese/cheese`, pattern: "yyyy-MM-dd.log", alwaysIncludePattern: true },
+            access: { type: "dateFile", filename: `logs/access/access`, pattern: "yyyy-MM-dd.log", alwaysIncludePattern: true },
+            db: { type: "dateFile", filename: `logs/db/db`, pattern: "yyyy-MM-dd.log", alwaysIncludePattern: true },
         },
         categories: {
             default: { appenders: ["cheese"], level: "info" },
