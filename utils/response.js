@@ -1,3 +1,10 @@
+/*
+ * @Author: xunxiao 17810204418@163.com
+ * @Date: 2022-09-10 17:55:15
+ * @LastEditors: xunxiao 17810204418@163.com
+ * @LastEditTime: 2022-09-11 15:56:07
+ * @Description: 统一返回
+ */
 //返回值
 const CODE = {
     SUCCESS: 200, //成功返回
