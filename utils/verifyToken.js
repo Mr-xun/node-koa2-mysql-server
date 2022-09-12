@@ -2,10 +2,10 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-10 16:26:15
  * @LastEditors: xunxiao 17810204418@163.com
- * @LastEditTime: 2022-09-11 16:00:02
+ * @LastEditTime: 2022-09-12 17:09:10
  * @Description: Token 认证
  */
-const JWT = require("jsonwebtoken");
+import JWT from "jsonwebtoken";
 const config = require("../config");
 const verify = {
     //设置token
@@ -31,5 +31,4 @@ const verify = {
         });
     },
 };
-
-module.exports = verify;
+export default verify;

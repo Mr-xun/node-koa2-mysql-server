@@ -2,7 +2,7 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-10 17:55:15
  * @LastEditors: xunxiao 17810204418@163.com
- * @LastEditTime: 2022-09-11 15:56:07
+ * @LastEditTime: 2022-09-12 17:04:39
  * @Description: 统一返回
  */
 //返回值
@@ -12,7 +12,7 @@ const CODE = {
     SYSTEM_ERROR: 500, //系统错误
     AUTH_ERROR: 401, //权限错误
 };
-module.exports = {
+export default {
     success(ctx, data = null, msg = "success", code = CODE.SUCCESS) {
         ctx.body = {
             code,

@@ -2,17 +2,16 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-10 16:31:26
  * @LastEditors: xunxiao 17810204418@163.com
- * @LastEditTime: 2022-09-11 17:56:46
+ * @LastEditTime: 2022-09-12 17:08:37
  * @Description: UserController
  */
-const verify = require("../utils/verifyToken");
+import verify from "../utils/verifyToken";
 const config = require("../config");
 const AdminService = require("../service/AdminService");
 const UserService = require("../service/UserService");
-const utils = require("../utils");
-const response = require("../utils/response");
-const paginate = require("../utils/paginate");
-
+import utils from "../utils";
+import response from "../utils/response";
+import paginate from "../utils/paginate";
 const userLogin = async (ctx) => {
     const admin = await AdminService.getAdminUser();
     const token = await verify.setToken({ firstName: admin.firstName, userId: admin.id });

@@ -2,7 +2,7 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-11 16:50:15
  * @LastEditors: xunxiao 17810204418@163.com
- * @LastEditTime: 2022-09-11 17:56:57
+ * @LastEditTime: 2022-09-12 17:07:07
  * @Description: common utils
  */
 /**
@@ -35,6 +35,6 @@ const setPager = (page, limit) => {
         offset,
     };
 };
-module.exports = {
+export default {
     setPager,
-};
+}

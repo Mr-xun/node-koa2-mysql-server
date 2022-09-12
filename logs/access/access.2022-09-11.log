@@ -43,3 +43,4 @@
 [2022-09-11T18:01:20.998] [INFO] access - path:/user/list?pageNum=1&pageSize=1 | method:GET | ua:apifox/1.0.0 (https://www.apifox.cn)
 [2022-09-11T18:01:32.845] [INFO] access - path:/user/list?pageNum=1&pageSize=1 | method:GET | ua:apifox/1.0.0 (https://www.apifox.cn)
 [2022-09-11T18:01:55.839] [INFO] access - path:/user/list?pageNum=1&pageSize=10 | method:GET | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2022-09-11T21:12:01.470] [INFO] access - path:/user/list?pageNum=1&pageSize=10 | method:GET | ua:apifox/1.0.0 (https://www.apifox.cn)

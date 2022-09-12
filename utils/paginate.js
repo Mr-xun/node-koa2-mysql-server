@@ -19,4 +19,4 @@ const paginate = (rows, total, limit) => {
         pages: Math.ceil(total / limit),
     };
 };
-module.exports = paginate;
+export default paginate;

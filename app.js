@@ -1,20 +1,29 @@
-const Koa = require("koa");
+/*
+ * @Author: xunxiao 17810204418@163.com
+ * @Date: 2022-09-04 15:28:48
+ * @LastEditors: xunxiao 17810204418@163.com
+ * @LastEditTime: 2022-09-12 17:54:36
+ * @Description:
+ */
+import Koa from "koa";
 const app = new Koa();
-const views = require("koa-views");
-const json = require("koa-json");
-const onerror = require("koa-onerror");
-const bodyparser = require("koa-bodyparser");
-const logger = require("koa-logger");
-const dotenv = require("dotenv");
+import views from "koa-views";
+import json from "koa-json";
+import onerror from "koa-onerror";
+import bodyparser from "koa-bodyparser";
+import logger from "koa-logger";
+import dotenv from "dotenv";
 dotenv.config();
-const cors = require("koa2-cors");
-const koajwt = require("koa-jwt");
+import cors from "koa2-cors";
+import koaJwt from "koa-jwt";
 const DB = require("./db");
 //连接数据库
 DB.connect();
 const config = require("./config");
 const AccessLogMiddleware = require("./middlewares/AccessLogMiddleware");
-const response = require("./utils/response");
+console.log(AccessLogMiddleware, 2222);
+
+import response from "./utils/response";
 const index = require("./routes/index");
 const user = require("./routes/user");
 const admin = require("./routes/admin");
@@ -70,7 +79,7 @@ app.use(async (ctx, next) => {
 
 //jwt认证
 app.use(
-    koajwt({
+    koaJwt({
         secret: config.jwt.signKey,
     }).unless({
         path: config.jwt.unRoute,

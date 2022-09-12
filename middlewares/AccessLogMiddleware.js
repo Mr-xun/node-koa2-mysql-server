@@ -2,7 +2,7 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-04 15:28:48
  * @LastEditors: xunxiao 17810204418@163.com
- * @LastEditTime: 2022-09-11 17:08:42
+ * @LastEditTime: 2022-09-12 17:55:00
  * @Description: AccessLogMiddleware
  */
 const Logger = require("../logger");

@@ -33547,3 +33547,56 @@
     type: 'SHOWINDEXES'
   }
 ]
+[2022-09-11T21:12:01.581] [INFO] db - [
+  'Executing (default): SELECT count(*) AS `count` FROM `Users` AS `User`;',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    limit: null,
+    offset: null,
+    hooks: true,
+    dataType: INTEGER {
+      options: {},
+      _length: undefined,
+      _zerofill: undefined,
+      _decimals: undefined,
+      _precision: undefined,
+      _scale: undefined,
+      _unsigned: undefined
+    },
+    includeIgnoreAttributes: false,
+    order: null,
+    attributes: [ [Array] ],
+    type: 'SELECT'
+  }
+]
+[2022-09-11T21:12:01.583] [INFO] db - [
+  'Executing (default): SELECT `id`, `username`, `avatar`, `mobile`, `role`, `is_delete`, `createdAt`, `updatedAt` FROM `Users` AS `User` LIMIT 0, 10;',
+  {
+    plain: false,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    limit: 10,
+    offset: 0,
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'username',
+      'avatar',    'mobile',
+      'role',      'is_delete',
+      'createdAt', 'updatedAt'
+    ],
+    attributes: [
+      'id',        'username',
+      'avatar',    'mobile',
+      'role',      'is_delete',
+      'createdAt', 'updatedAt'
+    ],
+    tableNames: [ 'Users' ],
+    type: 'SELECT',
+    model: User
+  }
+]
