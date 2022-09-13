@@ -1,17 +1,18 @@
 /*
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-10 16:31:26
- * @LastEditors: xunxiao 17810204418@163.com
- * @LastEditTime: 2022-09-12 17:08:37
+ * @LastEditors: xunxiao
+ * @LastEditTime: 2022-09-13 17:01:57
  * @Description: UserController
  */
 import verify from "../utils/verifyToken";
-const config = require("../config");
-const AdminService = require("../service/AdminService");
-const UserService = require("../service/UserService");
+import config from "../config";
 import utils from "../utils";
 import response from "../utils/response";
 import paginate from "../utils/paginate";
+import AdminService from "../service/AdminService";
+import UserService from "../service/UserService";
+
 const userLogin = async (ctx) => {
     const admin = await AdminService.getAdminUser();
     const token = await verify.setToken({ firstName: admin.firstName, userId: admin.id });
@@ -37,7 +38,7 @@ const userList = async (ctx) => {
     const { rows, count } = await UserService.getUserListByPage(where);
     response.success(ctx, paginate(rows, count, limit));
 };
-module.exports = {
+export default {
     userLogin,
     userVerify,
     userList,

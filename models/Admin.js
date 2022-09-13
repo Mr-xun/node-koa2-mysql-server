@@ -1,6 +1,13 @@
-const Sequelize = require("sequelize");
-const db = require("../db");
-const Admin = db.sequelize.define("Admin", {
+/*
+ * @Author: xunxiao
+ * @Date: 2022-09-13 08:33:50
+ * @LastEditors: xunxiao
+ * @LastEditTime: 2022-09-13 16:57:35
+ * @Description:
+ */
+import Sequelize from "sequelize";
+import DB from "../db";
+const Admin = DB.sequelize.define("Admin", {
     // 在这里定义模型属性
     firstName: {
         type: Sequelize.STRING,
@@ -11,4 +18,4 @@ const Admin = db.sequelize.define("Admin", {
     },
 });
 Admin.sync();
-module.exports = Admin;
+export default Admin;

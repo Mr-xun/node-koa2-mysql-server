@@ -1,11 +1,11 @@
 /*
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-04 15:28:48
- * @LastEditors: xunxiao 17810204418@163.com
- * @LastEditTime: 2022-09-11 18:02:28
- * @Description: common config 
+ * @LastEditors: xunxiao
+ * @LastEditTime: 2022-09-13 13:58:31
+ * @Description: common config
  */
-module.exports = {
+export default {
     server: {
         port: process.env.SERVER_PORT,
     },

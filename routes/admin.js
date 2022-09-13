@@ -1,5 +1,14 @@
-const router = require("koa-router")();
-const adminCtl = require("../controller/AdminController");
+/*
+ * @Author: xunxiao
+ * @Date: 2022-09-05 08:25:51
+ * @LastEditors: xunxiao
+ * @LastEditTime: 2022-09-13 16:59:52
+ * @Description: AdminRoute
+ */
+import Router from "koa-router";
+import adminCtl from "../controller/AdminController";
+const router = new Router();
+
 router.prefix("/admin");
 
 router.get("/", function (ctx, next) {
@@ -7,4 +16,4 @@ router.get("/", function (ctx, next) {
 });
 
 router.get("/findOne", adminCtl.findOne);
-module.exports = router;
+export default router;

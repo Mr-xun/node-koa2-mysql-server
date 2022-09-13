@@ -1,13 +1,13 @@
 /*
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-04 15:28:48
- * @LastEditors: xunxiao 17810204418@163.com
- * @LastEditTime: 2022-09-11 16:21:58
+ * @LastEditors: xunxiao
+ * @LastEditTime: 2022-09-13 17:01:23
  * @Description: UserRoute
  */
-const router = require("koa-router")();
-const userCtl = require("../controller/UserController");
-
+import Router from "koa-router";
+import userCtl from "../controller/UserController";
+const router = new Router();
 router.prefix("/user");
 
 router.get("/", function (ctx, next) {
@@ -27,4 +27,4 @@ router.post("/verify", userCtl.userVerify);
 //用户列表
 router.get("/list", userCtl.userList);
 
-module.exports = router;
+export default router;

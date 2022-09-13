@@ -1,32 +1,31 @@
 /*
- * @Author: xunxiao 17810204418@163.com
- * @Date: 2022-09-04 15:28:48
- * @LastEditors: xunxiao 17810204418@163.com
- * @LastEditTime: 2022-09-12 17:54:36
- * @Description:
+ * @Author: xunxiao
+ * @Date: 2022-09-13 11:14:22
+ * @LastEditors: xunxiao
+ * @LastEditTime: 2022-09-13 17:04:52
+ * @Description: entry
  */
 import Koa from "koa";
-const app = new Koa();
 import views from "koa-views";
 import json from "koa-json";
 import onerror from "koa-onerror";
 import bodyparser from "koa-bodyparser";
 import logger from "koa-logger";
-import dotenv from "dotenv";
-dotenv.config();
+import "dotenv/config";
 import cors from "koa2-cors";
 import koaJwt from "koa-jwt";
-const DB = require("./db");
-//连接数据库
-DB.connect();
-const config = require("./config");
-const AccessLogMiddleware = require("./middlewares/AccessLogMiddleware");
-console.log(AccessLogMiddleware, 2222);
-
+import db from "./db";
 import response from "./utils/response";
-const index = require("./routes/index");
-const user = require("./routes/user");
-const admin = require("./routes/admin");
+import config from "./config";
+import AccessLogMiddleware from "./middlewares/AccessLogMiddleware";
+
+import indexRoute from "./routes/index";
+import userRoute from "./routes/user";
+import adminRoute from "./routes/admin";
+
+const app = new Koa();
+//连接数据库
+db.connect();
 
 app.use(
     cors({
@@ -94,9 +93,9 @@ app.use(async (ctx, next) => {
 });
 
 // routes
-app.use(index.routes(), index.allowedMethods());
-app.use(user.routes(), user.allowedMethods());
-app.use(admin.routes(), admin.allowedMethods());
+app.use(indexRoute.routes(), indexRoute.allowedMethods());
+app.use(userRoute.routes(), userRoute.allowedMethods());
+app.use(adminRoute.routes(), adminRoute.allowedMethods());
 
 // error-handling
 app.on("error", (err, ctx) => {
