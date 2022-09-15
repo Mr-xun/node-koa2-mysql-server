@@ -2,7 +2,7 @@
  * @Author: xunxiao
  * @Date: 2022-09-13 11:14:22
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-09-13 17:04:52
+ * @LastEditTime: 2022-09-15 13:33:16
  * @Description: entry
  */
 import Koa from "koa";
@@ -11,6 +11,7 @@ import json from "koa-json";
 import onerror from "koa-onerror";
 import bodyparser from "koa-bodyparser";
 import logger from "koa-logger";
+import "module-alias/register";
 import "dotenv/config";
 import cors from "koa2-cors";
 import koaJwt from "koa-jwt";
@@ -20,9 +21,8 @@ import config from "./config";
 import AccessLogMiddleware from "./middlewares/AccessLogMiddleware";
 
 import indexRoute from "./routes/index";
-import userRoute from "./routes/user";
+import systemUserRoute from "./routes/system/user";
 import adminRoute from "./routes/admin";
-
 const app = new Koa();
 //连接数据库
 db.connect();
@@ -94,7 +94,7 @@ app.use(async (ctx, next) => {
 
 // routes
 app.use(indexRoute.routes(), indexRoute.allowedMethods());
-app.use(userRoute.routes(), userRoute.allowedMethods());
+app.use(systemUserRoute.routes(), systemUserRoute.allowedMethods());
 app.use(adminRoute.routes(), adminRoute.allowedMethods());
 
 // error-handling

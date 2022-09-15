@@ -2,7 +2,7 @@
  * @Author: xunxiao
  * @Date: 2022-09-13 08:33:50
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-09-14 17:25:25
+ * @LastEditTime: 2022-09-15 08:55:40
  * @Description: AdminController
  */
 import validate from "../utils/validate";
@@ -13,7 +13,11 @@ const findOne = async (ctx) => {
         name: [{ type: "string", required: true, message: "用户姓名不能为空" }],
         age: [{ type: "string", required: true, message: "用户年龄不能为空" }],
     };
-    const { data, error } = await validate(ctx, rules);
+    const queryData = {
+        name: ctx.query.name,
+        age: ctx.query.age,
+    };
+    const { data, error } = await validate(queryData, rules);
     if (error !== null) {
         return response.fail(ctx, error);
     }

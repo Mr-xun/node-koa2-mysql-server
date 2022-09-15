@@ -2,16 +2,22 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-11 16:14:39
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-09-13 17:02:20
- * @Description: UserModel
+ * @LastEditTime: 2022-09-15 11:20:08
+ * @Description: System_UserModel
  */
 import Sequelize from "sequelize";
 import DB from "../db";
-const User = DB.sequelize.define("User", {
-    username: {
-        //用户名
+const User = DB.sequelize.define("system_user", {
+    user_name: {
         type: Sequelize.STRING,
+        allowNull: false,
+        unique: true,
         comment: "用户名",
+    },
+    password: {
+        type: Sequelize.STRING,
+        allowNull: false,
+        comment: "用户密码",
     },
     avatar: {
         //头像

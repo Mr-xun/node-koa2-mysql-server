@@ -1,4 +1,10 @@
-//db.js
+/*
+ * @Author: xunxiao
+ * @Date: 2022-09-13 11:14:23
+ * @LastEditors: xunxiao
+ * @LastEditTime: 2022-09-15 11:30:34
+ * @Description: 数据库设置
+ */
 import path from "path";
 import Sequelize from "sequelize";
 import config from "../config";
@@ -26,6 +32,10 @@ const sequelize = new Sequelize(dbConfig.database, dbConfig.username, dbConfig.p
         dialectOptions: {
             collate: "utf8_general_ci",
         },
+    },
+    dialectOptions: {
+        dateStrings: true,
+        typeCast: true,
     },
     models: [path.join(__dirname, "..", ",model/**/*.js")],
 });

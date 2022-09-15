@@ -1,10 +1,11 @@
 /*
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-11 16:50:15
- * @LastEditors: xunxiao 17810204418@163.com
- * @LastEditTime: 2022-09-12 17:07:07
+ * @LastEditors: xunxiao
+ * @LastEditTime: 2022-09-15 09:42:21
  * @Description: common utils
  */
+import md5 from "md5";
 /**
  * @description 设置页码
  * @param {number} page 页码 默认为1
@@ -35,6 +36,8 @@ const setPager = (page, limit) => {
         offset,
     };
 };
+const MD5 = (val) => md5(val);
 export default {
     setPager,
-}
+    MD5,
+};
