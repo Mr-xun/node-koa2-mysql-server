@@ -20,12 +20,10 @@ const User = DB.sequelize.define("system_user", {
         comment: "用户密码",
     },
     avatar: {
-        //头像
         type: Sequelize.STRING,
         comment: "用户头像",
     },
     mobile: {
-        //联系电话
         type: Sequelize.STRING,
         comment: "联系电话",
     },
