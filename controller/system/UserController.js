@@ -2,7 +2,7 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-10 16:31:26
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-09-15 15:10:37
+ * @LastEditTime: 2022-09-19 14:30:59
  * @Description: SystemUserController
  */
 import verify from "@root/utils/verifyToken";
@@ -100,12 +100,12 @@ const userLogin = async (ctx) => {
         return response.fail(ctx, error);
     }
     data.password = utils.MD5(data.password);
-    let result = await SystemUserService.getUserOne({ user_name: data.user_name, password: data.password, is_delete: 0 });
-    if (result) {
-        const token = await verify.setToken(result);
+    let userInfo = await SystemUserService.getUserOne({ user_name: data.user_name, password: data.password, is_delete: 0 });
+    if (userInfo) {
+        const token = await verify.setToken(userInfo);
         response.success(ctx, {
             token,
-            result,
+            userInfo,
         });
     } else {
         return response.fail(ctx, "登录失败,用户名或密码错误");

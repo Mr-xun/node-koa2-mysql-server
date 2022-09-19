@@ -1,8 +1,8 @@
 /*
  * @Author: xunxiao
  * @Date: 2022-09-13 11:14:22
- * @LastEditors: xunxiao 17810204418@163.com
- * @LastEditTime: 2022-09-17 17:36:43
+ * @LastEditors: xunxiao
+ * @LastEditTime: 2022-09-19 14:09:45
  * @Description: entry
  */
 import Koa from "koa";
@@ -32,16 +32,15 @@ app.use(
     cors({
         origin: (ctx) => {
             //设置允许来自指定域名请求
-            if (ctx.url === "/test") {
-                return "*"; // 允许来自所有域名请求
-            }
-            return "http://localhost:8087"; //只允许http://localhost:8087这个域名的请求
+            // if (ctx.url.indexOf("/api") != -1) {
+            //     return "*"; // 允许来自所有域名请求
+            // }
+            return ctx.header.origin //允许ctx.header.origin这个域名的请求
         },
         maxAge: 5, //指定本次预检请求的有效期，单位为秒。
         credentials: true, //是否允许发送Cookie
         allowMethods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], //设置所允许的HTTP请求方法
         allowHeaders: ["Content-Type", "Authorization", "Accept"], //设置服务器支持的所有头信息字段
-        exposeHeaders: ["WWW-Authenticate", "Server-Authorization"], //设置获取其他自定义字段
     })
 );
 
