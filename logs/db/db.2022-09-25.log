@@ -1,0 +1,530 @@
+[2022-09-25T15:54:32.137] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-25T15:54:32.142] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'system_users' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'system_users', singular: 'system_user' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-25T15:54:32.147] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'system_menus' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'system_menus', singular: 'system_menu' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-25T15:54:32.152] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Admins' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-25T15:54:32.166] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `system_menus`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'system_menus', singular: 'system_menu' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-09-25T15:54:32.171] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `system_users`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'system_users', singular: 'system_user' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-09-25T15:54:32.175] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `Admins`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-09-25T16:00:53.266] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-25T16:00:53.270] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'system_users' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'system_users', singular: 'system_user' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-25T16:00:53.274] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'system_menus' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'system_menus', singular: 'system_menu' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-25T16:00:53.278] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Admins' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-25T16:00:53.283] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `system_users`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'system_users', singular: 'system_user' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-09-25T16:00:53.286] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `system_menus`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'system_menus', singular: 'system_menu' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-09-25T16:00:53.288] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `Admins`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-09-25T16:24:40.670] [INFO] db - [
+  "Executing (default): SELECT `id`, `user_name`, `avatar`, `mobile`, `role`, `createdAt`, `updatedAt` FROM `system_users` AS `system_user` WHERE `system_user`.`user_name` = '荀潇' AND `system_user`.`password` = '202cb962ac59075b964b07152d234b70' AND `system_user`.`is_delete` = 0;",
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: "`system_user`.`user_name` = '荀潇' AND `system_user`.`password` = '202cb962ac59075b964b07152d234b70' AND `system_user`.`is_delete` = 0",
+    attributes: [
+      'id',
+      'user_name',
+      'avatar',
+      'mobile',
+      'role',
+      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',
+      'user_name',
+      'avatar',
+      'mobile',
+      'role',
+      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_users' ],
+    type: 'SELECT',
+    model: system_user
+  }
+]
+[2022-09-25T20:12:52.603] [INFO] db - [
+  "Executing (default): SELECT `id`, `user_name`, `avatar`, `mobile`, `role`, `createdAt`, `updatedAt` FROM `system_users` AS `system_user` WHERE `system_user`.`user_name` = '荀潇' AND `system_user`.`password` = '202cb962ac59075b964b07152d234b70' AND `system_user`.`is_delete` = 0;",
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: "`system_user`.`user_name` = '荀潇' AND `system_user`.`password` = '202cb962ac59075b964b07152d234b70' AND `system_user`.`is_delete` = 0",
+    attributes: [
+      'id',
+      'user_name',
+      'avatar',
+      'mobile',
+      'role',
+      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',
+      'user_name',
+      'avatar',
+      'mobile',
+      'role',
+      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_users' ],
+    type: 'SELECT',
+    model: system_user
+  }
+]
