@@ -2,7 +2,7 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-10 16:31:26
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-09-19 14:30:59
+ * @LastEditTime: 2022-09-26 17:00:26
  * @Description: SystemUserController
  */
 import verify from "@root/utils/verifyToken";
@@ -44,6 +44,9 @@ const userCreate = async (ctx) => {
 //用户修改
 const userUpdate = async (ctx) => {
     const fromData = ctx.request.body;
+    if(!fromData.id){
+        return response.fail(ctx, "缺失id");
+    }
     const isExistUser = !!(await SystemUserService.getUserOne({ id: fromData.id }));
     if (!isExistUser) {
         return response.fail(ctx, "该用户不存在");

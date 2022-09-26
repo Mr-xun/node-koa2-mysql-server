@@ -1,8 +1,8 @@
 /*
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-17 16:51:34
- * @LastEditors: xunxiao 17810204418@163.com
- * @LastEditTime: 2022-09-17 17:50:28
+ * @LastEditors: xunxiao
+ * @LastEditTime: 2022-09-26 16:48:32
  * @Description: System_MenuModel
  */
 
@@ -31,9 +31,9 @@ const Menu = DB.sequelize.define("system_menu", {
         comment: "权限",
     },
     type: {
-        //类型 1 菜单 2按钮
+        //类型 0 菜单 1按钮
         type: Sequelize.INTEGER,
-        defaultValue: 1,
+        defaultValue: 0,
         comment: "类型",
     },
     order_num: {

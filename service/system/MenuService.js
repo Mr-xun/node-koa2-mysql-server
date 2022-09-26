@@ -1,8 +1,8 @@
 /*
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-17 17:00:56
- * @LastEditors: xunxiao 17810204418@163.com
- * @LastEditTime: 2022-09-17 17:58:16
+ * @LastEditors: xunxiao
+ * @LastEditTime: 2022-09-26 16:57:33
  * @Description: SystemMenuService
  */
 import SystemMenu from "@root/models/SystemMenu";
@@ -23,9 +23,18 @@ const menuDelete = async (ids) => {
 
 //获取单个菜单
 const getMenuOne = async (where) => {
-    return SystemMenu.findOne({ where, raw: true, attributes: { exclude: ["password", "is_delete"] } });
+    return SystemMenu.findOne({ where, raw: true, attributes: { exclude: [ "is_delete"] } });
 };
+//菜单列表
+const getMenuAll = () =>{
+    return SystemMenu.findAll({
+        where: {
+            is_delete: 0,
+        },
+        attributes: { exclude: ["is_delete"] },
 
+    })
+}
 //菜单列表分页
 const getMenuListByPage = ({ limit, offset }) => {
     return SystemMenu.findAndCountAll({
@@ -42,5 +51,6 @@ export default {
     menuUpdate,
     menuDelete,
     getMenuOne,
+    getMenuAll,
     getMenuListByPage,
 };
