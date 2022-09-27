@@ -2,7 +2,7 @@
  * @Author: xunxiao
  * @Date: 2022-09-13 11:14:22
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-09-19 14:09:45
+ * @LastEditTime: 2022-09-27 10:07:29
  * @Description: entry
  */
 import Koa from "koa";
@@ -23,6 +23,8 @@ import AccessLogMiddleware from "./middlewares/AccessLogMiddleware";
 import indexRoute from "./routes/index";
 import systemUserRoute from "./routes/system/user";
 import systemMenuRoute from "./routes/system/menu";
+import systemRoleRoute from "./routes/system/role";
+
 import adminRoute from "./routes/admin";
 const app = new Koa();
 //连接数据库
@@ -96,6 +98,7 @@ app.use(async (ctx, next) => {
 app.use(indexRoute.routes(), indexRoute.allowedMethods());
 app.use(systemUserRoute.routes(), systemUserRoute.allowedMethods());
 app.use(systemMenuRoute.routes(), systemMenuRoute.allowedMethods());
+app.use(systemRoleRoute.routes(), systemRoleRoute.allowedMethods());
 app.use(adminRoute.routes(), adminRoute.allowedMethods());
 
 // error-handling

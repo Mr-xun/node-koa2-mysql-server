@@ -2,8 +2,8 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-17 16:44:55
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-09-26 17:05:16
- * @Description: System_MenuModel
+ * @LastEditTime: 2022-09-27 13:58:28
+ * @Description: SystemMenuController
  */
 import validate from "@root/utils/validate";
 import response from "@root/utils/response";
@@ -32,7 +32,7 @@ const menuCreate = async (ctx) => {
 //菜单修改
 const menuUpdate = async (ctx) => {
     const fromData = ctx.request.body;
-    if(!fromData.id){
+    if (!fromData.id) {
         return response.fail(ctx, "缺失id");
     }
     const isExist = !!(await SystemMenuService.getMenuOne({ id: fromData.id }));
@@ -67,8 +67,15 @@ const menuGetTree = async (ctx) => {
             array.forEach((item) => {
                 if (item.parent_id == parent_id) {
                     item.children = arrayToTree(array, item.id);
+                    //order_num 排序
+                    item.children.sort((a, b) => {
+                        return a.order_num - b.order_num;
+                    });
                     result.push(item);
                 }
+            });
+            result.sort((a, b) => {
+                return a.order_num - b.order_num;
             });
             return result;
         }

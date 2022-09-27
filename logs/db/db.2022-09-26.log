@@ -79601,3 +79601,2648 @@
     type: 'SHOWINDEXES'
   }
 ]
+[2022-09-26T17:15:37.411] [INFO] db - [
+  "Executing (default): UPDATE `system_menus` SET `is_delete`=?,`updatedAt`=? WHERE `id` IN ('540', '541')",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: { id: [Array] },
+    validate: true,
+    hooks: true,
+    individualHooks: false,
+    returning: false,
+    force: false,
+    sideEffects: true,
+    type: 'BULKUPDATE',
+    fields: [ 'is_delete', 'updatedAt' ],
+    model: system_menu,
+    skip: undefined,
+    hasTrigger: undefined,
+    dialect: 'mysql',
+    dialectModule: null,
+    dialectModulePath: null,
+    host: 'localhost',
+    protocol: 'tcp',
+    define: { charset: 'utf8', dialectOptions: [Object] },
+    query: { raw: true },
+    sync: {},
+    timezone: '+00:00',
+    standardConformingStrings: true,
+    omitNull: false,
+    native: false,
+    replication: false,
+    ssl: undefined,
+    pool: { max: 5, min: 0, idle: 30000 },
+    quoteIdentifiers: true,
+    retry: { max: 5, match: [Array] },
+    transactionType: 'DEFERRED',
+    isolationLevel: null,
+    databaseVersion: '8.0.29',
+    typeValidation: false,
+    benchmark: false,
+    minifyAliases: false,
+    logQueryParameters: false,
+    operatorAliases: false,
+    dialectOptions: { dateStrings: true, typeCast: true },
+    models: [
+      'D:\\Job\\YHKJ\\me\\code\\node-koa2-mysql-server\\,model\\**\\*.js'
+    ],
+    allowNull: [],
+    bind: [ 1, '2022-09-26 09:15:37' ]
+  }
+]
+[2022-09-26T17:15:37.438] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:19:01.978] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:19:12.841] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:19:21.505] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:19:24.456] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:19:53.088] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:19:55.931] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:19:58.385] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:20:03.257] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:20:10.585] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:26:24.304] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-09-26T17:26:24.306] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'system_users' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'system_users', singular: 'system_user' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-26T17:26:24.319] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'system_menus' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'system_menus', singular: 'system_menu' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-26T17:26:24.320] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Admins' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-09-26T17:26:24.322] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `system_users`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'system_users', singular: 'system_user' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-09-26T17:26:24.323] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `system_menus`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'system_menus', singular: 'system_menu' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-09-26T17:26:24.324] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `Admins`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: false,
+    paranoid: false,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: {},
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'Admins', singular: 'Admin' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-09-26T17:29:58.487] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:30:04.236] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:30:08.003] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:30:49.807] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:36:11.340] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:36:39.850] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:36:42.865] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:37:30.483] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:37:50.372] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:37:57.471] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:38:19.408] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:38:42.076] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:38:49.312] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:38:53.436] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:39:30.036] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:39:37.023] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:39:40.052] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:40:05.362] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`id` = 538;',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`id` = 538',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:40:05.373] [INFO] db - [
+  'Executing (default): UPDATE `system_menus` SET `id`=?,`menu_name`=?,`parent_id`=?,`path`=?,`component`=?,`perms`=?,`type`=?,`order_num`=?,`icon`=?,`updatedAt`=? WHERE `id` = ?',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: { id: 538 },
+    validate: true,
+    hooks: true,
+    individualHooks: false,
+    returning: false,
+    force: false,
+    sideEffects: true,
+    type: 'BULKUPDATE',
+    fields: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'updatedAt'
+    ],
+    model: system_menu,
+    skip: undefined,
+    hasTrigger: undefined,
+    dialect: 'mysql',
+    dialectModule: null,
+    dialectModulePath: null,
+    host: 'localhost',
+    protocol: 'tcp',
+    define: { charset: 'utf8', dialectOptions: [Object] },
+    query: { raw: true },
+    sync: {},
+    timezone: '+00:00',
+    standardConformingStrings: true,
+    omitNull: false,
+    native: false,
+    replication: false,
+    ssl: undefined,
+    pool: { max: 5, min: 0, idle: 30000 },
+    quoteIdentifiers: true,
+    retry: { max: 5, match: [Array] },
+    transactionType: 'DEFERRED',
+    isolationLevel: null,
+    databaseVersion: '8.0.29',
+    typeValidation: false,
+    benchmark: false,
+    minifyAliases: false,
+    logQueryParameters: false,
+    operatorAliases: false,
+    dialectOptions: { dateStrings: true, typeCast: true },
+    models: [
+      'D:\\Job\\YHKJ\\me\\code\\node-koa2-mysql-server\\,model\\**\\*.js'
+    ],
+    allowNull: [],
+    bind: [
+      538,
+      '煎药监控1',
+      537,
+      '/bigMonitor/decoctMonitor',
+      'bigMonitor/decoctMonitor/Index',
+      'decoctMonitor:view',
+      0,
+      2,
+      '',
+      '2022-09-26 09:40:05',
+      538
+    ]
+  }
+]
+[2022-09-26T17:40:05.486] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:40:16.531] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`id` = 538;',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`id` = 538',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:40:16.533] [INFO] db - [
+  'Executing (default): UPDATE `system_menus` SET `id`=?,`menu_name`=?,`parent_id`=?,`path`=?,`component`=?,`perms`=?,`type`=?,`order_num`=?,`icon`=?,`updatedAt`=? WHERE `id` = ?',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: { id: 538 },
+    validate: true,
+    hooks: true,
+    individualHooks: false,
+    returning: false,
+    force: false,
+    sideEffects: true,
+    type: 'BULKUPDATE',
+    fields: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'updatedAt'
+    ],
+    model: system_menu,
+    skip: undefined,
+    hasTrigger: undefined,
+    dialect: 'mysql',
+    dialectModule: null,
+    dialectModulePath: null,
+    host: 'localhost',
+    protocol: 'tcp',
+    define: { charset: 'utf8', dialectOptions: [Object] },
+    query: { raw: true },
+    sync: {},
+    timezone: '+00:00',
+    standardConformingStrings: true,
+    omitNull: false,
+    native: false,
+    replication: false,
+    ssl: undefined,
+    pool: { max: 5, min: 0, idle: 30000 },
+    quoteIdentifiers: true,
+    retry: { max: 5, match: [Array] },
+    transactionType: 'DEFERRED',
+    isolationLevel: null,
+    databaseVersion: '8.0.29',
+    typeValidation: false,
+    benchmark: false,
+    minifyAliases: false,
+    logQueryParameters: false,
+    operatorAliases: false,
+    dialectOptions: { dateStrings: true, typeCast: true },
+    models: [
+      'D:\\Job\\YHKJ\\me\\code\\node-koa2-mysql-server\\,model\\**\\*.js'
+    ],
+    allowNull: [],
+    bind: [
+      538,
+      '煎药监控',
+      536,
+      '/bigMonitor/decoctMonitor',
+      'bigMonitor/decoctMonitor/Index',
+      'decoctMonitor:view',
+      0,
+      2,
+      '',
+      '2022-09-26 09:40:16',
+      538
+    ]
+  }
+]
+[2022-09-26T17:40:16.641] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:40:25.390] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:41:00.222] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:41:45.428] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:41:52.767] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:42:01.681] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:42:05.616] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:43:33.306] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:43:39.038] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:44:20.673] [INFO] db - [
+  'Executing (default): INSERT INTO `system_menus` (`id`,`menu_name`,`parent_id`,`path`,`component`,`perms`,`type`,`order_num`,`icon`,`is_delete`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    validate: true,
+    fields: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'is_delete',
+      'createdAt', 'updatedAt'
+    ],
+    defaultFields: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'is_delete',
+      'createdAt', 'updatedAt'
+    ],
+    returning: true,
+    hasTrigger: undefined,
+    dialect: 'mysql',
+    dialectModule: null,
+    dialectModulePath: null,
+    host: 'localhost',
+    protocol: 'tcp',
+    define: { charset: 'utf8', dialectOptions: [Object] },
+    query: { raw: true },
+    sync: {},
+    timezone: '+00:00',
+    standardConformingStrings: true,
+    omitNull: false,
+    native: false,
+    replication: false,
+    ssl: undefined,
+    pool: { max: 5, min: 0, idle: 30000 },
+    quoteIdentifiers: true,
+    retry: { max: 5, match: [Array] },
+    transactionType: 'DEFERRED',
+    isolationLevel: null,
+    databaseVersion: '8.0.29',
+    typeValidation: false,
+    benchmark: false,
+    minifyAliases: false,
+    logQueryParameters: false,
+    operatorAliases: false,
+    dialectOptions: { dateStrings: true, typeCast: true },
+    models: [
+      'D:\\Job\\YHKJ\\me\\code\\node-koa2-mysql-server\\,model\\**\\*.js'
+    ],
+    type: 'INSERT',
+    instance: system_menu {
+      dataValues: [Object],
+      _previousDataValues: [Object],
+      uniqno: 1,
+      _changed: [Set],
+      _options: [Object],
+      isNewRecord: true
+    },
+    model: system_menu,
+    bind: [
+      '',
+      'cs',
+      536,
+      '213',
+      '213',
+      '213',
+      0,
+      0,
+      '21',
+      0,
+      '2022-09-26 09:44:20',
+      '2022-09-26 09:44:20'
+    ]
+  }
+]
+[2022-09-26T17:44:20.761] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:44:29.559] [INFO] db - [
+  "Executing (default): UPDATE `system_menus` SET `is_delete`=?,`updatedAt`=? WHERE `id` IN ('548')",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: { id: [Array] },
+    validate: true,
+    hooks: true,
+    individualHooks: false,
+    returning: false,
+    force: false,
+    sideEffects: true,
+    type: 'BULKUPDATE',
+    fields: [ 'is_delete', 'updatedAt' ],
+    model: system_menu,
+    skip: undefined,
+    hasTrigger: undefined,
+    dialect: 'mysql',
+    dialectModule: null,
+    dialectModulePath: null,
+    host: 'localhost',
+    protocol: 'tcp',
+    define: { charset: 'utf8', dialectOptions: [Object] },
+    query: { raw: true },
+    sync: {},
+    timezone: '+00:00',
+    standardConformingStrings: true,
+    omitNull: false,
+    native: false,
+    replication: false,
+    ssl: undefined,
+    pool: { max: 5, min: 0, idle: 30000 },
+    quoteIdentifiers: true,
+    retry: { max: 5, match: [Array] },
+    transactionType: 'DEFERRED',
+    isolationLevel: null,
+    databaseVersion: '8.0.29',
+    typeValidation: false,
+    benchmark: false,
+    minifyAliases: false,
+    logQueryParameters: false,
+    operatorAliases: false,
+    dialectOptions: { dateStrings: true, typeCast: true },
+    models: [
+      'D:\\Job\\YHKJ\\me\\code\\node-koa2-mysql-server\\,model\\**\\*.js'
+    ],
+    allowNull: [],
+    bind: [ 1, '2022-09-26 09:44:29' ]
+  }
+]
+[2022-09-26T17:44:29.637] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:44:53.618] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:45:00.446] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:45:03.381] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:45:05.346] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:45:07.154] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:45:11.921] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:45:19.624] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:45:31.038] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:46:59.921] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:47:05.494] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:47:51.176] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:47:54.742] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:48:01.515] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:50:57.058] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:51:47.854] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T17:52:12.637] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T18:26:01.316] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`id` = 1;',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`id` = 1',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T18:26:01.320] [INFO] db - [
+  'Executing (default): UPDATE `system_menus` SET `id`=?,`menu_name`=?,`parent_id`=?,`path`=?,`component`=?,`perms`=?,`type`=?,`order_num`=?,`icon`=?,`updatedAt`=? WHERE `id` = ?',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: { id: 1 },
+    validate: true,
+    hooks: true,
+    individualHooks: false,
+    returning: false,
+    force: false,
+    sideEffects: true,
+    type: 'BULKUPDATE',
+    fields: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'updatedAt'
+    ],
+    model: system_menu,
+    skip: undefined,
+    hasTrigger: undefined,
+    dialect: 'mysql',
+    dialectModule: null,
+    dialectModulePath: null,
+    host: 'localhost',
+    protocol: 'tcp',
+    define: { charset: 'utf8', dialectOptions: [Object] },
+    query: { raw: true },
+    sync: {},
+    timezone: '+00:00',
+    standardConformingStrings: true,
+    omitNull: false,
+    native: false,
+    replication: false,
+    ssl: undefined,
+    pool: { max: 5, min: 0, idle: 30000 },
+    quoteIdentifiers: true,
+    retry: { max: 5, match: [Array] },
+    transactionType: 'DEFERRED',
+    isolationLevel: null,
+    databaseVersion: '8.0.29',
+    typeValidation: false,
+    benchmark: false,
+    minifyAliases: false,
+    logQueryParameters: false,
+    operatorAliases: false,
+    dialectOptions: { dateStrings: true, typeCast: true },
+    models: [
+      'D:\\Job\\YHKJ\\me\\code\\node-koa2-mysql-server\\,model\\**\\*.js'
+    ],
+    allowNull: [],
+    bind: [
+      1,
+      '系统管理',
+      0,
+      '/system',
+      'Layout',
+      'system',
+      0,
+      1,
+      'el-icon-set-up',
+      '2022-09-26 10:26:01',
+      1
+    ]
+  }
+]
+[2022-09-26T18:26:01.398] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T18:26:13.888] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T18:26:19.459] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T18:26:26.707] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T18:26:27.787] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-09-26T18:26:41.336] [INFO] db - [
+  "Executing (default): SELECT `id`, `user_name`, `avatar`, `mobile`, `role`, `createdAt`, `updatedAt` FROM `system_users` AS `system_user` WHERE `system_user`.`user_name` = '荀潇' AND `system_user`.`password` = '202cb962ac59075b964b07152d234b70' AND `system_user`.`is_delete` = 0;",
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: "`system_user`.`user_name` = '荀潇' AND `system_user`.`password` = '202cb962ac59075b964b07152d234b70' AND `system_user`.`is_delete` = 0",
+    attributes: [
+      'id',
+      'user_name',
+      'avatar',
+      'mobile',
+      'role',
+      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',
+      'user_name',
+      'avatar',
+      'mobile',
+      'role',
+      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_users' ],
+    type: 'SELECT',
+    model: system_user
+  }
+]
+[2022-09-26T18:26:41.622] [INFO] db - [
+  'Executing (default): SELECT `id`, `menu_name`, `parent_id`, `path`, `component`, `perms`, `type`, `order_num`, `icon`, `createdAt`, `updatedAt` FROM `system_menus` AS `system_menu` WHERE `system_menu`.`is_delete` = 0;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: '`system_menu`.`is_delete` = 0',
+    attributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',        'menu_name',
+      'parent_id', 'path',
+      'component', 'perms',
+      'type',      'order_num',
+      'icon',      'createdAt',
+      'updatedAt'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]

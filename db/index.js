@@ -1,8 +1,8 @@
 /*
  * @Author: xunxiao
  * @Date: 2022-09-13 11:14:23
- * @LastEditors: xunxiao 17810204418@163.com
- * @LastEditTime: 2022-09-17 17:55:58
+ * @LastEditors: xunxiao
+ * @LastEditTime: 2022-09-27 17:05:30
  * @Description: 数据库设置
  */
 import path from "path";
@@ -27,11 +27,25 @@ const sequelize = new Sequelize(dbConfig.database, dbConfig.username, dbConfig.p
         idle: 30000,
     },
     logging: (...msg) => dbLogger.info(msg),
+    timezone: "+08:00", //东八时区
     //解决中文输入问题
     define: {
         charset: "utf8",
         dialectOptions: {
             collate: "utf8_general_ci",
+        },
+        timestamps: true, //时间戳
+        paranoid: true, //软删除 必须启用时间戳
+        createdAt: "create_time", //创建时间表字段名称重定义
+        updatedAt: "update_time",
+        deletedAt: "delete_time",
+        underscored: true, //驼峰转下划线
+        scopes: {
+            bh: {
+                attributes: {
+                    exclude: ["update_time", "delete_time", "create_time"],
+                },
+            },
         },
     },
     dialectOptions: {
