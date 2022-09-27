@@ -1,22 +1,32 @@
 /*
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-17 16:51:34
- * @LastEditors: xunxiao
- * @LastEditTime: 2022-09-27 11:04:15
+ * @LastEditors: xunxiao 17810204418@163.com
+ * @LastEditTime: 2022-09-27 21:25:46
  * @Description: System_MenuModel
  */
 
 import Sequelize from "sequelize";
 import DB from "../db";
 const Menu = DB.sequelize.define("system_menu", {
-    menu_name: {
+    menuId: {
+        type: Sequelize.INTEGER,
+        autoIncrement: true,
+        primaryKey: true,
+        allowNull: false,
+        comment: "菜单Id",
+        field: "id",
+    },
+    menuName: {
         type: Sequelize.STRING,
         allowNull: false,
         comment: "菜单名称",
+        field: "menu_name",
     },
-    parent_id: {
+    parentId: {
         type: Sequelize.INTEGER,
         comment: "父菜单ID",
+        field: "parent_id",
     },
     path: {
         type: Sequelize.STRING,
@@ -32,24 +42,29 @@ const Menu = DB.sequelize.define("system_menu", {
     },
     type: {
         //类型 1 菜单 2按钮
-        type: Sequelize.INTEGER,
+        type: Sequelize.ENUM(1,2),
         defaultValue: 1,
         comment: "类型",
     },
-    order_num: {
+    orderNum: {
         type: Sequelize.INTEGER,
         defaultValue: 0,
         comment: "排序",
+        field: "order_num",
     },
     icon: {
         type: Sequelize.STRING,
         comment: "图标",
     },
-    is_delete: {
-        //是否删除 1是 0 否
-        type: Sequelize.INTEGER,
-        defaultValue: 0,
-        comment: "是否删除",
+    createTime: {
+        type: Sequelize.DATE,
+        comment: "创建时间",
+        field: "create_time",
+    },
+    updateTime: {
+        type: Sequelize.DATE,
+        comment: "更新时间",
+        field: "update_time",
     },
 });
 

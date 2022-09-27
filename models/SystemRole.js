@@ -1,14 +1,22 @@
 /*
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-17 16:51:34
- * @LastEditors: xunxiao
- * @LastEditTime: 2022-09-27 17:26:16
+ * @LastEditors: xunxiao 17810204418@163.com
+ * @LastEditTime: 2022-09-27 20:15:35
  * @Description: System_RoleModel
  */
 
 import Sequelize from "sequelize";
 import DB from "../db";
 const Role = DB.sequelize.define("system_role", {
+    roleId: {
+        type: Sequelize.INTEGER,
+        autoIncrement: true,
+        primaryKey: true,
+        allowNull: false,
+        comment: "角色Id",
+        field: "id",
+    },
     roleName: {
         type: Sequelize.STRING,
         allowNull: false,
@@ -36,5 +44,4 @@ const Role = DB.sequelize.define("system_role", {
     },
 });
 Role.sync();
-Role.scope('bh')
 export default Role;

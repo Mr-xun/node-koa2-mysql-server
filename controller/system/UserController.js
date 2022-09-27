@@ -1,8 +1,8 @@
 /*
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-10 16:31:26
- * @LastEditors: xunxiao
- * @LastEditTime: 2022-09-26 17:00:26
+ * @LastEditors: xunxiao 17810204418@163.com
+ * @LastEditTime: 2022-09-27 21:30:34
  * @Description: SystemUserController
  */
 import verify from "@root/utils/verifyToken";
@@ -16,7 +16,7 @@ import SystemUserService from "@root/service/system/UserService";
 //用户创建
 const userCreate = async (ctx) => {
     const rules = {
-        user_name: [{ type: "string", required: true, message: "用户名不能为空" }],
+        userName: [{ type: "string", required: true, message: "用户名不能为空" }],
         password: [{ type: "string", required: true, message: "密码不能为空" }],
     };
     const fromData = ctx.request.body;
@@ -24,14 +24,14 @@ const userCreate = async (ctx) => {
     if (error) {
         return response.fail(ctx, error);
     }
-    const isExistUser = !!(await SystemUserService.getUserOne({ user_name: data.user_name }));
-    if (isExistUser) {
-        return response.fail(ctx, "该用户已存在");
-    }
     try {
+        const isExistUser = !!(await SystemUserService.getUserOne({ userName: data.userName }));
+        if (isExistUser) {
+            return response.fail(ctx, "该用户已存在");
+        }
         data.password = utils.MD5(data.password);
         const raw = await SystemUserService.userCreate(data);
-        if (raw.id) {
+        if (raw.userId) {
             return response.success(ctx, null, "创建成功");
         }
         return response.fail(ctx, "创建失败");
@@ -44,7 +44,7 @@ const userCreate = async (ctx) => {
 //用户修改
 const userUpdate = async (ctx) => {
     const fromData = ctx.request.body;
-    if(!fromData.id){
+    if (!fromData.id) {
         return response.fail(ctx, "缺失id");
     }
     const isExistUser = !!(await SystemUserService.getUserOne({ id: fromData.id }));
@@ -52,7 +52,7 @@ const userUpdate = async (ctx) => {
         return response.fail(ctx, "该用户不存在");
     }
     const rules = {
-        user_name: [{ type: "string", required: true, message: "用户名不能为空" }],
+        userName: [{ type: "string", required: true, message: "用户名不能为空" }],
     };
     const { data, error } = await validate(fromData, rules);
     if (error) {
@@ -94,7 +94,7 @@ const userBatchDel = async (ctx) => {
 //用户登录
 const userLogin = async (ctx) => {
     const rules = {
-        user_name: [{ type: "string", required: true, message: "用户名不能为空" }],
+        userName: [{ type: "string", required: true, message: "用户名不能为空" }],
         password: [{ type: "string", required: true, message: "密码不能为空" }],
     };
     const fromData = ctx.request.body;
@@ -103,7 +103,7 @@ const userLogin = async (ctx) => {
         return response.fail(ctx, error);
     }
     data.password = utils.MD5(data.password);
-    let userInfo = await SystemUserService.getUserOne({ user_name: data.user_name, password: data.password, is_delete: 0 });
+    let userInfo = await SystemUserService.getUserOne({ userName: data.userName, password: data.password });
     if (userInfo) {
         const token = await verify.setToken(userInfo);
         response.success(ctx, {

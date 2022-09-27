@@ -1,8 +1,8 @@
 /*
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-17 16:44:55
- * @LastEditors: xunxiao
- * @LastEditTime: 2022-09-27 16:56:34
+ * @LastEditors: xunxiao 17810204418@163.com
+ * @LastEditTime: 2022-09-27 21:30:53
  * @Description: SystemRoleController
  */
 import utils from "@root/utils";
@@ -21,8 +21,12 @@ const Create = async (ctx) => {
         return response.fail(ctx, error);
     }
     try {
+        const isExistUser = !!(await SystemRoleService.GetOne({ roleName: data.roleName }));
+        if (isExistUser) {
+            return response.fail(ctx, "该角色已存在");
+        }
         const row = await SystemRoleService.Create(data);
-        if (row.id) {
+        if (row.roleId) {
             return response.success(ctx, null, "创建成功");
         }
         return response.fail(ctx, "创建失败");

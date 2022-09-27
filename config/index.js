@@ -2,7 +2,7 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-04 15:28:48
  * @LastEditors: xunxiao 17810204418@163.com
- * @LastEditTime: 2022-09-17 17:20:08
+ * @LastEditTime: 2022-09-27 20:09:23
  * @Description: common config
  */
 export default {
@@ -21,7 +21,7 @@ export default {
         signKey: "mrxun-server-jwt", // token密钥
         signTime: 3600 * 24 * 7, //过期时间  七天
         //不需要验证的路由 用户登录、用户注册
-        unRoute: [/^\/api\/system\/user\/login/, /^\/api\/system\/user\/register/, /^\/admin\/findOne/],
+        unRoute: [/^\/api\/system\/user\/create/,/^\/api\/system\/user\/login/, /^\/api\/system\/user\/register/, /^\/admin\/findOne/],
     },
     //日志
     logger: {

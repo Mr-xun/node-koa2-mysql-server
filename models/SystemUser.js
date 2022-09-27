@@ -1,18 +1,27 @@
 /*
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-11 16:14:39
- * @LastEditors: xunxiao
- * @LastEditTime: 2022-09-15 11:20:08
+ * @LastEditors: xunxiao 17810204418@163.com
+ * @LastEditTime: 2022-09-27 20:19:43
  * @Description: System_UserModel
  */
 import Sequelize from "sequelize";
 import DB from "../db";
 const User = DB.sequelize.define("system_user", {
-    user_name: {
+    userId: {
+        type: Sequelize.INTEGER,
+        autoIncrement: true,
+        primaryKey: true,
+        allowNull: false,
+        comment: "用户Id",
+        field: "id",
+    },
+    userName: {
         type: Sequelize.STRING,
         allowNull: false,
         unique: true,
         comment: "用户名",
+        field: "user_name",
     },
     password: {
         type: Sequelize.STRING,
@@ -33,11 +42,15 @@ const User = DB.sequelize.define("system_user", {
         defaultValue: 1,
         comment: "用户角色",
     },
-    is_delete: {
-        //是否删除 1是 0 否
-        type: Sequelize.INTEGER,
-        defaultValue: 0,
-        comment: "是否删除",
+    createTime: {
+        type: Sequelize.DATE,
+        comment: "创建时间",
+        field: "create_time",
+    },
+    updateTime: {
+        type: Sequelize.DATE,
+        comment: "更新时间",
+        field: "update_time",
     },
 });
 
