@@ -1,8 +1,8 @@
 /*
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-11 16:14:39
- * @LastEditors: xunxiao 17810204418@163.com
- * @LastEditTime: 2022-09-27 20:19:43
+ * @LastEditors: xunxiao
+ * @LastEditTime: 2022-09-28 16:49:30
  * @Description: System_UserModel
  */
 import Sequelize from "sequelize";
@@ -19,14 +19,26 @@ const User = DB.sequelize.define("system_user", {
     userName: {
         type: Sequelize.STRING,
         allowNull: false,
-        unique: true,
         comment: "用户名",
         field: "user_name",
+    },
+    realName: {
+        type: Sequelize.STRING,
+        allowNull: false,
+        comment: "姓名",
+        field: "real_name",
     },
     password: {
         type: Sequelize.STRING,
         allowNull: false,
         comment: "用户密码",
+    },
+    gender: {
+        //性别 1男 2女 3保密
+        type: Sequelize.INTEGER,
+        values: [1, 2, 3],
+        defaultValue: 3,
+        comment: "性别",
     },
     avatar: {
         type: Sequelize.STRING,
@@ -36,11 +48,39 @@ const User = DB.sequelize.define("system_user", {
         type: Sequelize.STRING,
         comment: "联系电话",
     },
-    role: {
-        //角色 1 管理员 2普通用户
+    email: {
+        type: Sequelize.STRING,
+        comment: "电子邮箱",
+    },
+    deptId: {
+        type: Sequelize.INTEGER,
+        comment: "部门Id",
+        field: "dept_id",
+    },
+    orgId: {
+        type: Sequelize.INTEGER,
+        comment: "机构Id",
+        field: "org_id",
+    },
+    roleId: {
+        type: Sequelize.STRING,
+        comment: "角色Id(多个,号分隔)",
+        field: "role_id",
+    },
+    status: {
+        //状态 1有效 2禁用
         type: Sequelize.INTEGER,
         defaultValue: 1,
-        comment: "用户角色",
+        comment: "状态",
+    },
+    description: {
+        type: Sequelize.STRING,
+        comment: "描述说明",
+    },
+    lastLoginTime: {
+        type: Sequelize.DATE,
+        comment: "上次登录时间",
+        field: "last_login_time",
     },
     createTime: {
         type: Sequelize.DATE,
@@ -53,6 +93,5 @@ const User = DB.sequelize.define("system_user", {
         field: "update_time",
     },
 });
-
 User.sync();
 export default User;

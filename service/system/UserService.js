@@ -1,8 +1,8 @@
 /*
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-11 16:13:33
- * @LastEditors: xunxiao 17810204418@163.com
- * @LastEditTime: 2022-09-27 20:19:01
+ * @LastEditors: xunxiao
+ * @LastEditTime: 2022-09-28 17:12:30
  * @Description: SystemUserService
  */
 import UserModel from "@root/models/SystemUser";
@@ -15,11 +15,11 @@ const userCreate = async (data) => {
 
 //用户更新
 const userUpdate = async (data) => {
-    return SystemUser.update(data, { where: { id: data.id } });
+    return SystemUser.update(data, { where: { id: data.userId } });
 };
 
-//用户删除
-const userDelete = async (ids) => {
+//用户批量删除
+const userBatchDel = async (ids) => {
     return SystemUser.destroy({ where: { id: ids } });
 };
 
@@ -39,7 +39,7 @@ const getUserListByPage = ({ limit, offset }) => {
 export default {
     userUpdate,
     userCreate,
-    userDelete,
+    userBatchDel,
     getUserOne,
     getUserListByPage,
 };

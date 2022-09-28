@@ -1,8 +1,8 @@
 /*
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-10 16:31:26
- * @LastEditors: xunxiao 17810204418@163.com
- * @LastEditTime: 2022-09-27 21:30:34
+ * @LastEditors: xunxiao
+ * @LastEditTime: 2022-09-28 17:19:15
  * @Description: SystemUserController
  */
 import verify from "@root/utils/verifyToken";
@@ -17,7 +17,7 @@ import SystemUserService from "@root/service/system/UserService";
 const userCreate = async (ctx) => {
     const rules = {
         userName: [{ type: "string", required: true, message: "用户名不能为空" }],
-        password: [{ type: "string", required: true, message: "密码不能为空" }],
+        realName: [{ type: "string", required: true, message: "姓名不能为空" }],
     };
     const fromData = ctx.request.body;
     const { data, error } = await validate(fromData, rules);
@@ -29,7 +29,8 @@ const userCreate = async (ctx) => {
         if (isExistUser) {
             return response.fail(ctx, "该用户已存在");
         }
-        data.password = utils.MD5(data.password);
+        //默认密码为123456
+        data.password = utils.MD5("123456");
         const raw = await SystemUserService.userCreate(data);
         if (raw.userId) {
             return response.success(ctx, null, "创建成功");
@@ -44,14 +45,8 @@ const userCreate = async (ctx) => {
 //用户修改
 const userUpdate = async (ctx) => {
     const fromData = ctx.request.body;
-    if (!fromData.id) {
-        return response.fail(ctx, "缺失id");
-    }
-    const isExistUser = !!(await SystemUserService.getUserOne({ id: fromData.id }));
-    if (!isExistUser) {
-        return response.fail(ctx, "该用户不存在");
-    }
     const rules = {
+        userId: [{ type: "number", required: true, message: "用户Id不能为空" }],
         userName: [{ type: "string", required: true, message: "用户名不能为空" }],
     };
     const { data, error } = await validate(fromData, rules);
@@ -59,6 +54,13 @@ const userUpdate = async (ctx) => {
         return response.fail(ctx, error);
     }
     try {
+        const isExistUser = !!(await SystemUserService.getUserOne({ userId: data.userId }));
+        if (!isExistUser) {
+            return response.fail(ctx, "该用户不存在");
+        }
+        //不可直接修改用户名和密码
+        delete data.password;
+        delete data.userName;
         const [upCount] = await SystemUserService.userUpdate(data);
         if (upCount) {
             return response.success(ctx);
@@ -79,7 +81,7 @@ const userBatchDel = async (ctx) => {
     }
     try {
         const deleteIds = ids.split(",");
-        const [delCount] = await SystemUserService.userDelete(deleteIds);
+        const delCount = await SystemUserService.userBatchDel(deleteIds);
         if (delCount) {
             return response.success(ctx);
         } else {
@@ -105,6 +107,12 @@ const userLogin = async (ctx) => {
     data.password = utils.MD5(data.password);
     let userInfo = await SystemUserService.getUserOne({ userName: data.userName, password: data.password });
     if (userInfo) {
+        //更新上次登录时间
+        let upData = {
+            userId: userInfo.userId,
+            lastLoginTime: new Date().getTime(),
+        };
+        await SystemUserService.userUpdate(upData);
         const token = await verify.setToken(userInfo);
         response.success(ctx, {
             token,

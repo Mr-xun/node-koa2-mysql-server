@@ -2,59 +2,37 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-17 16:51:34
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-09-28 16:27:47
- * @Description: System_MenuModel
+ * @LastEditTime: 2022-09-28 13:29:44
+ * @Description: System_DeptModel
  */
 
 import Sequelize from "sequelize";
 import DB from "../db";
-const Menu = DB.sequelize.define("system_menu", {
-    menuId: {
+const Dept = DB.sequelize.define("system_dept", {
+    deptId: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
         primaryKey: true,
         allowNull: false,
-        comment: "菜单Id",
+        comment: "部门Id",
         field: "id",
     },
-    menuName: {
+    deptName: {
         type: Sequelize.STRING,
         allowNull: false,
-        comment: "菜单名称",
-        field: "menu_name",
+        comment: "部门名称",
+        field: "dept_name",
     },
     parentId: {
         type: Sequelize.INTEGER,
         comment: "父菜单ID",
         field: "parent_id",
     },
-    path: {
-        type: Sequelize.STRING,
-        comment: "菜单路径",
-    },
-    component: {
-        type: Sequelize.STRING,
-        comment: "组件",
-    },
-    perms: {
-        type: Sequelize.STRING,
-        comment: "权限",
-    },
-    type: {
-        //类型 1 菜单 2按钮
-        type: Sequelize.INTEGER,
-        defaultValue: 1,
-        comment: "类型",
-    },
     orderNum: {
         type: Sequelize.INTEGER,
         defaultValue: 0,
         comment: "排序",
         field: "order_num",
-    },
-    icon: {
-        type: Sequelize.STRING,
-        comment: "图标",
     },
     createTime: {
         type: Sequelize.DATE,
@@ -68,5 +46,5 @@ const Menu = DB.sequelize.define("system_menu", {
     },
 });
 
-Menu.sync();
-export default Menu;
+Dept.sync();
+export default Dept;

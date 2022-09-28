@@ -2,16 +2,16 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-17 16:44:55
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-09-28 17:03:21
- * @Description: SystemMenuController
+ * @LastEditTime: 2022-09-28 17:04:06
+ * @Description: SystemDeptController
  */
 import validate from "@root/utils/validate";
 import response from "@root/utils/response";
-import SystemMenuService from "../../service/system/MenuService";
-//菜单创建
+import SystemDeptService from "../../service/system/DeptService";
+//部门创建
 const Create = async (ctx) => {
     const rules = {
-        menuName: [{ type: "string", required: true, message: "菜单名称不能为空" }],
+        deptName: [{ type: "string", required: true, message: "部门名称不能为空" }],
     };
     const formData = ctx.request.body;
     const { data, error } = await validate(formData, rules);
@@ -22,8 +22,8 @@ const Create = async (ctx) => {
         if (!data.parentId) {
             data.parentId = 0;
         }
-        const row = await SystemMenuService.Create(data);
-        if (row.menuId) {
+        const row = await SystemDeptService.Create(data);
+        if (row.deptId) {
             return response.success(ctx, null, "创建成功");
         }
         return response.fail(ctx, "创建失败");
@@ -32,26 +32,26 @@ const Create = async (ctx) => {
         return response.error(ctx, "系统异常", JSON.stringify(error));
     }
 };
-//菜单修改
+//部门修改
 const Update = async (ctx) => {
     const fromData = ctx.request.body;
     const rules = {
-        menuId: [{ type: "number", required: true, message: "菜单id不能为空" }],
-        menuName: [{ type: "string", required: true, message: "菜单名称不能为空" }],
+        deptId: [{ type: "number", required: true, message: "部门id不能为空" }],
+        deptName: [{ type: "string", required: true, message: "部门名称不能为空" }],
     };
     const { data, error } = await validate(fromData, rules);
     if (error) {
         return response.fail(ctx, error);
     }
     try {
-        const isExist = !!(await SystemMenuService.GetOne({ menuId: data.menuId }));
+        const isExist = !!(await SystemDeptService.GetOne({ deptId: data.deptId }));
         if (!isExist) {
-            return response.fail(ctx, "该菜单不存在");
+            return response.fail(ctx, "该部门不存在");
         }
         if (!data.parentId) {
             data.parentId = 0;
         }
-        const [upCount] = await SystemMenuService.Update(data);
+        const [upCount] = await SystemDeptService.Update(data);
         if (upCount) {
             return response.success(ctx);
         } else {
@@ -62,15 +62,16 @@ const Update = async (ctx) => {
         return response.error(ctx, "系统异常");
     }
 };
-//菜单列表tree结构
+//部门列表tree结构
 const GetTree = async (ctx) => {
     try {
-        const rows = await SystemMenuService.GetAll();
+        const rows = await SystemDeptService.GetAll();
+        console.log(rows, 77);
         function arrayToTree(array, parentId) {
             let result = [];
             array.forEach((item) => {
                 if (item.parentId == parentId) {
-                    item.children = arrayToTree(array, item.menuId);
+                    item.children = arrayToTree(array, item.deptId);
                     //orderNum 排序
                     item.children.sort((a, b) => {
                         return a.orderNum - b.orderNum;
@@ -91,7 +92,7 @@ const GetTree = async (ctx) => {
         return response.error(ctx, "系统异常", JSON.stringify(error));
     }
 };
-//菜单批量删除
+//部门批量删除
 const BatchDel = async (ctx) => {
     const { ids } = ctx.params;
     if (!ids || ids == "undefined") {
@@ -100,7 +101,7 @@ const BatchDel = async (ctx) => {
     }
     try {
         const deleteIds = ids.split(",");
-        const delCount = await SystemMenuService.BatchDel(deleteIds);
+        const delCount = await SystemDeptService.BatchDel(deleteIds);
         if (delCount) {
             return response.success(ctx);
         } else {

@@ -1,8 +1,8 @@
 /*
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-17 16:44:55
- * @LastEditors: xunxiao 17810204418@163.com
- * @LastEditTime: 2022-09-27 21:30:53
+ * @LastEditors: xunxiao
+ * @LastEditTime: 2022-09-28 17:03:02
  * @Description: SystemRoleController
  */
 import utils from "@root/utils";
@@ -38,14 +38,8 @@ const Create = async (ctx) => {
 //角色修改
 const Update = async (ctx) => {
     const fromData = ctx.request.body;
-    if (!fromData.id) {
-        return response.fail(ctx, "缺失id");
-    }
-    const isExist = !!(await SystemRoleService.GetOne({ id: fromData.id }));
-    if (!isExist) {
-        return response.fail(ctx, "该角色不存在");
-    }
     const rules = {
+        roleId: [{ type: "number", required: true, message: "角色id不能为空" }],
         roleName: [{ type: "string", required: true, message: "角色名称不能为空" }],
     };
     const { data, error } = await validate(fromData, rules);
@@ -53,6 +47,10 @@ const Update = async (ctx) => {
         return response.fail(ctx, error);
     }
     try {
+        const isExist = !!(await SystemRoleService.GetOne({ roleId: data.roleId }));
+        if (!isExist) {
+            return response.fail(ctx, "该角色不存在");
+        }
         const [upCount] = await SystemRoleService.Update(data);
         if (upCount) {
             return response.success(ctx);
@@ -67,12 +65,15 @@ const Update = async (ctx) => {
 //角色列表
 const GetList = async (ctx) => {
     try {
+        let { roleName = "" } = ctx.query;
         let { limit, offset } = utils.setPager(ctx.query.pageNum, ctx.query.pageSize);
-        let where = {
+        let condition = {
+            where: { roleName },
             limit,
             offset,
         };
-        const { rows, count } = await SystemRoleService.GetListByPage(where);
+
+        const { rows, count } = await SystemRoleService.GetListByPage(condition);
         response.success(ctx, paginate(rows, count, limit));
     } catch (error) {
         console.log(error);
@@ -89,7 +90,6 @@ const BatchDel = async (ctx) => {
     try {
         const deleteIds = ids.split(",");
         const delCount = await SystemRoleService.BatchDel(deleteIds);
-        console.log(delCount)
         if (delCount) {
             return response.success(ctx);
         } else {

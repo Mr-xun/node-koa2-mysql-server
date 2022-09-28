@@ -2,7 +2,7 @@
  * @Author: xunxiao
  * @Date: 2022-09-13 11:14:22
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-09-27 10:07:29
+ * @LastEditTime: 2022-09-28 13:42:27
  * @Description: entry
  */
 import Koa from "koa";
@@ -24,6 +24,7 @@ import indexRoute from "./routes/index";
 import systemUserRoute from "./routes/system/user";
 import systemMenuRoute from "./routes/system/menu";
 import systemRoleRoute from "./routes/system/role";
+import systemDeptRoute from "./routes/system/dept";
 
 import adminRoute from "./routes/admin";
 const app = new Koa();
@@ -37,7 +38,7 @@ app.use(
             // if (ctx.url.indexOf("/api") != -1) {
             //     return "*"; // 允许来自所有域名请求
             // }
-            return ctx.header.origin //允许ctx.header.origin这个域名的请求
+            return ctx.header.origin; //允许ctx.header.origin这个域名的请求
         },
         maxAge: 5, //指定本次预检请求的有效期，单位为秒。
         credentials: true, //是否允许发送Cookie
@@ -99,6 +100,7 @@ app.use(indexRoute.routes(), indexRoute.allowedMethods());
 app.use(systemUserRoute.routes(), systemUserRoute.allowedMethods());
 app.use(systemMenuRoute.routes(), systemMenuRoute.allowedMethods());
 app.use(systemRoleRoute.routes(), systemRoleRoute.allowedMethods());
+app.use(systemDeptRoute.routes(), systemDeptRoute.allowedMethods());
 app.use(adminRoute.routes(), adminRoute.allowedMethods());
 
 // error-handling

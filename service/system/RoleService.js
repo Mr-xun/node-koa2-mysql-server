@@ -1,10 +1,11 @@
 /*
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-17 17:00:56
- * @LastEditors: xunxiao 17810204418@163.com
- * @LastEditTime: 2022-09-27 21:31:33
+ * @LastEditors: xunxiao
+ * @LastEditTime: 2022-09-28 13:11:29
  * @Description: SystemRoleService
  */
+import { Op } from "sequelize";
 import RoleModel from "@root/models/SystemRole";
 const SystemRole = RoleModel.scope("hiddenAttr");
 
@@ -15,7 +16,7 @@ const Create = async (data) => {
 
 //角色更新
 const Update = async (data) => {
-    return SystemRole.update(data, { where: { id: data.id } });
+    return SystemRole.update(data, { where: { id: data.roleId } });
 };
 
 //角色删除
@@ -32,8 +33,13 @@ const GetAll = () => {
     return SystemRole.findAll();
 };
 //角色列表分页
-const GetListByPage = ({ limit, offset }) => {
+const GetListByPage = ({ where, limit, offset }) => {
     return SystemRole.findAndCountAll({
+        where: {
+            roleName: {
+                [Op.like]: `%${where.roleName}%`,
+            },
+        },
         limit,
         offset,
     });
