@@ -2,7 +2,7 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-17 16:44:55
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-09-28 17:03:21
+ * @LastEditTime: 2022-09-29 09:40:47
  * @Description: SystemMenuController
  */
 import validate from "@root/utils/validate";
@@ -83,9 +83,7 @@ const GetTree = async (ctx) => {
             });
             return result;
         }
-        return response.success(ctx, {
-            rows: arrayToTree(rows, 0),
-        });
+        return response.success(ctx, arrayToTree(rows, 0));
     } catch (error) {
         console.log(error);
         return response.error(ctx, "系统异常", JSON.stringify(error));

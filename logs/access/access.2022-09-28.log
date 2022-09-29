@@ -249,3 +249,5 @@
 [2022-09-28T17:17:56.679] [INFO] access - path:/api/system/menu/tree | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36
 [2022-09-28T17:18:29.910] [INFO] access - path:/api/system/user/login | method:POST | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36
 [2022-09-28T17:18:30.189] [INFO] access - path:/api/system/menu/tree | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36
+[2022-09-28T17:20:48.689] [INFO] access - path:/api/system/dept/tree | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36
+[2022-09-28T17:20:53.307] [INFO] access - path:/api/system/dept/tree | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36

@@ -2,24 +2,27 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-17 17:31:16
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-09-27 10:47:31
+ * @LastEditTime: 2022-09-29 10:43:56
  * @Description: RoleRoute
  */
 import Router from "koa-router";
-import sysMenuCtl from "@root/controller/system/RoleController";
+import sysRoleCtl from "@root/controller/system/RoleController";
 const router = new Router();
 router.prefix("/api/system/role");
 
-//菜单创建
-router.post("/create", sysMenuCtl.Create);
+//角色创建
+router.post("/create", sysRoleCtl.Create);
 
-//菜单修改
-router.put("/update", sysMenuCtl.Update);
+//角色修改
+router.put("/update", sysRoleCtl.Update);
 
-//菜单列表
-router.get("/list", sysMenuCtl.GetList);
+//角色列表
+router.get("/list", sysRoleCtl.GetList);
 
-//菜单删除
-router.delete("/delete/:ids", sysMenuCtl.BatchDel);
+//所用角色
+router.get("/all", sysRoleCtl.GetAll);
+
+//角色删除
+router.delete("/delete/:ids", sysRoleCtl.BatchDel);
 
 export default router;

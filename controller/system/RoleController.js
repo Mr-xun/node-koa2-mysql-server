@@ -2,7 +2,7 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-17 16:44:55
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-09-28 17:03:02
+ * @LastEditTime: 2022-09-29 10:40:23
  * @Description: SystemRoleController
  */
 import utils from "@root/utils";
@@ -80,6 +80,15 @@ const GetList = async (ctx) => {
         return response.error(ctx, "系统异常");
     }
 };
+const GetAll = async (ctx)=>{
+    try {
+        const rows = await SystemRoleService.GetAll();
+        response.success(ctx, rows);
+    } catch (error) {
+        console.log(error);
+        return response.error(ctx, "系统异常");
+    }
+}
 //角色批量删除
 const BatchDel = async (ctx) => {
     const { ids } = ctx.params;
@@ -104,5 +113,6 @@ export default {
     Create,
     Update,
     GetList,
+    GetAll,
     BatchDel,
 };

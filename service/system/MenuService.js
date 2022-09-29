@@ -2,7 +2,7 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-17 17:00:56
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-09-28 13:53:41
+ * @LastEditTime: 2022-09-29 09:26:46
  * @Description: SystemMenuService
  */
 import MenuModel from "@root/models/SystemMenu";
@@ -30,7 +30,7 @@ const BatchDel = async (ids) => {
 const GetOne = async (where) => {
     return SystemMenu.findOne({ where, raw: true });
 };
-//菜单列表
+//获取所有菜单
 const GetAll = () => {
     return SystemMenu.findAll();
 };

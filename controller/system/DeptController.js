@@ -2,7 +2,7 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-17 16:44:55
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-09-28 17:04:06
+ * @LastEditTime: 2022-09-29 10:46:30
  * @Description: SystemDeptController
  */
 import validate from "@root/utils/validate";
@@ -66,7 +66,6 @@ const Update = async (ctx) => {
 const GetTree = async (ctx) => {
     try {
         const rows = await SystemDeptService.GetAll();
-        console.log(rows, 77);
         function arrayToTree(array, parentId) {
             let result = [];
             array.forEach((item) => {
@@ -84,9 +83,7 @@ const GetTree = async (ctx) => {
             });
             return result;
         }
-        return response.success(ctx, {
-            rows: arrayToTree(rows, 0),
-        });
+        return response.success(ctx, arrayToTree(rows, 0));
     } catch (error) {
         console.log(error);
         return response.error(ctx, "系统异常", JSON.stringify(error));

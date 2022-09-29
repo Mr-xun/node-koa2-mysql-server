@@ -2,7 +2,7 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-17 17:00:56
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-09-28 13:11:29
+ * @LastEditTime: 2022-09-29 09:26:38
  * @Description: SystemRoleService
  */
 import { Op } from "sequelize";
@@ -28,7 +28,7 @@ const BatchDel = async (ids) => {
 const GetOne = async (where) => {
     return SystemRole.findOne({ where, raw: true });
 };
-//角色列表
+//获取所有角色
 const GetAll = () => {
     return SystemRole.findAll();
 };

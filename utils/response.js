@@ -1,8 +1,8 @@
 /*
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-10 17:55:15
- * @LastEditors: xunxiao 17810204418@163.com
- * @LastEditTime: 2022-09-12 17:04:39
+ * @LastEditors: xunxiao
+ * @LastEditTime: 2022-09-29 09:35:11
  * @Description: 统一返回
  */
 //返回值
@@ -17,7 +17,7 @@ export default {
         ctx.body = {
             code,
             msg,
-            data: data ? { ...data } : null,
+            data: data ? data : null,
         };
     },
     fail(ctx, msg = "fail", code = CODE.FAIL, data = null) {

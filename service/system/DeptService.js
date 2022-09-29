@@ -2,7 +2,7 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-17 17:00:56
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-09-28 13:34:13
+ * @LastEditTime: 2022-09-29 09:26:55
  * @Description: SystemDeptService
  */
 import DeptModel from "@root/models/SystemDept";
@@ -30,7 +30,7 @@ const BatchDel = async (ids) => {
 const GetOne = async (where) => {
     return SystemDept.findOne({ where, raw: true });
 };
-//部门列表
+//获取所有部门
 const GetAll = () => {
     return SystemDept.findAll();
 };

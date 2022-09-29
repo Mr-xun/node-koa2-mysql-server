@@ -2,7 +2,7 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-10 16:31:26
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-09-28 17:19:15
+ * @LastEditTime: 2022-09-29 09:35:18
  * @Description: SystemUserController
  */
 import verify from "@root/utils/verifyToken";
@@ -107,11 +107,11 @@ const userLogin = async (ctx) => {
     data.password = utils.MD5(data.password);
     let userInfo = await SystemUserService.getUserOne({ userName: data.userName, password: data.password });
     if (userInfo) {
-        //更新上次登录时间
         let upData = {
             userId: userInfo.userId,
             lastLoginTime: new Date().getTime(),
         };
+        //更新上次登录时间
         await SystemUserService.userUpdate(upData);
         const token = await verify.setToken(userInfo);
         response.success(ctx, {
@@ -120,6 +120,28 @@ const userLogin = async (ctx) => {
         });
     } else {
         return response.fail(ctx, "登录失败,用户名或密码错误");
+    }
+};
+
+//用户登录成功
+const userLoginSuccess = async (ctx) => {
+    const token = ctx.header[config.jwt.header].replace("Bearer ", "");
+    const tokenInfo = await verify.getToken(token);
+    //更新上次登录时间
+    let upData = {
+        userId: tokenInfo.userId,
+        lastLoginTime: new Date().getTime(),
+    };
+    try {
+        let [upCount] = await SystemUserService.userUpdate(upData);
+        if (upCount) {
+            return response.success(ctx);
+        } else {
+            return response.fail(ctx, "更新失败");
+        }
+    } catch (error) {
+        console.log(error);
+        return response.error(ctx, "系统异常");
     }
 };
 
@@ -140,14 +162,32 @@ const userList = async (ctx) => {
         limit,
         offset,
     };
-    const { rows, count } = await SystemUserService.getUserListByPage(where);
-    response.success(ctx, paginate(rows, count, limit));
+    try {
+        const { rows, count } = await SystemUserService.getUserListByPage(where);
+        response.success(ctx, paginate(rows, count, limit));
+    } catch (error) {
+        console.log(error);
+        return response.error(ctx, "系统异常");
+    }
+};
+
+//所有用户
+const userAll = async (ctx) => {
+    try {
+        const rows = await SystemUserService.getUserALl();
+        response.success(ctx, rows);
+    } catch (error) {
+        console.log(error);
+        return response.error(ctx, "系统异常");
+    }
 };
 export default {
     userCreate,
     userUpdate,
     userBatchDel,
     userLogin,
+    userLoginSuccess,
     userVerify,
+    userAll,
     userList,
 };

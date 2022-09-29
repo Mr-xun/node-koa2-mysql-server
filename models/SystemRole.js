@@ -1,8 +1,8 @@
 /*
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-17 16:51:34
- * @LastEditors: xunxiao 17810204418@163.com
- * @LastEditTime: 2022-09-27 20:15:35
+ * @LastEditors: xunxiao
+ * @LastEditTime: 2022-09-29 14:46:14
  * @Description: System_RoleModel
  */
 
@@ -20,6 +20,7 @@ const Role = DB.sequelize.define("system_role", {
     roleName: {
         type: Sequelize.STRING,
         allowNull: false,
+        unique: true,
         comment: "角色名称",
         field: "role_name",
     },
