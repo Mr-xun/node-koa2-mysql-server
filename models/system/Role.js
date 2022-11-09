@@ -2,14 +2,12 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-17 16:51:34
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-10-14 09:52:53
+ * @LastEditTime: 2022-10-14 09:46:08
  * @Description: System_RoleModel
  */
 
 import Sequelize from "sequelize";
-import DB from "../db";
-import SystemUser from "./SystemUser";
-import SystemUserRole from "./system/UserRole";
+import DB from "@root/db";
 const Role = DB.sequelize.define("system_role", {
     roleId: {
         type: Sequelize.INTEGER,
@@ -46,10 +44,5 @@ const Role = DB.sequelize.define("system_role", {
         field: "update_time",
     },
 });
-// // Role.associate = function () {
-//     console.log(222);
-//     Role.belongsToMany(SystemUser, { through: SystemUserRole,constraints: false, });
-// // };
-
 Role.sync();
 export default Role;

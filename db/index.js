@@ -1,8 +1,8 @@
 /*
  * @Author: xunxiao
  * @Date: 2022-09-13 11:14:23
- * @LastEditors: xunxiao 17810204418@163.com
- * @LastEditTime: 2022-09-27 20:13:31
+ * @LastEditors: xunxiao
+ * @LastEditTime: 2022-11-09 15:08:48
  * @Description: 数据库设置
  */
 import path from "path";
@@ -20,7 +20,7 @@ const sequelize = new Sequelize(dbConfig.database, dbConfig.username, dbConfig.p
     host: dbConfig.host,
     dialect: "mysql",
     operatorAliases: false,
-    query: { raw: true },
+    // query: { raw: true },-
     pool: {
         max: 5,
         min: 0,

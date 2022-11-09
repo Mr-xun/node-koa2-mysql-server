@@ -2,7 +2,7 @@
  * @Author: xunxiao
  * @Date: 2022-09-13 11:14:22
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-09-28 13:42:27
+ * @LastEditTime: 2022-11-09 13:07:22
  * @Description: entry
  */
 import Koa from "koa";
@@ -25,6 +25,7 @@ import systemUserRoute from "./routes/system/user";
 import systemMenuRoute from "./routes/system/menu";
 import systemRoleRoute from "./routes/system/role";
 import systemDeptRoute from "./routes/system/dept";
+import testApiRoute from "./routes/testapi/post";
 
 import adminRoute from "./routes/admin";
 const app = new Koa();
@@ -101,6 +102,7 @@ app.use(systemUserRoute.routes(), systemUserRoute.allowedMethods());
 app.use(systemMenuRoute.routes(), systemMenuRoute.allowedMethods());
 app.use(systemRoleRoute.routes(), systemRoleRoute.allowedMethods());
 app.use(systemDeptRoute.routes(), systemDeptRoute.allowedMethods());
+app.use(testApiRoute.routes(), testApiRoute.allowedMethods());
 app.use(adminRoute.routes(), adminRoute.allowedMethods());
 
 // error-handling

@@ -2,7 +2,7 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-17 16:44:55
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-09-29 10:40:23
+ * @LastEditTime: 2022-11-09 16:50:05
  * @Description: SystemRoleController
  */
 import utils from "@root/utils";
@@ -10,6 +10,8 @@ import validate from "@root/utils/validate";
 import response from "@root/utils/response";
 import paginate from "@root/utils/paginate";
 import SystemRoleService from "../../service/system/RoleService";
+import SystemMenuService from "../../service/system/MenuService";
+
 //角色创建
 const Create = async (ctx) => {
     const rules = {
@@ -25,8 +27,14 @@ const Create = async (ctx) => {
         if (isExistUser) {
             return response.fail(ctx, "该角色已存在");
         }
-        const row = await SystemRoleService.Create(data);
-        if (row.roleId) {
+        const newData = await SystemRoleService.Create(data);
+        const menus = await SystemMenuService.GetAll({
+            where: {
+                id: data.menuIds,
+            },
+        });
+        await newData.setSystem_menus(menus); //通过setSystem_menus方法在system_role_menus表添加记录
+        if (newData.roleId) {
             return response.success(ctx, null, "创建成功");
         }
         return response.fail(ctx, "创建失败");
@@ -72,15 +80,19 @@ const GetList = async (ctx) => {
             limit,
             offset,
         };
-
         const { rows, count } = await SystemRoleService.GetListByPage(condition);
-        response.success(ctx, paginate(rows, count, limit));
+        let list = rows.map((row) => row.dataValues);
+        list.forEach((item) => {
+            item.menuIds = item.system_menus.map((m) => m.dataValues.id);
+            delete item.system_menus;
+        });
+        response.success(ctx, paginate(list, count, limit));
     } catch (error) {
         console.log(error);
         return response.error(ctx, "系统异常");
     }
 };
-const GetAll = async (ctx)=>{
+const GetAll = async (ctx) => {
     try {
         const rows = await SystemRoleService.GetAll();
         response.success(ctx, rows);
@@ -88,7 +100,7 @@ const GetAll = async (ctx)=>{
         console.log(error);
         return response.error(ctx, "系统异常");
     }
-}
+};
 //角色批量删除
 const BatchDel = async (ctx) => {
     const { ids } = ctx.params;

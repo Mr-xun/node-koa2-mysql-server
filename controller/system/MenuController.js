@@ -2,7 +2,7 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-17 16:44:55
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-09-29 09:40:47
+ * @LastEditTime: 2022-11-09 15:16:37
  * @Description: SystemMenuController
  */
 import validate from "@root/utils/validate";
@@ -65,7 +65,7 @@ const Update = async (ctx) => {
 //菜单列表tree结构
 const GetTree = async (ctx) => {
     try {
-        const rows = await SystemMenuService.GetAll();
+        const rows = await SystemMenuService.GetAll({ raw: true });
         function arrayToTree(array, parentId) {
             let result = [];
             array.forEach((item) => {

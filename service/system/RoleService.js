@@ -2,12 +2,13 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-17 17:00:56
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-09-29 09:26:38
+ * @LastEditTime: 2022-11-09 16:39:00
  * @Description: SystemRoleService
  */
 import { Op } from "sequelize";
-import RoleModel from "@root/models/SystemRole";
-const SystemRole = RoleModel.scope("hiddenAttr");
+import systemModel from "@root/models/system";
+const SystemMenu = systemModel.SystemMenu;
+const SystemRole = systemModel.SystemRole.scope("hiddenAttr");
 
 //角色创建
 const Create = async (data) => {
@@ -29,12 +30,19 @@ const GetOne = async (where) => {
     return SystemRole.findOne({ where, raw: true });
 };
 //获取所有角色
-const GetAll = () => {
-    return SystemRole.findAll();
+const GetAll = (where) => {
+    return SystemRole.findAll(where);
 };
 //角色列表分页
 const GetListByPage = ({ where, limit, offset }) => {
     return SystemRole.findAndCountAll({
+        include: [
+            {
+                model: SystemMenu,
+                attributes: ["id"],
+                through: { attributes: [] }, // 隐藏中间表字段
+            },
+        ],
         where: {
             roleName: {
                 [Op.like]: `%${where.roleName}%`,

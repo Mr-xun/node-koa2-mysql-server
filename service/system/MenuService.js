@@ -2,10 +2,10 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-17 17:00:56
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-09-29 09:26:46
+ * @LastEditTime: 2022-11-09 15:16:28
  * @Description: SystemMenuService
  */
-import MenuModel from "@root/models/SystemMenu";
+import MenuModel from "@root/models/system/SystemMenu";
 const SystemMenu = MenuModel.scope("hiddenAttr");
 //菜单创建
 const Create = async (data) => {
@@ -31,8 +31,8 @@ const GetOne = async (where) => {
     return SystemMenu.findOne({ where, raw: true });
 };
 //获取所有菜单
-const GetAll = () => {
-    return SystemMenu.findAll();
+const GetAll = (condition) => {
+    return SystemMenu.findAll(condition);
 };
 //菜单列表分页
 const getMenuListByPage = ({ limit, offset }) => {

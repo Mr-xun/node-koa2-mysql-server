@@ -2,15 +2,13 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-17 16:51:34
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-10-14 09:52:53
+ * @LastEditTime: 2022-11-09 15:36:13
  * @Description: System_RoleModel
  */
 
 import Sequelize from "sequelize";
-import DB from "../db";
-import SystemUser from "./SystemUser";
-import SystemUserRole from "./system/UserRole";
-const Role = DB.sequelize.define("system_role", {
+import DB from "@root/db";
+const SystemRole = DB.sequelize.define("system_role", {
     roleId: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
@@ -30,11 +28,6 @@ const Role = DB.sequelize.define("system_role", {
         type: Sequelize.STRING,
         comment: "角色说明",
     },
-    menuIds: {
-        type: Sequelize.STRING,
-        comment: "关联菜单",
-        field: "menu_ids",
-    },
     createTime: {
         type: Sequelize.DATE,
         comment: "创建时间",
@@ -46,10 +39,5 @@ const Role = DB.sequelize.define("system_role", {
         field: "update_time",
     },
 });
-// // Role.associate = function () {
-//     console.log(222);
-//     Role.belongsToMany(SystemUser, { through: SystemUserRole,constraints: false, });
-// // };
-
-Role.sync();
-export default Role;
+SystemRole.sync();
+export default SystemRole;

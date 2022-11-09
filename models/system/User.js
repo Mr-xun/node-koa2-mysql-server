@@ -2,13 +2,11 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-11 16:14:39
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-09-30 13:10:19
+ * @LastEditTime: 2022-10-14 09:51:12
  * @Description: System_UserModel
  */
 import Sequelize from "sequelize";
-import DB from "../db";
-import SystemRole from "./SystemRole";
-import SystemUserRole from "./system/UserRole";
+import DB from "@root/db";
 const User = DB.sequelize.define("system_user", {
     userId: {
         type: Sequelize.INTEGER,
@@ -91,9 +89,5 @@ const User = DB.sequelize.define("system_user", {
         field: "update_time",
     },
 });
-// // User.associate = function () {
-// User.belongsToMany(SystemRole, { through: SystemUserRole, constraints: false });
-// // }
-
 User.sync();
 export default User;

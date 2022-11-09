@@ -2,7 +2,7 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-10 16:31:26
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-09-29 09:35:18
+ * @LastEditTime: 2022-11-09 15:34:04
  * @Description: SystemUserController
  */
 import verify from "@root/utils/verifyToken";
@@ -12,6 +12,7 @@ import validate from "@root/utils/validate";
 import response from "@root/utils/response";
 import paginate from "@root/utils/paginate";
 import SystemUserService from "@root/service/system/UserService";
+import SystemRoleService from "@root/service/system/RoleService";
 
 //用户创建
 const userCreate = async (ctx) => {
@@ -31,8 +32,14 @@ const userCreate = async (ctx) => {
         }
         //默认密码为123456
         data.password = utils.MD5("123456");
-        const raw = await SystemUserService.userCreate(data);
-        if (raw.userId) {
+        const newData = await SystemUserService.userCreate(data);
+        const roles = await SystemRoleService.GetAll({
+            where: {
+                id: data.roleIds,
+            },
+        });
+        await newData.setSystem_roles(roles); //通过setSystem_roles方法在system_user_roles表添加记录
+        if (newData.userId) {
             return response.success(ctx, null, "创建成功");
         }
         return response.fail(ctx, "创建失败");
@@ -158,12 +165,12 @@ const userVerify = async (ctx) => {
 //用户列表
 const userList = async (ctx) => {
     let { limit, offset } = utils.setPager(ctx.query.pageNum, ctx.query.pageSize);
-    let where = {
+    let condition = {
         limit,
         offset,
     };
     try {
-        const { rows, count } = await SystemUserService.getUserListByPage(where);
+        const { rows, count } = await SystemUserService.getUserListByPage(condition);
         response.success(ctx, paginate(rows, count, limit));
     } catch (error) {
         console.log(error);
