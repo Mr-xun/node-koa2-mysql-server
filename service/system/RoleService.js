@@ -2,7 +2,7 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-17 17:00:56
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-11-17 11:02:20
+ * @LastEditTime: 2022-11-17 17:13:16
  * @Description: SystemRoleService
  */
 import DB from "@root/db";
@@ -10,6 +10,7 @@ import { Op } from "sequelize";
 import systemModel from "@root/models/system";
 const SystemRole = systemModel.SystemRole.scope("hiddenAttr");
 const SystemMenu = systemModel.SystemMenu;
+const SystemUser = systemModel.SystemUser;
 
 //角色创建
 const Create = async (data) => {
@@ -81,7 +82,10 @@ const BatchDel = async (ids) => {
     try {
         const instanceData = await SystemRole.findAll({ where: { id: ids } }, { transaction: t });
         instanceData.forEach(async (ins) => {
-            await ins.setSystem_menus([], { force: true, transaction: t }); //通过setSystem_menus方法在system_role_menus表添加记录
+            await ins.setSystem_menus([], { force: true, transaction: t });
+        });
+        instanceData.forEach(async (ins) => {
+            await ins.setSystem_users([], { force: true, transaction: t });
         });
         const delCount = await SystemRole.destroy({ where: { id: ids } }, { transaction: t });
         if (delCount) {
@@ -118,6 +122,10 @@ const GetListByPage = ({ where, limit, offset }) => {
                 model: SystemMenu,
                 attributes: ["id"],
                 through: { attributes: [] }, // 隐藏中间表字段
+            },
+            {
+                model: SystemUser,
+                attributes: ["id"],
             },
         ],
         where: {

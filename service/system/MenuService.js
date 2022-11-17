@@ -2,11 +2,13 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-17 17:00:56
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-11-09 15:16:28
+ * @LastEditTime: 2022-11-17 14:20:15
  * @Description: SystemMenuService
  */
-import MenuModel from "@root/models/system/SystemMenu";
-const SystemMenu = MenuModel.scope("hiddenAttr");
+import DB from "@root/db";
+import systemModel from "@root/models/system";
+const SystemMenu = systemModel.SystemMenu.scope("hiddenAttr");
+const SystemRole = systemModel.SystemRole;
 //菜单创建
 const Create = async (data) => {
     return SystemMenu.create(data);
@@ -19,6 +21,29 @@ const Update = async (data) => {
 
 //菜单删除
 const BatchDel = async (ids) => {
+    const t = await DB.sequelize.transaction();
+    try {
+        const instanceData = await SystemMenu.findAll({ where: { id: ids } }, { transaction: t });
+        instanceData.forEach(async (ins) => {
+            await ins.setSystem_roles([], { force: true, transaction: t });
+        });
+        const delCount = await SystemMenu.destroy({ where: { id: ids } }, { transaction: t });
+        if (delCount) {
+            await t.commit();
+            return {
+                result: true,
+            };
+        } else {
+            return {
+                result: false,
+                error: "删除失败",
+            };
+        }
+    } catch (error) {
+        console.log(error);
+        t.rollback();
+        throw new Error(error);
+    }
     return SystemMenu.destroy({
         where: {
             id: ids,

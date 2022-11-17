@@ -2,7 +2,7 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-11 16:13:33
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-11-17 11:05:48
+ * @LastEditTime: 2022-11-17 15:31:06
  * @Description: SystemUserService
  */
 import DB from "@root/db";
@@ -15,7 +15,6 @@ const Create = async (data) => {
     const t = await DB.sequelize.transaction();
     try {
         const newData = await SystemUser.create(data, { transaction: t });
-        console.log(newData, "newData");
         const roles = await SystemRole.findAll(
             {
                 where: {
