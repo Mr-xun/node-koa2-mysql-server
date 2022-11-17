@@ -2,7 +2,7 @@
  * @Author: xunxiao
  * @Date: 2022-09-13 11:14:22
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-11-09 13:07:22
+ * @LastEditTime: 2022-11-17 09:52:55
  * @Description: entry
  */
 import Koa from "koa";
@@ -27,7 +27,6 @@ import systemRoleRoute from "./routes/system/role";
 import systemDeptRoute from "./routes/system/dept";
 import testApiRoute from "./routes/testapi/post";
 
-import adminRoute from "./routes/admin";
 const app = new Koa();
 //连接数据库
 db.connect();
@@ -103,7 +102,6 @@ app.use(systemMenuRoute.routes(), systemMenuRoute.allowedMethods());
 app.use(systemRoleRoute.routes(), systemRoleRoute.allowedMethods());
 app.use(systemDeptRoute.routes(), systemDeptRoute.allowedMethods());
 app.use(testApiRoute.routes(), testApiRoute.allowedMethods());
-app.use(adminRoute.routes(), adminRoute.allowedMethods());
 
 // error-handling
 app.on("error", (err, ctx) => {

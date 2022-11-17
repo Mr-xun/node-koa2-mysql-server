@@ -2,27 +2,27 @@
  * @Author: xunxiao
  * @Date: 2022-10-14 09:42:02
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-11-09 16:06:24
+ * @LastEditTime: 2022-11-17 09:50:57
  * @Description: system model entry
  */
-import User from "./User";
-import Role from "./Role";
-import UserRole from "./UserRole";
+import SystemUser from "./SystemUser";
 import SystemRole from "./SystemRole";
 import SystemMenu from "./SystemMenu";
+import SystemDept from "./SystemDept";
+import SystemUserRole from "./SystemUserRole";
 import SystemRoleMenu from "./SystemRoleMenu";
 
-User.belongsToMany(Role, {
+SystemUser.belongsToMany(SystemRole, {
     through: {
-        model: UserRole,
+        model: SystemUserRole,
         unique: false,
     },
     foreignKey: "userId",
     constraints: false,
 });
-Role.belongsToMany(User, {
+SystemRole.belongsToMany(SystemUser, {
     through: {
-        model: UserRole,
+        model: SystemUserRole,
         unique: false,
     },
     foreignKey: "roleId",
@@ -49,10 +49,10 @@ SystemMenu.belongsToMany(SystemRole, {
     constraints: false,
 });
 export default {
-    User,
-    Role,
-    UserRole,
+    SystemUser,
     SystemRole,
     SystemMenu,
+    SystemDept,
+    SystemUserRole,
     SystemRoleMenu,
 };

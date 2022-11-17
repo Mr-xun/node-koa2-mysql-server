@@ -2,7 +2,7 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-17 16:44:55
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-09-29 10:46:30
+ * @LastEditTime: 2022-11-17 09:54:26
  * @Description: SystemDeptController
  */
 import validate from "@root/utils/validate";
@@ -65,7 +65,7 @@ const Update = async (ctx) => {
 //部门列表tree结构
 const GetTree = async (ctx) => {
     try {
-        const rows = await SystemDeptService.GetAll();
+        const rows = await SystemDeptService.GetAll({ raw: true });
         function arrayToTree(array, parentId) {
             let result = [];
             array.forEach((item) => {

@@ -2,11 +2,11 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-11 16:13:33
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-11-09 15:47:02
+ * @LastEditTime: 2022-11-17 09:47:32
  * @Description: SystemUserService
  */
 import systemModel from "@root/models/system";
-const SystemUser = systemModel.User.scope("hiddenAttr");
+const SystemUser = systemModel.SystemUser.scope("hiddenAttr");
 const SystemRole = systemModel.SystemRole;
 
 //用户创建
@@ -37,7 +37,7 @@ const getUserALl = () => {
 //用户列表分页
 const getUserListByPage = ({ limit, offset }) => {
     return SystemUser.findAndCountAll({
-        include: [{ model: SystemRole}],
+        include: [{ model: SystemRole }],
         limit,
         offset,
         attributes: { exclude: ["password"] },

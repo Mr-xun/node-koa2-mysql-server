@@ -2,11 +2,11 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-17 17:00:56
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-09-29 09:26:55
+ * @LastEditTime: 2022-11-17 09:53:55
  * @Description: SystemDeptService
  */
-import DeptModel from "@root/models/SystemDept";
-const SystemDept = DeptModel.scope("hiddenAttr");
+import systemModel from "@root/models/system";
+const SystemDept = systemModel.SystemDept.scope("hiddenAttr");
 //部门创建
 const Create = async (data) => {
     return SystemDept.create(data);
@@ -31,8 +31,8 @@ const GetOne = async (where) => {
     return SystemDept.findOne({ where, raw: true });
 };
 //获取所有部门
-const GetAll = () => {
-    return SystemDept.findAll();
+const GetAll = (condition) => {
+    return SystemDept.findAll(condition);
 };
 //部门列表分页
 const GetListByPage = ({ limit, offset }) => {

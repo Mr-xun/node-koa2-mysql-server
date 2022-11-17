@@ -2,7 +2,7 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-17 16:44:55
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-11-09 16:50:05
+ * @LastEditTime: 2022-11-17 09:42:06
  * @Description: SystemRoleController
  */
 import utils from "@root/utils";
@@ -10,7 +10,6 @@ import validate from "@root/utils/validate";
 import response from "@root/utils/response";
 import paginate from "@root/utils/paginate";
 import SystemRoleService from "../../service/system/RoleService";
-import SystemMenuService from "../../service/system/MenuService";
 
 //角色创建
 const Create = async (ctx) => {
@@ -23,24 +22,18 @@ const Create = async (ctx) => {
         return response.fail(ctx, error);
     }
     try {
-        const isExistUser = !!(await SystemRoleService.GetOne({ roleName: data.roleName }));
-        if (isExistUser) {
+        const isExistRole = !!(await SystemRoleService.GetOne({ roleName: data.roleName }));
+        if (isExistRole) {
             return response.fail(ctx, "该角色已存在");
         }
-        const newData = await SystemRoleService.Create(data);
-        const menus = await SystemMenuService.GetAll({
-            where: {
-                id: data.menuIds,
-            },
-        });
-        await newData.setSystem_menus(menus); //通过setSystem_menus方法在system_role_menus表添加记录
-        if (newData.roleId) {
-            return response.success(ctx, null, "创建成功");
+        const { error } = await SystemRoleService.Create(data);
+        if (error) {
+            return response.fail(ctx, "创建失败");
         }
-        return response.fail(ctx, "创建失败");
+        return response.success(ctx, null, "创建成功");
     } catch (error) {
         console.log(error);
-        return response.error(ctx, "系统异常", JSON.stringify(error));
+        return response.error(ctx, "系统异常");
     }
 };
 //角色修改
@@ -55,16 +48,11 @@ const Update = async (ctx) => {
         return response.fail(ctx, error);
     }
     try {
-        const isExist = !!(await SystemRoleService.GetOne({ roleId: data.roleId }));
-        if (!isExist) {
-            return response.fail(ctx, "该角色不存在");
+        const { error } = await SystemRoleService.Update(data);
+        if (error) {
+            return response.fail(ctx, error);
         }
-        const [upCount] = await SystemRoleService.Update(data);
-        if (upCount) {
-            return response.success(ctx);
-        } else {
-            return response.fail(ctx, "更新失败");
-        }
+        return response.success(ctx);
     } catch (error) {
         console.log(error);
         return response.error(ctx, "系统异常");
