@@ -2,7 +2,7 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-17 17:31:16
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-09-29 10:43:56
+ * @LastEditTime: 2022-11-17 10:25:48
  * @Description: RoleRoute
  */
 import Router from "koa-router";
@@ -17,7 +17,7 @@ router.post("/create", sysRoleCtl.Create);
 router.put("/update", sysRoleCtl.Update);
 
 //角色列表
-router.get("/list", sysRoleCtl.GetList);
+router.get("/list", sysRoleCtl.GetListByPage);
 
 //所用角色
 router.get("/all", sysRoleCtl.GetAll);

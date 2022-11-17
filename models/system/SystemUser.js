@@ -2,7 +2,7 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-11 16:14:39
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-10-14 09:51:12
+ * @LastEditTime: 2022-11-17 11:08:13
  * @Description: System_UserModel
  */
 import Sequelize from "sequelize";
@@ -19,7 +19,6 @@ const User = DB.sequelize.define("system_user", {
     userName: {
         type: Sequelize.STRING,
         allowNull: false,
-        unique: true,
         comment: "用户名",
         field: "user_name",
     },

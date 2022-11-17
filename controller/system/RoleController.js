@@ -2,7 +2,7 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-17 16:44:55
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-11-17 09:42:06
+ * @LastEditTime: 2022-11-17 10:51:12
  * @Description: SystemRoleController
  */
 import utils from "@root/utils";
@@ -59,7 +59,7 @@ const Update = async (ctx) => {
     }
 };
 //角色列表
-const GetList = async (ctx) => {
+const GetListByPage = async (ctx) => {
     try {
         let { roleName = "" } = ctx.query;
         let { limit, offset } = utils.setPager(ctx.query.pageNum, ctx.query.pageSize);
@@ -98,12 +98,11 @@ const BatchDel = async (ctx) => {
     }
     try {
         const deleteIds = ids.split(",");
-        const delCount = await SystemRoleService.BatchDel(deleteIds);
-        if (delCount) {
-            return response.success(ctx);
-        } else {
-            return response.fail(ctx, "删除失败");
+        const { error } = await SystemRoleService.BatchDel(deleteIds);
+        if (error) {
+            return response.fail(ctx, error);
         }
+        return response.success(ctx);
     } catch (error) {
         console.log(error);
         return response.error(ctx, "系统异常");
@@ -112,7 +111,7 @@ const BatchDel = async (ctx) => {
 export default {
     Create,
     Update,
-    GetList,
+    GetListByPage,
     GetAll,
     BatchDel,
 };
