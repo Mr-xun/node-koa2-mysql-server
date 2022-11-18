@@ -2,13 +2,14 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-11 16:13:33
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-11-17 15:31:06
+ * @LastEditTime: 2022-11-18 13:45:55
  * @Description: SystemUserService
  */
 import DB from "@root/db";
 import systemModel from "@root/models/system";
 const SystemUser = systemModel.SystemUser.scope("hiddenAttr");
-const SystemRole = systemModel.SystemRole;
+const SystemRole = systemModel.SystemRole.scope("hiddenAttr");
+const SystemMenu = systemModel.SystemMenu.scope("hiddenAttr");
 
 //用户创建
 const Create = async (data) => {
@@ -105,7 +106,32 @@ const BatchDel = async (ids) => {
 
 //获取单个用户
 const GetOne = async (where) => {
-    return SystemUser.findOne({ where, raw: true, attributes: { exclude: ["password"] } });
+    return SystemUser.findOne({
+        where,
+        raw: true,
+        attributes: { exclude: ["password"] },
+    });
+};
+
+//获取单个用户
+const GetUserById = async (userId) => {
+    return SystemUser.findByPk(userId, {
+        include: [
+            {
+                model: SystemRole,
+                attributes: ["id", "roleName"],
+                through: { attributes: [] }, // 隐藏中间表字段
+                include: [
+                    {
+                        model: SystemMenu,
+                        attributes: ["menuId", "menuName", "parentId", "path", "component", "perms", "orderNum", "icon"],
+                        through: { attributes: [] }, // 隐藏中间表字段
+                    },
+                ],
+            },
+        ],
+        attributes: { exclude: ["password"] },
+    });
 };
 
 //获取所有用户
@@ -119,7 +145,7 @@ const GetListByPage = ({ limit, offset }) => {
         include: [
             {
                 model: SystemRole,
-                attributes: ["id"],
+                attributes: ["id","roleName"],
                 through: { attributes: [] }, // 隐藏中间表字段
             },
         ],
@@ -134,6 +160,7 @@ export default {
     Update,
     BatchDel,
     GetOne,
+    GetUserById,
     GetAll,
     GetListByPage,
 };

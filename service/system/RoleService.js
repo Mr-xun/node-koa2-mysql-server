@@ -2,7 +2,7 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-17 17:00:56
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-11-17 17:13:16
+ * @LastEditTime: 2022-11-18 13:29:36
  * @Description: SystemRoleService
  */
 import DB from "@root/db";
@@ -122,10 +122,6 @@ const GetListByPage = ({ where, limit, offset }) => {
                 model: SystemMenu,
                 attributes: ["id"],
                 through: { attributes: [] }, // 隐藏中间表字段
-            },
-            {
-                model: SystemUser,
-                attributes: ["id"],
             },
         ],
         where: {

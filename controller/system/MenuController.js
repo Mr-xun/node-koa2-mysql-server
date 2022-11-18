@@ -2,7 +2,7 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-17 16:44:55
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-11-17 14:11:17
+ * @LastEditTime: 2022-11-18 11:21:40
  * @Description: SystemMenuController
  */
 import validate from "@root/utils/validate";
@@ -98,7 +98,7 @@ const BatchDel = async (ctx) => {
     }
     try {
         const deleteIds = ids.split(",");
-        const {error} = await SystemMenuService.BatchDel(deleteIds);
+        const { error } = await SystemMenuService.BatchDel(deleteIds);
         if (error) {
             return response.fail(ctx, error);
         }
@@ -108,6 +108,8 @@ const BatchDel = async (ctx) => {
         return response.error(ctx, "系统异常");
     }
 };
+
+
 export default {
     Create,
     Update,
