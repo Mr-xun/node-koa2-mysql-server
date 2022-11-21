@@ -2,12 +2,11 @@
  * @Author: xunxiao
  * @Date: 2022-11-09 11:29:33
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-11-09 13:55:08
+ * @LastEditTime: 2022-11-18 16:29:50
  * @Description: 
  */
 
 import testApiModel from "@root/models/testapi";
-console.log(testApiModel,'testApiModel')
 const PostModel = testApiModel.Post;
 const TagModel = testApiModel.Tag;
 

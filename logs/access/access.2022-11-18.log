@@ -275,3 +275,10 @@
 [2022-11-18T14:55:29.569] [INFO] access - path:/api/system/role/all | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
 [2022-11-18T14:56:01.879] [INFO] access - path:/api/system/user/list?pageSize=10&pageNum=1 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
 [2022-11-18T14:57:17.702] [INFO] access - path:/api/system/user/list?pageSize=10&pageNum=1 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+[2022-11-18T14:57:48.798] [INFO] access - path:/api/system/user/list?pageSize=10&pageNum=1 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+[2022-11-18T15:02:48.432] [INFO] access - path:/api/system/user/list?pageSize=10&pageNum=1 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+[2022-11-18T15:02:48.851] [INFO] access - path:/api/system/user/list?pageSize=10&pageNum=1 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+[2022-11-18T15:02:49.305] [INFO] access - path:/api/system/user/list?pageSize=10&pageNum=1 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+[2022-11-18T17:31:44.267] [INFO] access - path:/api/system/dept/tree | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+[2022-11-18T17:31:44.281] [INFO] access - path:/api/system/role/all | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+[2022-11-18T17:31:44.282] [INFO] access - path:/api/system/user/list?pageSize=10&pageNum=1 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
