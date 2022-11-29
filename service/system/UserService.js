@@ -2,7 +2,7 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-11 16:13:33
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-11-18 13:45:55
+ * @LastEditTime: 2022-11-29 14:01:31
  * @Description: SystemUserService
  */
 import DB from "@root/db";
@@ -124,7 +124,7 @@ const GetUserById = async (userId) => {
                 include: [
                     {
                         model: SystemMenu,
-                        attributes: ["menuId", "menuName", "parentId", "path", "component", "perms", "orderNum", "icon"],
+                        attributes: ["menuId", "menuName", "parentId", "path", "component", "perms", "orderNum", "icon" ,"type"],
                         through: { attributes: [] }, // 隐藏中间表字段
                     },
                 ],

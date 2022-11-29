@@ -2,7 +2,7 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-17 16:51:34
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-11-09 15:04:58
+ * @LastEditTime: 2022-11-29 14:01:08
  * @Description: System_MenuModel
  */
 
@@ -44,7 +44,7 @@ const SystemMenu = DB.sequelize.define("system_menu", {
         //类型 1 菜单 2按钮
         type: Sequelize.INTEGER,
         defaultValue: 1,
-        comment: "类型",
+        comment: "类型 1 菜单 2按钮",
     },
     orderNum: {
         type: Sequelize.INTEGER,

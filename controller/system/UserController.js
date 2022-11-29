@@ -2,7 +2,7 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-10 16:31:26
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-11-21 17:06:34
+ * @LastEditTime: 2022-11-29 14:02:19
  * @Description: SystemUserController
  */
 import verify from "@root/utils/verifyToken";
@@ -82,11 +82,12 @@ const GetUserMenu = async (ctx) => {
         //角色菜单去重
         let map = new Map();
         for (let item of routes) {
-            if (!map.has(item.menuId)) {
+            if (!map.has(item.menuId) && item.type == 1) {
                 map.set(item.menuId, item);
             }
         }
         routes = [...map.values()];
+        console.log(routes,'routes')
         //菜单路由转树结构
         const arrayToTree = (array, parentId) => {
             let result = [];
@@ -108,6 +109,7 @@ const GetUserMenu = async (ctx) => {
                     delete item.dataValues.parentId;
                     delete item.dataValues.icon;
                     delete item.dataValues.orderNum;
+                    delete item.dataValues.type;
                     result.push(item);
                 }
             });
