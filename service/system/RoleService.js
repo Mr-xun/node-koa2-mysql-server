@@ -2,7 +2,7 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-17 17:00:56
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-11-18 13:29:36
+ * @LastEditTime: 2022-12-03 17:18:08
  * @Description: SystemRoleService
  */
 import DB from "@root/db";
@@ -131,6 +131,7 @@ const GetListByPage = ({ where, limit, offset }) => {
         },
         limit,
         offset,
+        distinct: true,
     });
 };
 export default {

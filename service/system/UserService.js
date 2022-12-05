@@ -2,10 +2,11 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-11 16:13:33
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-11-29 14:01:31
+ * @LastEditTime: 2022-12-03 17:18:29
  * @Description: SystemUserService
  */
 import DB from "@root/db";
+import { Op } from "sequelize";
 import systemModel from "@root/models/system";
 const SystemUser = systemModel.SystemUser.scope("hiddenAttr");
 const SystemRole = systemModel.SystemRole.scope("hiddenAttr");
@@ -124,7 +125,7 @@ const GetUserById = async (userId) => {
                 include: [
                     {
                         model: SystemMenu,
-                        attributes: ["menuId", "menuName", "parentId", "path", "component", "perms", "orderNum", "icon" ,"type"],
+                        attributes: ["menuId", "menuName", "parentId", "path", "component", "perms", "orderNum", "icon", "type"],
                         through: { attributes: [] }, // 隐藏中间表字段
                     },
                 ],
@@ -140,18 +141,25 @@ const GetAll = () => {
 };
 
 //用户列表分页
-const GetListByPage = ({ limit, offset }) => {
+const GetListByPage = ({ where, limit, offset }) => {
+    //连表查询的方式，当前的 count 会是所有联表的综合。需在 findAndCountAll 参数中添加 distinct: true。
     return SystemUser.findAndCountAll({
-        include: [
-            {
-                model: SystemRole,
-                attributes: ["id","roleName"],
-                through: { attributes: [] }, // 隐藏中间表字段
+        where: {
+            realName: {
+                [Op.like]: `%${where.realName}%`,
             },
-        ],
+        },
         limit,
         offset,
         attributes: { exclude: ["password"] },
+        include: [
+            {
+                model: SystemRole,
+                attributes: ["id", "roleName"],
+                through: { attributes: [] }, // 隐藏中间表字段
+            },
+        ],
+        distinct: true,
     });
 };
 

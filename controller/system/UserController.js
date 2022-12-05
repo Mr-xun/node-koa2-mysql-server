@@ -2,7 +2,7 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-10 16:31:26
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-11-29 14:02:19
+ * @LastEditTime: 2022-12-03 17:04:51
  * @Description: SystemUserController
  */
 import verify from "@root/utils/verifyToken";
@@ -87,7 +87,6 @@ const GetUserMenu = async (ctx) => {
             }
         }
         routes = [...map.values()];
-        console.log(routes,'routes')
         //菜单路由转树结构
         const arrayToTree = (array, parentId) => {
             let result = [];
@@ -210,14 +209,17 @@ const BatchDel = async (ctx) => {
 
 //用户列表
 const GetListByPage = async (ctx) => {
-    let { limit, offset } = utils.setPager(ctx.query.pageNum, ctx.query.pageSize);
-    let condition = {
-        limit,
-        offset,
-    };
     try {
+        let { realName = "" } = ctx.query;
+        let { limit, offset } = utils.setPager(ctx.query.pageNum, ctx.query.pageSize);
+        let condition = {
+            where: { realName },
+            limit,
+            offset,
+        };
         const { rows, count } = await SystemUserService.GetListByPage(condition);
         let list = rows.map((row) => row.dataValues);
+        console.log(rows,count)
         list.forEach((item) => {
             item.roleIds = item.system_roles.map((m) => m.dataValues.id);
             item.roleNames = item.system_roles.map((m) => m.dataValues.roleName);
