@@ -2,7 +2,7 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-10 16:31:26
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-12-03 17:04:51
+ * @LastEditTime: 2022-12-07 08:55:59
  * @Description: SystemUserController
  */
 import verify from "@root/utils/verifyToken";
@@ -210,16 +210,15 @@ const BatchDel = async (ctx) => {
 //用户列表
 const GetListByPage = async (ctx) => {
     try {
-        let { realName = "" } = ctx.query;
+        let { userName = "", realName = "" } = ctx.query;
         let { limit, offset } = utils.setPager(ctx.query.pageNum, ctx.query.pageSize);
         let condition = {
-            where: { realName },
+            where: { userName, realName },
             limit,
             offset,
         };
         const { rows, count } = await SystemUserService.GetListByPage(condition);
         let list = rows.map((row) => row.dataValues);
-        console.log(rows,count)
         list.forEach((item) => {
             item.roleIds = item.system_roles.map((m) => m.dataValues.id);
             item.roleNames = item.system_roles.map((m) => m.dataValues.roleName);

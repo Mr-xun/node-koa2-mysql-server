@@ -2,7 +2,7 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-11 16:13:33
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-12-03 17:18:29
+ * @LastEditTime: 2022-12-07 08:56:45
  * @Description: SystemUserService
  */
 import DB from "@root/db";
@@ -145,6 +145,9 @@ const GetListByPage = ({ where, limit, offset }) => {
     //连表查询的方式，当前的 count 会是所有联表的综合。需在 findAndCountAll 参数中添加 distinct: true。
     return SystemUser.findAndCountAll({
         where: {
+            userName: {
+                [Op.like]: `%${where.userName}%`,
+            },
             realName: {
                 [Op.like]: `%${where.realName}%`,
             },

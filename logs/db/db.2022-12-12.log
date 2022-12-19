@@ -1,0 +1,3596 @@
+[2022-12-12T09:12:25.729] [INFO] db - [
+  'Executing (default): SELECT 1+1 AS result',
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'SELECT'
+  }
+]
+[2022-12-12T09:12:25.732] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'system_users' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: true,
+    paranoid: true,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: { hiddenAttr: [Object] },
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'system_users', singular: 'system_user' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    createdAt: 'create_time',
+    updatedAt: 'update_time',
+    deletedAt: 'delete_time',
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-12-12T09:12:25.798] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'system_roles' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: true,
+    paranoid: true,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: { hiddenAttr: [Object] },
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'system_roles', singular: 'system_role' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    createdAt: 'create_time',
+    updatedAt: 'update_time',
+    deletedAt: 'delete_time',
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-12-12T09:12:25.800] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'system_menus' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: true,
+    paranoid: true,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: { hiddenAttr: [Object] },
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'system_menus', singular: 'system_menu' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    createdAt: 'create_time',
+    updatedAt: 'update_time',
+    deletedAt: 'delete_time',
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-12-12T09:12:25.803] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'system_depts' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: true,
+    paranoid: true,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: { hiddenAttr: [Object] },
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'system_depts', singular: 'system_dept' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    createdAt: 'create_time',
+    updatedAt: 'update_time',
+    deletedAt: 'delete_time',
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-12-12T09:12:25.804] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'system_user_roles' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: true,
+    paranoid: true,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: { hiddenAttr: [Object] },
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'system_user_roles', singular: 'system_user_role' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    createdAt: 'create_time',
+    updatedAt: 'update_time',
+    deletedAt: 'delete_time',
+    comment: '用户角色表',
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-12-12T09:12:25.807] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'system_role_menus' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: true,
+    paranoid: true,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: { hiddenAttr: [Object] },
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'system_role_menus', singular: 'system_role_menu' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    createdAt: 'create_time',
+    updatedAt: 'update_time',
+    deletedAt: 'delete_time',
+    comment: '角色菜单关联表',
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-12-12T09:12:25.809] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'post' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: true,
+    underscored: true,
+    paranoid: true,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: { hiddenAttr: [Object] },
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'posts', singular: 'post' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    createdAt: 'create_time',
+    updatedAt: 'update_time',
+    deletedAt: 'delete_time',
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-12-12T09:12:25.810] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'tag' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: true,
+    underscored: true,
+    paranoid: true,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: { hiddenAttr: [Object] },
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'tags', singular: 'tag' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    createdAt: 'create_time',
+    updatedAt: 'update_time',
+    deletedAt: 'delete_time',
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-12-12T09:12:25.811] [INFO] db - [
+  "Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'postTag' AND TABLE_SCHEMA = 'koa-mysql'",
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: true,
+    underscored: true,
+    paranoid: true,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: { hiddenAttr: [Object] },
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'postTags', singular: 'postTag' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    createdAt: 'create_time',
+    updatedAt: 'update_time',
+    deletedAt: 'delete_time',
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWTABLES'
+  }
+]
+[2022-12-12T09:12:25.812] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `system_roles`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: true,
+    paranoid: true,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: { hiddenAttr: [Object] },
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'system_roles', singular: 'system_role' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    createdAt: 'create_time',
+    updatedAt: 'update_time',
+    deletedAt: 'delete_time',
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-12-12T09:12:25.812] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `system_users`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: true,
+    paranoid: true,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: { hiddenAttr: [Object] },
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'system_users', singular: 'system_user' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    createdAt: 'create_time',
+    updatedAt: 'update_time',
+    deletedAt: 'delete_time',
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-12-12T09:12:25.813] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `system_menus`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: true,
+    paranoid: true,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: { hiddenAttr: [Object] },
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'system_menus', singular: 'system_menu' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    createdAt: 'create_time',
+    updatedAt: 'update_time',
+    deletedAt: 'delete_time',
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-12-12T09:12:25.814] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `system_depts`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: true,
+    paranoid: true,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: { hiddenAttr: [Object] },
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'system_depts', singular: 'system_dept' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    createdAt: 'create_time',
+    updatedAt: 'update_time',
+    deletedAt: 'delete_time',
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-12-12T09:12:25.815] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `system_user_roles`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: true,
+    paranoid: true,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: { hiddenAttr: [Object] },
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'system_user_roles', singular: 'system_user_role' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    createdAt: 'create_time',
+    updatedAt: 'update_time',
+    deletedAt: 'delete_time',
+    comment: '用户角色表',
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-12-12T09:12:25.819] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `system_role_menus`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: false,
+    underscored: true,
+    paranoid: true,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: { hiddenAttr: [Object] },
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'system_role_menus', singular: 'system_role_menu' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    createdAt: 'create_time',
+    updatedAt: 'update_time',
+    deletedAt: 'delete_time',
+    comment: '角色菜单关联表',
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-12-12T09:12:25.820] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `post`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: true,
+    underscored: true,
+    paranoid: true,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: { hiddenAttr: [Object] },
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'posts', singular: 'post' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    createdAt: 'create_time',
+    updatedAt: 'update_time',
+    deletedAt: 'delete_time',
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-12-12T09:12:25.821] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `tag`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: true,
+    underscored: true,
+    paranoid: true,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: { hiddenAttr: [Object] },
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'tags', singular: 'tag' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    createdAt: 'create_time',
+    updatedAt: 'update_time',
+    deletedAt: 'delete_time',
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-12-12T09:12:25.822] [INFO] db - [
+  'Executing (default): SHOW INDEX FROM `postTag`',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    timestamps: true,
+    validate: {},
+    freezeTableName: true,
+    underscored: true,
+    paranoid: true,
+    rejectOnEmpty: false,
+    whereCollection: null,
+    schema: null,
+    schemaDelimiter: '',
+    defaultScope: {},
+    scopes: { hiddenAttr: [Object] },
+    indexes: [],
+    whereMergeStrategy: 'overwrite',
+    name: { plural: 'postTags', singular: 'postTag' },
+    omitNull: false,
+    charset: 'utf8',
+    dialectOptions: { collate: 'utf8_general_ci' },
+    createdAt: 'create_time',
+    updatedAt: 'update_time',
+    deletedAt: 'delete_time',
+    sequelize: Sequelize {
+      options: [Object],
+      config: [Object],
+      dialect: [MysqlDialect],
+      queryInterface: [MySQLQueryInterface],
+      models: [Object],
+      modelManager: [ModelManager],
+      connectionManager: [ConnectionManager]
+    },
+    hooks: true,
+    type: 'SHOWINDEXES'
+  }
+]
+[2022-12-12T09:12:47.595] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:29:51.824] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:30:12.442] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:30:44.454] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:31:11.719] [INFO] db - [
+  "Executing (default): SELECT count(DISTINCT(`system_role`.`id`)) AS `count` FROM `system_roles` AS `system_role` LEFT OUTER JOIN ( `system_role_menus` AS `system_menus->system_role_menu` INNER JOIN `system_menus` AS `system_menus` ON `system_menus`.`id` = `system_menus->system_role_menu`.`menu_id` AND (`system_menus->system_role_menu`.`delete_time` IS NULL)) ON `system_role`.`id` = `system_menus->system_role_menu`.`role_id` AND (`system_menus`.`delete_time` IS NULL) WHERE (`system_role`.`delete_time` IS NULL AND `system_role`.`role_name` LIKE '%%');",
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    include: [ [Object] ],
+    where: "(`system_role`.`delete_time` IS NULL AND `system_role`.`role_name` LIKE '%%')",
+    limit: null,
+    offset: null,
+    distinct: true,
+    hooks: true,
+    dataType: INTEGER {
+      options: {},
+      _length: undefined,
+      _zerofill: undefined,
+      _decimals: undefined,
+      _precision: undefined,
+      _scale: undefined,
+      _unsigned: undefined
+    },
+    includeIgnoreAttributes: false,
+    order: null,
+    attributes: [ [Array] ],
+    model: system_role,
+    includeNames: [ 'system_menus' ],
+    includeMap: { system_menus: [Object] },
+    hasSingleAssociation: true,
+    hasMultiAssociation: true,
+    topModel: system_role,
+    topLimit: null,
+    hasDuplicating: true,
+    hasRequired: false,
+    hasWhere: false,
+    hasIncludeWhere: false,
+    hasIncludeRequired: false,
+    subQuery: false,
+    type: 'SELECT',
+    keysEscaped: true
+  }
+]
+[2022-12-12T09:31:11.722] [INFO] db - [
+  "Executing (default): SELECT `system_role`.*, `system_menus`.`id` AS `system_menus.menuId`, `system_menus`.`id` AS `system_menus.id` FROM (SELECT `system_role`.`id` AS `roleId`, `system_role`.`role_name` AS `roleName`, `system_role`.`remark`, `system_role`.`create_time` AS `createTime`, `system_role`.`update_time` AS `updateTime` FROM `system_roles` AS `system_role` WHERE (`system_role`.`delete_time` IS NULL AND `system_role`.`role_name` LIKE '%%') LIMIT 0, 10) AS `system_role` LEFT OUTER JOIN ( `system_role_menus` AS `system_menus->system_role_menu` INNER JOIN `system_menus` AS `system_menus` ON `system_menus`.`id` = `system_menus->system_role_menu`.`menu_id` AND (`system_menus->system_role_menu`.`delete_time` IS NULL)) ON `system_role`.`roleId` = `system_menus->system_role_menu`.`role_id` AND (`system_menus`.`delete_time` IS NULL);",
+  {
+    plain: false,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    include: [ [Object] ],
+    where: "(`system_role`.`delete_time` IS NULL AND `system_role`.`role_name` LIKE '%%')",
+    limit: 10,
+    offset: 0,
+    distinct: true,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [ [Array], [Array], 'remark', [Array], [Array] ],
+    originalAttributes: [ 'roleId', 'roleName', 'remark', 'createTime', 'updateTime' ],
+    hasJoin: true,
+    model: system_role,
+    includeNames: [ 'system_menus' ],
+    includeMap: { system_menus: [Object] },
+    hasSingleAssociation: true,
+    hasMultiAssociation: true,
+    topModel: system_role,
+    topLimit: 10,
+    hasDuplicating: true,
+    hasRequired: false,
+    hasWhere: false,
+    subQuery: true,
+    hasIncludeWhere: false,
+    hasIncludeRequired: false,
+    tableNames: [
+      'system_roles',
+      'system_menus',
+      'undefined',
+      'system_role_menus'
+    ],
+    type: 'SELECT',
+    keysEscaped: true
+  }
+]
+[2022-12-12T09:31:11.727] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:32:55.963] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:33:28.187] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:35:26.958] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:36:48.086] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:36:49.613] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:38:00.391] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:38:00.404] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:38:10.043] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:38:11.561] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:38:15.730] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:39:32.012] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:39:57.763] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:40:06.080] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:40:08.693] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:40:46.209] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:40:48.351] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:40:49.645] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:42:13.390] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:43:05.987] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:43:18.475] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:43:21.058] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:43:32.346] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:43:34.751] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:43:41.103] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:45:24.396] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:46:08.426] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:46:11.111] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:46:36.883] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:46:52.959] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:47:02.524] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:47:10.514] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:47:21.923] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:47:28.755] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:47:31.207] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:47:47.773] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:47:50.375] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:47:54.189] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:47:55.554] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:47:58.168] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:48:11.486] [INFO] db - [
+  'Executing (46a23333-4901-489c-bf53-99e68c9f0125): START TRANSACTION;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'DEFERRED',
+    isolationLevel: null,
+    readOnly: false,
+    transaction: Transaction {
+      sequelize: [Sequelize],
+      savepoints: [],
+      _afterCommitHooks: [],
+      options: [Object],
+      parent: undefined,
+      name: undefined,
+      id: '46a23333-4901-489c-bf53-99e68c9f0125',
+      connection: [Connection]
+    }
+  }
+]
+[2022-12-12T09:48:11.626] [INFO] db - [
+  "Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL AND `system_menu`.`id` IN ('192'));",
+  {
+    plain: false,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: "(`system_menu`.`delete_time` IS NULL AND `system_menu`.`id` IN ('192'))",
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:48:11.634] [INFO] db - [
+  "Executing (default): UPDATE `system_menus` SET `delete_time`=? WHERE `delete_time` IS NULL AND `id` IN ('192')",
+  {
+    plain: false,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: { id: [Array] },
+    attributes: { exclude: [Array] },
+    hooks: true,
+    individualHooks: false,
+    force: false,
+    cascade: false,
+    restartIdentity: false,
+    type: 'BULKUPDATE',
+    model: system_menu,
+    dialect: 'mysql',
+    dialectModule: null,
+    dialectModulePath: null,
+    host: 'localhost',
+    protocol: 'tcp',
+    define: {
+      charset: 'utf8',
+      dialectOptions: [Object],
+      timestamps: true,
+      paranoid: true,
+      createdAt: 'create_time',
+      updatedAt: 'update_time',
+      deletedAt: 'delete_time',
+      underscored: true,
+      scopes: [Object]
+    },
+    query: {},
+    sync: {},
+    timezone: '+08:00',
+    standardConformingStrings: true,
+    omitNull: false,
+    native: false,
+    replication: false,
+    ssl: undefined,
+    pool: { max: 5, min: 0, idle: 30000 },
+    quoteIdentifiers: true,
+    retry: { max: 5, match: [Array] },
+    transactionType: 'DEFERRED',
+    isolationLevel: null,
+    databaseVersion: '8.0.29',
+    typeValidation: false,
+    benchmark: false,
+    minifyAliases: false,
+    logQueryParameters: false,
+    operatorAliases: false,
+    dialectOptions: { dateStrings: true, typeCast: true },
+    models: [
+      'D:\\Job\\YHKJ\\me\\code\\node-koa2-mysql-server\\,model\\**\\*.js'
+    ],
+    allowNull: [],
+    bind: [ '2022-12-12 09:48:11' ]
+  }
+]
+[2022-12-12T09:48:11.635] [INFO] db - [
+  'Executing (46a23333-4901-489c-bf53-99e68c9f0125): SELECT `id`, `role_id` AS `roleId`, `menu_id` AS `menuId`, `create_time` AS `createTime`, `update_time` AS `updateTime`, `create_time`, `update_time`, `delete_time` FROM `system_role_menus` AS `system_role_menu` WHERE (`system_role_menu`.`delete_time` IS NULL AND `system_role_menu`.`menu_id` = 192);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    force: true,
+    transaction: Transaction {
+      sequelize: [Sequelize],
+      savepoints: [],
+      _afterCommitHooks: [],
+      options: [Object],
+      parent: undefined,
+      name: undefined,
+      id: '46a23333-4901-489c-bf53-99e68c9f0125',
+      connection: [Connection]
+    },
+    where: '(`system_role_menu`.`delete_time` IS NULL AND `system_role_menu`.`menu_id` = 192)',
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'id',
+      'roleId',
+      'menuId',
+      'createTime',
+      'updateTime',
+      'create_time',
+      'update_time',
+      'delete_time'
+    ],
+    attributes: [
+      'id',
+      [Array],
+      [Array],
+      [Array],
+      [Array],
+      'create_time',
+      'update_time',
+      'delete_time'
+    ],
+    tableNames: [ 'system_role_menus' ],
+    type: 'SELECT',
+    model: system_role_menu
+  }
+]
+[2022-12-12T09:48:11.711] [INFO] db - [
+  'Executing (46a23333-4901-489c-bf53-99e68c9f0125): DELETE FROM `system_role_menus` WHERE `menu_id` = 192 AND `role_id` IN (46)',
+  {
+    plain: false,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    force: true,
+    transaction: Transaction {
+      sequelize: [Sequelize],
+      savepoints: [],
+      _afterCommitHooks: [],
+      options: [Object],
+      parent: undefined,
+      name: undefined,
+      id: '46a23333-4901-489c-bf53-99e68c9f0125',
+      connection: [Connection]
+    },
+    where: { menu_id: 192, role_id: [Array] },
+    hooks: true,
+    individualHooks: false,
+    cascade: false,
+    restartIdentity: false,
+    type: 'BULKDELETE',
+    model: system_role_menu,
+    limit: null
+  }
+]
+[2022-12-12T09:48:11.718] [INFO] db - [
+  'Executing (46a23333-4901-489c-bf53-99e68c9f0125): COMMIT;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'DEFERRED',
+    isolationLevel: null,
+    readOnly: false,
+    transaction: Transaction {
+      sequelize: [Sequelize],
+      savepoints: [],
+      _afterCommitHooks: [],
+      options: [Object],
+      parent: undefined,
+      name: undefined,
+      id: '46a23333-4901-489c-bf53-99e68c9f0125',
+      connection: [Connection],
+      finished: 'commit'
+    },
+    supportsSearchPath: false,
+    completesTransaction: true
+  }
+]
+[2022-12-12T09:48:11.801] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:48:18.427] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:48:22.059] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:49:03.226] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T09:49:06.162] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T10:05:28.193] [INFO] db - [
+  "Executing (default): SELECT count(DISTINCT(`system_role`.`id`)) AS `count` FROM `system_roles` AS `system_role` LEFT OUTER JOIN ( `system_role_menus` AS `system_menus->system_role_menu` INNER JOIN `system_menus` AS `system_menus` ON `system_menus`.`id` = `system_menus->system_role_menu`.`menu_id` AND (`system_menus->system_role_menu`.`delete_time` IS NULL)) ON `system_role`.`id` = `system_menus->system_role_menu`.`role_id` AND (`system_menus`.`delete_time` IS NULL) WHERE (`system_role`.`delete_time` IS NULL AND `system_role`.`role_name` LIKE '%%');",
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    include: [ [Object] ],
+    where: "(`system_role`.`delete_time` IS NULL AND `system_role`.`role_name` LIKE '%%')",
+    limit: null,
+    offset: null,
+    distinct: true,
+    hooks: true,
+    dataType: INTEGER {
+      options: {},
+      _length: undefined,
+      _zerofill: undefined,
+      _decimals: undefined,
+      _precision: undefined,
+      _scale: undefined,
+      _unsigned: undefined
+    },
+    includeIgnoreAttributes: false,
+    order: null,
+    attributes: [ [Array] ],
+    model: system_role,
+    includeNames: [ 'system_menus' ],
+    includeMap: { system_menus: [Object] },
+    hasSingleAssociation: true,
+    hasMultiAssociation: true,
+    topModel: system_role,
+    topLimit: null,
+    hasDuplicating: true,
+    hasRequired: false,
+    hasWhere: false,
+    hasIncludeWhere: false,
+    hasIncludeRequired: false,
+    subQuery: false,
+    type: 'SELECT',
+    keysEscaped: true
+  }
+]
+[2022-12-12T10:05:28.196] [INFO] db - [
+  "Executing (default): SELECT `system_role`.*, `system_menus`.`id` AS `system_menus.menuId`, `system_menus`.`id` AS `system_menus.id` FROM (SELECT `system_role`.`id` AS `roleId`, `system_role`.`role_name` AS `roleName`, `system_role`.`remark`, `system_role`.`create_time` AS `createTime`, `system_role`.`update_time` AS `updateTime` FROM `system_roles` AS `system_role` WHERE (`system_role`.`delete_time` IS NULL AND `system_role`.`role_name` LIKE '%%') LIMIT 0, 10) AS `system_role` LEFT OUTER JOIN ( `system_role_menus` AS `system_menus->system_role_menu` INNER JOIN `system_menus` AS `system_menus` ON `system_menus`.`id` = `system_menus->system_role_menu`.`menu_id` AND (`system_menus->system_role_menu`.`delete_time` IS NULL)) ON `system_role`.`roleId` = `system_menus->system_role_menu`.`role_id` AND (`system_menus`.`delete_time` IS NULL);",
+  {
+    plain: false,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    include: [ [Object] ],
+    where: "(`system_role`.`delete_time` IS NULL AND `system_role`.`role_name` LIKE '%%')",
+    limit: 10,
+    offset: 0,
+    distinct: true,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [ [Array], [Array], 'remark', [Array], [Array] ],
+    originalAttributes: [ 'roleId', 'roleName', 'remark', 'createTime', 'updateTime' ],
+    hasJoin: true,
+    model: system_role,
+    includeNames: [ 'system_menus' ],
+    includeMap: { system_menus: [Object] },
+    hasSingleAssociation: true,
+    hasMultiAssociation: true,
+    topModel: system_role,
+    topLimit: 10,
+    hasDuplicating: true,
+    hasRequired: false,
+    hasWhere: false,
+    subQuery: true,
+    hasIncludeWhere: false,
+    hasIncludeRequired: false,
+    tableNames: [
+      'system_roles',
+      'system_menus',
+      'undefined',
+      'system_role_menus'
+    ],
+    type: 'SELECT',
+    keysEscaped: true
+  }
+]
+[2022-12-12T10:05:28.197] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T10:05:40.894] [INFO] db - [
+  'Executing (default): SELECT `id` AS `deptId`, `dept_name` AS `deptName`, `parent_id` AS `parentId`, `order_num` AS `orderNum`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_depts` AS `system_dept` WHERE (`system_dept`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [ [Array], [Array], [Array], [Array], [Array], [Array] ],
+    originalAttributes: [
+      'deptId',
+      'deptName',
+      'parentId',
+      'orderNum',
+      'createTime',
+      'updateTime'
+    ],
+    where: '(`system_dept`.`delete_time` IS NULL)',
+    tableNames: [ 'system_depts' ],
+    type: 'SELECT',
+    model: system_dept
+  }
+]
+[2022-12-12T10:06:47.960] [INFO] db - [
+  'Executing (default): SELECT `id` AS `deptId`, `dept_name` AS `deptName`, `parent_id` AS `parentId`, `order_num` AS `orderNum`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_depts` AS `system_dept` WHERE (`system_dept`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [ [Array], [Array], [Array], [Array], [Array], [Array] ],
+    originalAttributes: [
+      'deptId',
+      'deptName',
+      'parentId',
+      'orderNum',
+      'createTime',
+      'updateTime'
+    ],
+    where: '(`system_dept`.`delete_time` IS NULL)',
+    tableNames: [ 'system_depts' ],
+    type: 'SELECT',
+    model: system_dept
+  }
+]
+[2022-12-12T10:06:49.205] [INFO] db - [
+  'Executing (default): SELECT `id` AS `deptId`, `dept_name` AS `deptName`, `parent_id` AS `parentId`, `order_num` AS `orderNum`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_depts` AS `system_dept` WHERE (`system_dept`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [ [Array], [Array], [Array], [Array], [Array], [Array] ],
+    originalAttributes: [
+      'deptId',
+      'deptName',
+      'parentId',
+      'orderNum',
+      'createTime',
+      'updateTime'
+    ],
+    where: '(`system_dept`.`delete_time` IS NULL)',
+    tableNames: [ 'system_depts' ],
+    type: 'SELECT',
+    model: system_dept
+  }
+]
+[2022-12-12T10:08:01.202] [INFO] db - [
+  'Executing (default): SELECT `id` AS `deptId`, `dept_name` AS `deptName`, `parent_id` AS `parentId`, `order_num` AS `orderNum`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_depts` AS `system_dept` WHERE (`system_dept`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [ [Array], [Array], [Array], [Array], [Array], [Array] ],
+    originalAttributes: [
+      'deptId',
+      'deptName',
+      'parentId',
+      'orderNum',
+      'createTime',
+      'updateTime'
+    ],
+    where: '(`system_dept`.`delete_time` IS NULL)',
+    tableNames: [ 'system_depts' ],
+    type: 'SELECT',
+    model: system_dept
+  }
+]
+[2022-12-12T10:08:51.687] [INFO] db - [
+  'Executing (default): SELECT `id` AS `deptId`, `dept_name` AS `deptName`, `parent_id` AS `parentId`, `order_num` AS `orderNum`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_depts` AS `system_dept` WHERE (`system_dept`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [ [Array], [Array], [Array], [Array], [Array], [Array] ],
+    originalAttributes: [
+      'deptId',
+      'deptName',
+      'parentId',
+      'orderNum',
+      'createTime',
+      'updateTime'
+    ],
+    where: '(`system_dept`.`delete_time` IS NULL)',
+    tableNames: [ 'system_depts' ],
+    type: 'SELECT',
+    model: system_dept
+  }
+]
+[2022-12-12T10:08:57.289] [INFO] db - [
+  'Executing (default): SELECT `id` AS `deptId`, `dept_name` AS `deptName`, `parent_id` AS `parentId`, `order_num` AS `orderNum`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_depts` AS `system_dept` WHERE (`system_dept`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [ [Array], [Array], [Array], [Array], [Array], [Array] ],
+    originalAttributes: [
+      'deptId',
+      'deptName',
+      'parentId',
+      'orderNum',
+      'createTime',
+      'updateTime'
+    ],
+    where: '(`system_dept`.`delete_time` IS NULL)',
+    tableNames: [ 'system_depts' ],
+    type: 'SELECT',
+    model: system_dept
+  }
+]
+[2022-12-12T10:18:21.619] [INFO] db - [
+  'Executing (default): SELECT `id` AS `deptId`, `dept_name` AS `deptName`, `parent_id` AS `parentId`, `order_num` AS `orderNum`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_depts` AS `system_dept` WHERE (`system_dept`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [ [Array], [Array], [Array], [Array], [Array], [Array] ],
+    originalAttributes: [
+      'deptId',
+      'deptName',
+      'parentId',
+      'orderNum',
+      'createTime',
+      'updateTime'
+    ],
+    where: '(`system_dept`.`delete_time` IS NULL)',
+    tableNames: [ 'system_depts' ],
+    type: 'SELECT',
+    model: system_dept
+  }
+]
+[2022-12-12T10:18:21.629] [INFO] db - [
+  'Executing (default): SELECT `id` AS `deptId`, `dept_name` AS `deptName`, `parent_id` AS `parentId`, `order_num` AS `orderNum`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_depts` AS `system_dept` WHERE (`system_dept`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [ [Array], [Array], [Array], [Array], [Array], [Array] ],
+    originalAttributes: [
+      'deptId',
+      'deptName',
+      'parentId',
+      'orderNum',
+      'createTime',
+      'updateTime'
+    ],
+    where: '(`system_dept`.`delete_time` IS NULL)',
+    tableNames: [ 'system_depts' ],
+    type: 'SELECT',
+    model: system_dept
+  }
+]
+[2022-12-12T10:18:42.670] [INFO] db - [
+  'Executing (default): SELECT `id` AS `deptId`, `dept_name` AS `deptName`, `parent_id` AS `parentId`, `order_num` AS `orderNum`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_depts` AS `system_dept` WHERE (`system_dept`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [ [Array], [Array], [Array], [Array], [Array], [Array] ],
+    originalAttributes: [
+      'deptId',
+      'deptName',
+      'parentId',
+      'orderNum',
+      'createTime',
+      'updateTime'
+    ],
+    where: '(`system_dept`.`delete_time` IS NULL)',
+    tableNames: [ 'system_depts' ],
+    type: 'SELECT',
+    model: system_dept
+  }
+]
+[2022-12-12T10:18:42.676] [INFO] db - [
+  'Executing (default): SELECT `id` AS `deptId`, `dept_name` AS `deptName`, `parent_id` AS `parentId`, `order_num` AS `orderNum`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_depts` AS `system_dept` WHERE (`system_dept`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [ [Array], [Array], [Array], [Array], [Array], [Array] ],
+    originalAttributes: [
+      'deptId',
+      'deptName',
+      'parentId',
+      'orderNum',
+      'createTime',
+      'updateTime'
+    ],
+    where: '(`system_dept`.`delete_time` IS NULL)',
+    tableNames: [ 'system_depts' ],
+    type: 'SELECT',
+    model: system_dept
+  }
+]
+[2022-12-12T10:18:45.627] [INFO] db - [
+  'Executing (default): SELECT `id` AS `deptId`, `dept_name` AS `deptName`, `parent_id` AS `parentId`, `order_num` AS `orderNum`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_depts` AS `system_dept` WHERE (`system_dept`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [ [Array], [Array], [Array], [Array], [Array], [Array] ],
+    originalAttributes: [
+      'deptId',
+      'deptName',
+      'parentId',
+      'orderNum',
+      'createTime',
+      'updateTime'
+    ],
+    where: '(`system_dept`.`delete_time` IS NULL)',
+    tableNames: [ 'system_depts' ],
+    type: 'SELECT',
+    model: system_dept
+  }
+]
+[2022-12-12T10:18:45.634] [INFO] db - [
+  'Executing (default): SELECT `id` AS `deptId`, `dept_name` AS `deptName`, `parent_id` AS `parentId`, `order_num` AS `orderNum`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_depts` AS `system_dept` WHERE (`system_dept`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [ [Array], [Array], [Array], [Array], [Array], [Array] ],
+    originalAttributes: [
+      'deptId',
+      'deptName',
+      'parentId',
+      'orderNum',
+      'createTime',
+      'updateTime'
+    ],
+    where: '(`system_dept`.`delete_time` IS NULL)',
+    tableNames: [ 'system_depts' ],
+    type: 'SELECT',
+    model: system_dept
+  }
+]
+[2022-12-12T10:18:48.361] [INFO] db - [
+  'Executing (default): SELECT `id` AS `deptId`, `dept_name` AS `deptName`, `parent_id` AS `parentId`, `order_num` AS `orderNum`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_depts` AS `system_dept` WHERE (`system_dept`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [ [Array], [Array], [Array], [Array], [Array], [Array] ],
+    originalAttributes: [
+      'deptId',
+      'deptName',
+      'parentId',
+      'orderNum',
+      'createTime',
+      'updateTime'
+    ],
+    where: '(`system_dept`.`delete_time` IS NULL)',
+    tableNames: [ 'system_depts' ],
+    type: 'SELECT',
+    model: system_dept
+  }
+]
+[2022-12-12T10:18:54.672] [INFO] db - [
+  "Executing (default): UPDATE `system_depts` SET `delete_time`=? WHERE `delete_time` IS NULL AND `id` IN ('8')",
+  {
+    plain: false,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: { id: [Array] },
+    attributes: { exclude: [Array] },
+    hooks: true,
+    individualHooks: false,
+    force: false,
+    cascade: false,
+    restartIdentity: false,
+    type: 'BULKUPDATE',
+    model: system_dept,
+    dialect: 'mysql',
+    dialectModule: null,
+    dialectModulePath: null,
+    host: 'localhost',
+    protocol: 'tcp',
+    define: {
+      charset: 'utf8',
+      dialectOptions: [Object],
+      timestamps: true,
+      paranoid: true,
+      createdAt: 'create_time',
+      updatedAt: 'update_time',
+      deletedAt: 'delete_time',
+      underscored: true,
+      scopes: [Object]
+    },
+    query: {},
+    sync: {},
+    timezone: '+08:00',
+    standardConformingStrings: true,
+    omitNull: false,
+    native: false,
+    replication: false,
+    ssl: undefined,
+    pool: { max: 5, min: 0, idle: 30000 },
+    quoteIdentifiers: true,
+    retry: { max: 5, match: [Array] },
+    transactionType: 'DEFERRED',
+    isolationLevel: null,
+    databaseVersion: '8.0.29',
+    typeValidation: false,
+    benchmark: false,
+    minifyAliases: false,
+    logQueryParameters: false,
+    operatorAliases: false,
+    dialectOptions: { dateStrings: true, typeCast: true },
+    models: [
+      'D:\\Job\\YHKJ\\me\\code\\node-koa2-mysql-server\\,model\\**\\*.js'
+    ],
+    allowNull: [],
+    bind: [ '2022-12-12 10:18:54' ]
+  }
+]
+[2022-12-12T10:18:54.696] [INFO] db - [
+  'Executing (default): SELECT `id` AS `deptId`, `dept_name` AS `deptName`, `parent_id` AS `parentId`, `order_num` AS `orderNum`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_depts` AS `system_dept` WHERE (`system_dept`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [ [Array], [Array], [Array], [Array], [Array], [Array] ],
+    originalAttributes: [
+      'deptId',
+      'deptName',
+      'parentId',
+      'orderNum',
+      'createTime',
+      'updateTime'
+    ],
+    where: '(`system_dept`.`delete_time` IS NULL)',
+    tableNames: [ 'system_depts' ],
+    type: 'SELECT',
+    model: system_dept
+  }
+]
+[2022-12-12T10:19:03.505] [INFO] db - [
+  'Executing (default): INSERT INTO `system_depts` (`id`,`dept_name`,`parent_id`,`order_num`,`create_time`,`update_time`) VALUES (?,?,?,?,?,?);',
+  {
+    plain: false,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    validate: true,
+    fields: [
+      'deptId',
+      'deptName',
+      'parentId',
+      'orderNum',
+      'createTime',
+      'updateTime',
+      'create_time',
+      'update_time',
+      'delete_time'
+    ],
+    defaultFields: [
+      'deptId',
+      'deptName',
+      'parentId',
+      'orderNum',
+      'createTime',
+      'updateTime',
+      'create_time',
+      'update_time',
+      'delete_time'
+    ],
+    returning: true,
+    hasTrigger: undefined,
+    dialect: 'mysql',
+    dialectModule: null,
+    dialectModulePath: null,
+    host: 'localhost',
+    protocol: 'tcp',
+    define: {
+      charset: 'utf8',
+      dialectOptions: [Object],
+      timestamps: true,
+      paranoid: true,
+      createdAt: 'create_time',
+      updatedAt: 'update_time',
+      deletedAt: 'delete_time',
+      underscored: true,
+      scopes: [Object]
+    },
+    query: {},
+    sync: {},
+    timezone: '+08:00',
+    standardConformingStrings: true,
+    omitNull: false,
+    native: false,
+    replication: false,
+    ssl: undefined,
+    pool: { max: 5, min: 0, idle: 30000 },
+    quoteIdentifiers: true,
+    retry: { max: 5, match: [Array] },
+    transactionType: 'DEFERRED',
+    isolationLevel: null,
+    databaseVersion: '8.0.29',
+    typeValidation: false,
+    benchmark: false,
+    minifyAliases: false,
+    logQueryParameters: false,
+    operatorAliases: false,
+    dialectOptions: { dateStrings: true, typeCast: true },
+    models: [
+      'D:\\Job\\YHKJ\\me\\code\\node-koa2-mysql-server\\,model\\**\\*.js'
+    ],
+    type: 'INSERT',
+    instance: system_dept {
+      dataValues: [Object],
+      _previousDataValues: [Object],
+      uniqno: 1,
+      _changed: [Set],
+      _options: [Object],
+      isNewRecord: true
+    },
+    model: system_dept,
+    bind: [ '', '测试3', 0, 0, '2022-12-12 10:19:03', '2022-12-12 10:19:03' ]
+  }
+]
+[2022-12-12T10:19:03.520] [INFO] db - [
+  'Executing (default): SELECT `id` AS `deptId`, `dept_name` AS `deptName`, `parent_id` AS `parentId`, `order_num` AS `orderNum`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_depts` AS `system_dept` WHERE (`system_dept`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [ [Array], [Array], [Array], [Array], [Array], [Array] ],
+    originalAttributes: [
+      'deptId',
+      'deptName',
+      'parentId',
+      'orderNum',
+      'createTime',
+      'updateTime'
+    ],
+    where: '(`system_dept`.`delete_time` IS NULL)',
+    tableNames: [ 'system_depts' ],
+    type: 'SELECT',
+    model: system_dept
+  }
+]
+[2022-12-12T10:19:13.524] [INFO] db - [
+  'Executing (default): SELECT `id` AS `deptId`, `dept_name` AS `deptName`, `parent_id` AS `parentId`, `order_num` AS `orderNum`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_depts` AS `system_dept` WHERE (`system_dept`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [ [Array], [Array], [Array], [Array], [Array], [Array] ],
+    originalAttributes: [
+      'deptId',
+      'deptName',
+      'parentId',
+      'orderNum',
+      'createTime',
+      'updateTime'
+    ],
+    where: '(`system_dept`.`delete_time` IS NULL)',
+    tableNames: [ 'system_depts' ],
+    type: 'SELECT',
+    model: system_dept
+  }
+]
+[2022-12-12T10:19:15.110] [INFO] db - [
+  'Executing (default): SELECT `id` AS `deptId`, `dept_name` AS `deptName`, `parent_id` AS `parentId`, `order_num` AS `orderNum`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_depts` AS `system_dept` WHERE (`system_dept`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [ [Array], [Array], [Array], [Array], [Array], [Array] ],
+    originalAttributes: [
+      'deptId',
+      'deptName',
+      'parentId',
+      'orderNum',
+      'createTime',
+      'updateTime'
+    ],
+    where: '(`system_dept`.`delete_time` IS NULL)',
+    tableNames: [ 'system_depts' ],
+    type: 'SELECT',
+    model: system_dept
+  }
+]
+[2022-12-12T10:19:17.400] [INFO] db - [
+  'Executing (default): SELECT `id` AS `deptId`, `dept_name` AS `deptName`, `parent_id` AS `parentId`, `order_num` AS `orderNum`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_depts` AS `system_dept` WHERE (`system_dept`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [ [Array], [Array], [Array], [Array], [Array], [Array] ],
+    originalAttributes: [
+      'deptId',
+      'deptName',
+      'parentId',
+      'orderNum',
+      'createTime',
+      'updateTime'
+    ],
+    where: '(`system_dept`.`delete_time` IS NULL)',
+    tableNames: [ 'system_depts' ],
+    type: 'SELECT',
+    model: system_dept
+  }
+]
+[2022-12-12T10:19:49.192] [INFO] db - [
+  'Executing (default): SELECT `id` AS `deptId`, `dept_name` AS `deptName`, `parent_id` AS `parentId`, `order_num` AS `orderNum`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_depts` AS `system_dept` WHERE (`system_dept`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [ [Array], [Array], [Array], [Array], [Array], [Array] ],
+    originalAttributes: [
+      'deptId',
+      'deptName',
+      'parentId',
+      'orderNum',
+      'createTime',
+      'updateTime'
+    ],
+    where: '(`system_dept`.`delete_time` IS NULL)',
+    tableNames: [ 'system_depts' ],
+    type: 'SELECT',
+    model: system_dept
+  }
+]
+[2022-12-12T10:19:57.217] [INFO] db - [
+  'Executing (default): SELECT `id` AS `deptId`, `dept_name` AS `deptName`, `parent_id` AS `parentId`, `order_num` AS `orderNum`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_depts` AS `system_dept` WHERE (`system_dept`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [ [Array], [Array], [Array], [Array], [Array], [Array] ],
+    originalAttributes: [
+      'deptId',
+      'deptName',
+      'parentId',
+      'orderNum',
+      'createTime',
+      'updateTime'
+    ],
+    where: '(`system_dept`.`delete_time` IS NULL)',
+    tableNames: [ 'system_depts' ],
+    type: 'SELECT',
+    model: system_dept
+  }
+]
+[2022-12-12T10:31:33.127] [INFO] db - [
+  'Executing (default): SELECT `id` AS `deptId`, `dept_name` AS `deptName`, `parent_id` AS `parentId`, `order_num` AS `orderNum`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_depts` AS `system_dept` WHERE (`system_dept`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [ [Array], [Array], [Array], [Array], [Array], [Array] ],
+    originalAttributes: [
+      'deptId',
+      'deptName',
+      'parentId',
+      'orderNum',
+      'createTime',
+      'updateTime'
+    ],
+    where: '(`system_dept`.`delete_time` IS NULL)',
+    tableNames: [ 'system_depts' ],
+    type: 'SELECT',
+    model: system_dept
+  }
+]
+[2022-12-12T10:31:36.431] [INFO] db - [
+  'Executing (default): SELECT `id` AS `deptId`, `dept_name` AS `deptName`, `parent_id` AS `parentId`, `order_num` AS `orderNum`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_depts` AS `system_dept` WHERE (`system_dept`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [ [Array], [Array], [Array], [Array], [Array], [Array] ],
+    originalAttributes: [
+      'deptId',
+      'deptName',
+      'parentId',
+      'orderNum',
+      'createTime',
+      'updateTime'
+    ],
+    where: '(`system_dept`.`delete_time` IS NULL)',
+    tableNames: [ 'system_depts' ],
+    type: 'SELECT',
+    model: system_dept
+  }
+]
+[2022-12-12T10:31:59.554] [INFO] db - [
+  'Executing (default): SELECT `id` AS `deptId`, `dept_name` AS `deptName`, `parent_id` AS `parentId`, `order_num` AS `orderNum`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_depts` AS `system_dept` WHERE (`system_dept`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [ [Array], [Array], [Array], [Array], [Array], [Array] ],
+    originalAttributes: [
+      'deptId',
+      'deptName',
+      'parentId',
+      'orderNum',
+      'createTime',
+      'updateTime'
+    ],
+    where: '(`system_dept`.`delete_time` IS NULL)',
+    tableNames: [ 'system_depts' ],
+    type: 'SELECT',
+    model: system_dept
+  }
+]
+[2022-12-12T10:32:19.902] [INFO] db - [
+  'Executing (default): SELECT `id` AS `deptId`, `dept_name` AS `deptName`, `parent_id` AS `parentId`, `order_num` AS `orderNum`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_depts` AS `system_dept` WHERE (`system_dept`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [ [Array], [Array], [Array], [Array], [Array], [Array] ],
+    originalAttributes: [
+      'deptId',
+      'deptName',
+      'parentId',
+      'orderNum',
+      'createTime',
+      'updateTime'
+    ],
+    where: '(`system_dept`.`delete_time` IS NULL)',
+    tableNames: [ 'system_depts' ],
+    type: 'SELECT',
+    model: system_dept
+  }
+]
+[2022-12-12T10:32:57.899] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T10:33:38.754] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T10:33:42.419] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T13:04:14.981] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T13:57:32.463] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T14:27:27.343] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
+[2022-12-12T17:58:01.389] [INFO] db - [
+  'Executing (default): SELECT `id` AS `menuId`, `menu_name` AS `menuName`, `parent_id` AS `parentId`, `path`, `component`, `perms`, `type`, `order_num` AS `orderNum`, `icon`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_menus` AS `system_menu` WHERE (`system_menu`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],     [Array],
+      [Array],     'path',
+      'component', 'perms',
+      'type',      [Array],
+      'icon',      [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'menuId',     'menuName',
+      'parentId',   'path',
+      'component',  'perms',
+      'type',       'orderNum',
+      'icon',       'createTime',
+      'updateTime'
+    ],
+    where: '(`system_menu`.`delete_time` IS NULL)',
+    tableNames: [ 'system_menus' ],
+    type: 'SELECT',
+    model: system_menu
+  }
+]
