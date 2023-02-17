@@ -9,7 +9,7 @@ import utils from "@root/utils";
 import validate from "@root/utils/validate";
 import response from "@root/utils/response";
 import paginate from "@root/utils/paginate";
-import SystemRoleService from "../../service/system/RoleService";
+import SystemRoleService from "@root/service/system/RoleService";
 
 //角色创建
 const Create = async (ctx) => {

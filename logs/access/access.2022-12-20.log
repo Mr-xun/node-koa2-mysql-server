@@ -1,0 +1,6 @@
+[2022-12-20T15:33:41.524] [INFO] access - path:/api/system/user/login | method:POST | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+[2022-12-20T15:33:41.620] [INFO] access - path:/api/system/user/info | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+[2022-12-20T15:33:41.633] [INFO] access - path:/api/system/user/menu | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+[2022-12-20T15:33:44.745] [INFO] access - path:/api/system/menu/tree | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+[2022-12-20T15:33:48.886] [INFO] access - path:/api/system/menu/tree | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+[2022-12-20T15:33:48.888] [INFO] access - path:/api/system/role/list?pageSize=10&pageNum=1&total=0&page=1 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36

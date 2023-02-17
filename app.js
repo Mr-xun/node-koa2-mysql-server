@@ -25,6 +25,7 @@ import systemUserRoute from "./routes/system/user";
 import systemMenuRoute from "./routes/system/menu";
 import systemRoleRoute from "./routes/system/role";
 import systemDeptRoute from "./routes/system/dept";
+import logLoginRoute from './routes/log/login';
 import testApiRoute from "./routes/testapi/post";
 
 const app = new Koa();
@@ -101,6 +102,7 @@ app.use(systemUserRoute.routes(), systemUserRoute.allowedMethods());
 app.use(systemMenuRoute.routes(), systemMenuRoute.allowedMethods());
 app.use(systemRoleRoute.routes(), systemRoleRoute.allowedMethods());
 app.use(systemDeptRoute.routes(), systemDeptRoute.allowedMethods());
+app.use(logLoginRoute.routes(), logLoginRoute.allowedMethods());
 app.use(testApiRoute.routes(), testApiRoute.allowedMethods());
 
 // error-handling

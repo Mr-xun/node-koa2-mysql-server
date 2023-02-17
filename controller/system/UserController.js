@@ -2,7 +2,7 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-10 16:31:26
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-12-07 08:55:59
+ * @LastEditTime: 2023-02-17 15:57:42
  * @Description: SystemUserController
  */
 import verify from "@root/utils/verifyToken";
@@ -12,7 +12,8 @@ import validate from "@root/utils/validate";
 import response from "@root/utils/response";
 import paginate from "@root/utils/paginate";
 import SystemUserService from "@root/service/system/UserService";
-
+import LogLoginService from "@root/service/log/LogLoginService";
+import UAParser from "ua-parser-js";
 //用户登录
 const Login = async (ctx) => {
     const rules = {
@@ -27,12 +28,27 @@ const Login = async (ctx) => {
     data.password = utils.MD5(data.password);
     let userInfo = await SystemUserService.GetOne({ userName: data.userName, password: data.password });
     if (userInfo) {
-        let upData = {
+        //记录登录日志
+        console.log(ctx.request, "ctx.request");
+        const ua = ctx.request.header["user-agent"];
+        var uaParser = new UAParser(ua).getResult();
+        console.log(uaParser, "uaParser");
+        await LogLoginService.Create({
+            userId: userInfo.userId,
+            userName: userInfo.userName,
+            realName: userInfo.realName,
+            lastLoginTime: userInfo.lastLoginTime,
+            ua: uaParser.ua,
+            browser: uaParser.browser.name + uaParser.browser.version,
+            os: uaParser.os.name + uaParser.os.version,
+            status: 1,
+            msg: "登陆成功",
+        });
+        //更新上次登录时间
+        await SystemUserService.Update({
             userId: userInfo.userId,
             lastLoginTime: new Date().getTime(),
-        };
-        //更新上次登录时间
-        await SystemUserService.Update(upData);
+        });
         const token = await verify.setToken(userInfo);
         response.success(ctx, {
             token,

@@ -7,7 +7,7 @@
  */
 import validate from "@root/utils/validate";
 import response from "@root/utils/response";
-import SystemDeptService from "../../service/system/DeptService";
+import SystemDeptService from "@root/service/system/DeptService";
 //部门创建
 const Create = async (ctx) => {
     const rules = {

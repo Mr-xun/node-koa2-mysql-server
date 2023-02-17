@@ -7,7 +7,7 @@
  */
 import validate from "@root/utils/validate";
 import response from "@root/utils/response";
-import SystemMenuService from "../../service/system/MenuService";
+import SystemMenuService from "@root/service/system/MenuService";
 //菜单创建
 const Create = async (ctx) => {
     const rules = {
