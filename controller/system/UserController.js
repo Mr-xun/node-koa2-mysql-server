@@ -2,17 +2,17 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-10 16:31:26
  * @LastEditors: xunxiao
- * @LastEditTime: 2023-02-17 15:57:42
+ * @LastEditTime: 2023-02-20 16:47:15
  * @Description: SystemUserController
  */
-import verify from "@root/utils/verifyToken";
-import config from "@root/config";
 import utils from "@root/utils";
+import config from "@root/config";
+import verify from "@root/utils/verifyToken";
 import validate from "@root/utils/validate";
 import response from "@root/utils/response";
 import paginate from "@root/utils/paginate";
 import SystemUserService from "@root/service/system/UserService";
-import LogLoginService from "@root/service/log/LogLoginService";
+import LogLoginService from "@root/service/log/LoginService";
 import UAParser from "ua-parser-js";
 //用户登录
 const Login = async (ctx) => {
@@ -29,10 +29,8 @@ const Login = async (ctx) => {
     let userInfo = await SystemUserService.GetOne({ userName: data.userName, password: data.password });
     if (userInfo) {
         //记录登录日志
-        console.log(ctx.request, "ctx.request");
         const ua = ctx.request.header["user-agent"];
-        var uaParser = new UAParser(ua).getResult();
-        console.log(uaParser, "uaParser");
+        const uaParser = new UAParser(ua).getResult();
         await LogLoginService.Create({
             userId: userInfo.userId,
             userName: userInfo.userName,
@@ -174,6 +172,7 @@ const Create = async (ctx) => {
         if (error) {
             return response.fail(ctx, "创建失败");
         }
+        ctx.state.operationLog.describe = '用户创建'
         return response.success(ctx, null, "创建成功");
     } catch (error) {
         console.log(error);
@@ -197,6 +196,7 @@ const Update = async (ctx) => {
         if (error) {
             return response.fail(ctx, error);
         }
+        ctx.state.operationLog.describe = '用户修改'
         return response.success(ctx);
     } catch (error) {
         console.log(error);
@@ -216,6 +216,7 @@ const BatchDel = async (ctx) => {
         if (error) {
             return response.fail(ctx, error);
         }
+        ctx.state.operationLog.describe = '用户删除'
         return response.success(ctx);
     } catch (error) {
         console.log(error);

@@ -2,7 +2,7 @@
  * @Author: xunxiao
  * @Date: 2022-09-13 11:14:22
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-11-17 09:52:55
+ * @LastEditTime: 2023-02-20 17:00:19
  * @Description: entry
  */
 import Koa from "koa";
@@ -19,6 +19,7 @@ import db from "./db";
 import response from "./utils/response";
 import config from "./config";
 import AccessLogMiddleware from "./middlewares/AccessLogMiddleware";
+import OperationLogMiddleware from "./middlewares/OperationLogMiddleware";
 
 import indexRoute from "./routes/index";
 import systemUserRoute from "./routes/system/user";
@@ -95,6 +96,9 @@ app.use(async (ctx, next) => {
     const ms = new Date() - start;
     console.log(`${ctx.method} ${ctx.url} - ${ms}ms`);
 });
+
+// 操作日志中间件
+app.use(OperationLogMiddleware());
 
 // routes
 app.use(indexRoute.routes(), indexRoute.allowedMethods());

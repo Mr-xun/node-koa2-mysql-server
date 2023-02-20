@@ -140,3 +140,14 @@
 [2023-02-17T17:16:05.861] [INFO] access - path:/api/log/login/list?pageNum=1&pageSize=10 | method:GET | ua:apifox/1.0.0 (https://www.apifox.cn)
 [2023-02-17T17:16:36.437] [INFO] access - path:/api/log/login/list?pageNum=1&pageSize=10&userName=1&realName= | method:GET | ua:apifox/1.0.0 (https://www.apifox.cn)
 [2023-02-17T17:16:44.829] [INFO] access - path:/api/log/login/list?pageNum=1&pageSize=10&userName=xunxiao&realName= | method:GET | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-17T17:25:54.349] [INFO] access - path:/api/log/login/delete/1 | method:DELETE | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-17T17:26:05.692] [INFO] access - path:/api/log/login/all | method:GET | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-17T17:26:22.913] [INFO] access - path:/api/log/login/list?pageNum=1&pageSize=10&userName=xunxiao&realName= | method:GET | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-17T17:28:21.914] [INFO] access - path:/api/system/user/list?pageSize=10&pageNum=1&total=2&page=1 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+[2023-02-17T17:28:22.442] [INFO] access - path:/api/system/user/list?pageSize=10&pageNum=1&total=2&page=1 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+[2023-02-17T17:28:23.221] [INFO] access - path:/api/system/user/list?pageSize=10&pageNum=1&total=2&page=1 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+[2023-02-17T17:28:28.664] [INFO] access - path:/api/system/menu/tree | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+[2023-02-17T17:28:56.116] [INFO] access - path:/api/system/dept/tree | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+[2023-02-17T17:28:56.117] [INFO] access - path:/api/system/role/all | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+[2023-02-17T17:28:56.118] [INFO] access - path:/api/system/user/list?pageSize=10&pageNum=1&total=0&page=1 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+[2023-02-17T17:28:59.458] [INFO] access - path:/api/system/menu/tree | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36

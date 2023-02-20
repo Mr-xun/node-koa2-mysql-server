@@ -18,10 +18,8 @@ import PostService from "@root/service/testapi/PostService";
 //用户创建
 const postCreate = async (ctx) => {
     try {
-        console.log(ctx.request.body,'ctx.request.body')
         const raw = await PostService.postCreate(ctx.request.body);
        
-        console.log(raw);
         if (raw) {
             return response.success(ctx, null, "创建成功");
         }

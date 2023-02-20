@@ -3,7 +3,7 @@
  * @Date: 2022-09-17 17:31:16
  * @LastEditors: xunxiao
  * @LastEditTime: 2023-02-17 10:28:32
- * @Description: RoleRoute
+ * @Description: SystemRoleRoute
  */
 import Router from "koa-router";
 import sysRoleCtl from "@root/controller/system/RoleController";

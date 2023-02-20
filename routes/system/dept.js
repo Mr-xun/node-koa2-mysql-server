@@ -3,7 +3,7 @@
  * @Date: 2022-09-17 17:31:16
  * @LastEditors: xunxiao
  * @LastEditTime: 2022-09-28 13:42:46
- * @Description: DeptRoute
+ * @Description: SystemDeptRoute
  */
 import Router from "koa-router";
 import sysDeptCtl from "@root/controller/system/DeptController";

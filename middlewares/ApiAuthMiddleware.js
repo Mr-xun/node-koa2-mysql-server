@@ -2,7 +2,7 @@
  * @Author: xunxiao
  * @Date: 2022-11-21 17:03:55
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-11-21 17:48:50
+ * @LastEditTime: 2023-02-20 15:25:05
  * @Description: 接口级权限校验
  */
 import verify from "@root/utils/verifyToken";

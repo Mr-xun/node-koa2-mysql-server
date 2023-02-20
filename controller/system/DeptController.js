@@ -24,6 +24,7 @@ const Create = async (ctx) => {
         }
         const row = await SystemDeptService.Create(data);
         if (row.deptId) {
+            ctx.state.operationLog.describe = "部门创建";
             return response.success(ctx, null, "创建成功");
         }
         return response.fail(ctx, "创建失败");
@@ -53,6 +54,7 @@ const Update = async (ctx) => {
         }
         const [upCount] = await SystemDeptService.Update(data);
         if (upCount) {
+            ctx.state.operationLog.describe = "部门修改";
             return response.success(ctx);
         } else {
             return response.fail(ctx, "更新失败");
@@ -100,6 +102,7 @@ const BatchDel = async (ctx) => {
         const deleteIds = ids.split(",");
         const delCount = await SystemDeptService.BatchDel(deleteIds);
         if (delCount) {
+            ctx.state.operationLog.describe = "部门删除";
             return response.success(ctx);
         } else {
             return response.fail(ctx, "删除失败");

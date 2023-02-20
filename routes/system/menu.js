@@ -3,7 +3,7 @@
  * @Date: 2022-09-17 17:31:16
  * @LastEditors: xunxiao
  * @LastEditTime: 2022-09-26 17:14:34
- * @Description: MenuRoute
+ * @Description: SystemMenuRoute
  */
 import Router from "koa-router";
 import sysMenuCtl from "@root/controller/system/MenuController";

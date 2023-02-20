@@ -2,8 +2,8 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-04 15:28:48
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-11-21 17:44:08
- * @Description: UserRoute
+ * @LastEditTime: 2023-02-20 14:37:45
+ * @Description: SystemUserRoute
  */
 import Router from "koa-router";
 import sysUserCtl from "@root/controller/system/UserController";
@@ -22,7 +22,7 @@ router.put("/update", ApiAuthMiddleware("user:update"), sysUserCtl.Update);
 router.post("/login", sysUserCtl.Login);
 
 //用户信息
-router.get("/info", ApiAuthMiddleware("user:view"), sysUserCtl.GetUserInfo);
+router.get("/info", sysUserCtl.GetUserInfo);
 
 //用户权限菜单
 router.get("/menu", sysUserCtl.GetUserMenu);

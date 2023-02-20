@@ -2,7 +2,7 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-17 16:44:55
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-11-17 10:51:12
+ * @LastEditTime: 2023-02-20 17:53:15
  * @Description: SystemRoleController
  */
 import utils from "@root/utils";
@@ -30,6 +30,7 @@ const Create = async (ctx) => {
         if (error) {
             return response.fail(ctx, "创建失败");
         }
+        ctx.state.operationLog.describe = '角色创建'
         return response.success(ctx, null, "创建成功");
     } catch (error) {
         console.log(error);
@@ -38,6 +39,7 @@ const Create = async (ctx) => {
 };
 //角色修改
 const Update = async (ctx) => {
+    
     const fromData = ctx.request.body;
     const rules = {
         roleId: [{ type: "number", required: true, message: "角色id不能为空" }],
@@ -52,6 +54,7 @@ const Update = async (ctx) => {
         if (error) {
             return response.fail(ctx, error);
         }
+        ctx.state.operationLog.describe = '角色修改'
         return response.success(ctx);
     } catch (error) {
         console.log(error);
@@ -102,6 +105,7 @@ const BatchDel = async (ctx) => {
         if (error) {
             return response.fail(ctx, error);
         }
+        ctx.state.operationLog.describe = '角色删除'
         return response.success(ctx);
     } catch (error) {
         console.log(error);

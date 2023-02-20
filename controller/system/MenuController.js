@@ -24,6 +24,7 @@ const Create = async (ctx) => {
         }
         const row = await SystemMenuService.Create(data);
         if (row.menuId) {
+            ctx.state.operationLog.describe = "菜单创建";
             return response.success(ctx, null, "创建成功");
         }
         return response.fail(ctx, "创建失败");
@@ -53,6 +54,7 @@ const Update = async (ctx) => {
         }
         const [upCount] = await SystemMenuService.Update(data);
         if (upCount) {
+            ctx.state.operationLog.describe = "菜单修改";
             return response.success(ctx);
         } else {
             return response.fail(ctx, "更新失败");
@@ -102,13 +104,13 @@ const BatchDel = async (ctx) => {
         if (error) {
             return response.fail(ctx, error);
         }
+        ctx.state.operationLog.describe = "菜单删除";
         return response.success(ctx);
     } catch (error) {
         console.log(error);
         return response.error(ctx, "系统异常");
     }
 };
-
 
 export default {
     Create,
