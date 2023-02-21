@@ -2,7 +2,7 @@
  * @Author: xunxiao
  * @Date: 2023-02-17 14:56:12
  * @LastEditors: xunxiao
- * @LastEditTime: 2023-02-20 16:59:14
+ * @LastEditTime: 2023-02-21 09:31:09
  * @Description: LogOperationService
  */
 import { Op } from "sequelize";
@@ -27,18 +27,24 @@ const GetAll = () => {
 
 //操作日志列表分页
 const GetListByPage = ({ where, limit, offset }) => {
-    return LogOperation.findAndCountAll({
-        where: {
-            userName: {
-                [Op.like]: `%${where.userName}%`,
-            },
-            realName: {
-                [Op.like]: `%${where.realName}%`,
-            },
-            describe: {
-                [Op.like]: `%${where.describe}%`,
-            }
+    let opWhere = {
+        userName: {
+            [Op.like]: `%${where.userName}%`,
         },
+        realName: {
+            [Op.like]: `%${where.realName}%`,
+        },
+        describe: {
+            [Op.like]: `%${where.describe}%`,
+        },
+    };
+    if (where.startTime && where.endTime) {
+        opWhere.createTime = {
+            [Op.between]: [`${where.startTime}`, `${where.endTime}`],
+        };
+    }
+    return LogOperation.findAndCountAll({
+        where: opWhere,
         limit,
         offset,
     });

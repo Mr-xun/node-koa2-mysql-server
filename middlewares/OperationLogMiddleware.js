@@ -2,7 +2,7 @@
  * @Author: xunxiao
  * @Date: 2023-02-20 15:11:05
  * @LastEditors: xunxiao
- * @LastEditTime: 2023-02-20 18:04:42
+ * @LastEditTime: 2023-02-21 10:38:25
  * @Description: 记录操作日志中间件
  */
 import UAParser from "ua-parser-js";
@@ -28,9 +28,9 @@ const OperationLogMiddleware = () => {
                     userId: userInfo.userId,
                     userName: userInfo.userName,
                     realName: userInfo.realName,
-                    ua: uaParser.ua,
-                    browser: uaParser.browser.name + uaParser.browser.version,
-                    os: uaParser.os.name + uaParser.os.version,
+                    ua: uaParser.ua || "",
+                    browser: (uaParser.browser.name || "") + (uaParser.browser.version || ""),
+                    os: (uaParser.os.name || "") + (uaParser.os.version || ""),
                     method: ctx.method,
                     url: ctx.url,
                     params: JSON.stringify(ctx.request.body),

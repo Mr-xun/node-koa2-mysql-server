@@ -2,7 +2,7 @@
  * @Author: xunxiao
  * @Date: 2022-09-13 11:14:22
  * @LastEditors: xunxiao
- * @LastEditTime: 2023-02-20 17:00:19
+ * @LastEditTime: 2023-02-21 14:37:31
  * @Description: entry
  */
 import Koa from "koa";
@@ -20,15 +20,7 @@ import response from "./utils/response";
 import config from "./config";
 import AccessLogMiddleware from "./middlewares/AccessLogMiddleware";
 import OperationLogMiddleware from "./middlewares/OperationLogMiddleware";
-
-import indexRoute from "./routes/index";
-import systemUserRoute from "./routes/system/user";
-import systemMenuRoute from "./routes/system/menu";
-import systemRoleRoute from "./routes/system/role";
-import systemDeptRoute from "./routes/system/dept";
-import logLoginRoute from './routes/log/login';
-import testApiRoute from "./routes/testapi/post";
-
+import router from "./routes";
 const app = new Koa();
 //连接数据库
 db.connect();
@@ -99,16 +91,8 @@ app.use(async (ctx, next) => {
 
 // 操作日志中间件
 app.use(OperationLogMiddleware());
-
 // routes
-app.use(indexRoute.routes(), indexRoute.allowedMethods());
-app.use(systemUserRoute.routes(), systemUserRoute.allowedMethods());
-app.use(systemMenuRoute.routes(), systemMenuRoute.allowedMethods());
-app.use(systemRoleRoute.routes(), systemRoleRoute.allowedMethods());
-app.use(systemDeptRoute.routes(), systemDeptRoute.allowedMethods());
-app.use(logLoginRoute.routes(), logLoginRoute.allowedMethods());
-app.use(testApiRoute.routes(), testApiRoute.allowedMethods());
-
+app.use(router.routes(), router.allowedMethods());
 // error-handling
 app.on("error", (err, ctx) => {
     console.error("server error", err, ctx);

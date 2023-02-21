@@ -523,3 +523,31 @@
 [2023-02-20T18:03:39.984] [INFO] access - path:/api/system/role/all | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
 [2023-02-20T18:03:44.315] [INFO] access - path:/api/system/user/update | method:PUT | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
 [2023-02-20T18:03:44.391] [INFO] access - path:/api/system/user/list?pageSize=10&pageNum=1&total=2&page=1 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+[2023-02-20T18:15:54.729] [INFO] access - path:/api/system/user/list?pageSize=10&pageNum=1&total=2&page=1 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+[2023-02-20T18:15:56.081] [INFO] access - path:/api/system/user/list?pageSize=10&pageNum=1&total=2&page=1 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+[2023-02-20T18:15:56.553] [INFO] access - path:/api/system/user/list?pageSize=10&pageNum=1&total=2&page=1 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+[2023-02-20T18:15:57.037] [INFO] access - path:/api/system/user/list?pageSize=10&pageNum=1&total=2&page=1 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+[2023-02-20T18:15:57.206] [INFO] access - path:/api/system/user/list?pageSize=10&pageNum=1&total=2&page=1 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+[2023-02-20T18:15:57.370] [INFO] access - path:/api/system/user/list?pageSize=10&pageNum=1&total=2&page=1 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+[2023-02-20T18:16:00.096] [INFO] access - path:/api/system/dept/tree | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+[2023-02-20T18:16:00.097] [INFO] access - path:/api/system/role/all | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+[2023-02-20T18:16:00.098] [INFO] access - path:/api/system/user/list?pageSize=10&pageNum=1&total=0&page=1 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+[2023-02-20T18:16:02.546] [INFO] access - path:/api/system/user/list?pageSize=10&pageNum=1&total=2&page=1 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+[2023-02-20T18:16:03.154] [INFO] access - path:/api/system/user/list?pageSize=10&pageNum=1&total=2&page=1 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+[2023-02-20T18:17:27.897] [INFO] access - path:/api/log/operation/list?pageNum=1&pageSize=10&userName=1&realName=&describe= | method:GET | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-20T18:17:30.585] [INFO] access - path:/api/log/operation/list?pageNum=1&pageSize=10&userName=1&realName=&describe= | method:GET | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-20T18:19:24.203] [INFO] access - path:/api/log/operation/list?pageNum=1&pageSize=10&userName=1&realName=&describe= | method:GET | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-20T18:19:26.355] [INFO] access - path:/api/log/operation/list?pageNum=1&pageSize=10&userName=1&realName=&describe= | method:GET | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-20T18:19:35.067] [INFO] access - path:/api/log/operation/list?pageNum=1&pageSize=10&userName=&realName=&describe= | method:GET | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-20T18:20:17.698] [INFO] access - path:/api/log/operation/all | method:GET | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-20T18:20:52.857] [INFO] access - path:/api/log/operation/delete/1 | method:DELETE | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-20T18:22:10.379] [INFO] access - path:/api/log/operation/delete/1 | method:DELETE | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-20T18:23:13.071] [INFO] access - path:/api/log/operation/delete/1 | method:DELETE | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-20T18:24:14.709] [INFO] access - path:/api/log/operation/delete/1 | method:DELETE | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-20T18:25:35.049] [INFO] access - path:/api/log/operation/delete/1 | method:DELETE | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-20T18:26:07.612] [INFO] access - path:/api/log/operation/delete/1 | method:DELETE | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-20T18:26:58.675] [INFO] access - path:/api/log/operation/delete/1 | method:DELETE | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-20T18:28:08.411] [INFO] access - path:/api/log/operation/delete/1 | method:DELETE | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-20T18:28:42.565] [INFO] access - path:/api/log/operation/delete/1 | method:DELETE | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-20T18:29:12.983] [INFO] access - path:/api/log/login/delete/1 | method:DELETE | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-20T18:29:33.998] [INFO] access - path:/api/system/role/delete/4 | method:DELETE | ua:apifox/1.0.0 (https://www.apifox.cn)

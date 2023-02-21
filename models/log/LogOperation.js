@@ -1,3 +1,10 @@
+/*
+ * @Author: xunxiao
+ * @Date: 2023-02-17 14:37:36
+ * @LastEditors: xunxiao
+ * @LastEditTime: 2023-02-21 09:33:08
+ * @Description: 
+ */
 import Sequelize from "sequelize";
 import DB from "@root/db";
 const LogOperation = DB.sequelize.define("log_operation", {
@@ -10,7 +17,7 @@ const LogOperation = DB.sequelize.define("log_operation", {
         field: "id",
     },
     userId: {
-        type: Sequelize.STRING,
+        type: Sequelize.INTEGER,
         allowNull: false,
         comment: "用户Id",
         field: "user_id",

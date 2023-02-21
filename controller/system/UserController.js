@@ -2,7 +2,7 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-10 16:31:26
  * @LastEditors: xunxiao
- * @LastEditTime: 2023-02-20 16:47:15
+ * @LastEditTime: 2023-02-21 15:34:19
  * @Description: SystemUserController
  */
 import utils from "@root/utils";
@@ -37,8 +37,8 @@ const Login = async (ctx) => {
             realName: userInfo.realName,
             lastLoginTime: userInfo.lastLoginTime,
             ua: uaParser.ua,
-            browser: uaParser.browser.name + uaParser.browser.version,
-            os: uaParser.os.name + uaParser.os.version,
+            browser: (uaParser.browser.name || "") + (uaParser.browser.version || ""),
+            os: (uaParser.os.name || "") + (uaParser.os.version || ""),
             status: 1,
             msg: "登陆成功",
         });
@@ -172,7 +172,7 @@ const Create = async (ctx) => {
         if (error) {
             return response.fail(ctx, "创建失败");
         }
-        ctx.state.operationLog.describe = '用户创建'
+        ctx.state.operationLog.describe = "用户创建";
         return response.success(ctx, null, "创建成功");
     } catch (error) {
         console.log(error);
@@ -196,13 +196,79 @@ const Update = async (ctx) => {
         if (error) {
             return response.fail(ctx, error);
         }
-        ctx.state.operationLog.describe = '用户修改'
+        ctx.state.operationLog.describe = "用户修改";
         return response.success(ctx);
     } catch (error) {
         console.log(error);
         return response.error(ctx, "系统异常");
     }
 };
+
+//用户密码重置
+const PasswordReset = async (ctx) => {
+    const fromData = ctx.request.body;
+    console.log(ctx.request.body, "ctx.request.body");
+    const rules = {
+        userIds: [{ type: "string", required: true, message: "用户Id集合不能为空" }],
+    };
+    const { data, error } = await validate(fromData, rules);
+    if (error) {
+        return response.fail(ctx, error);
+    }
+    try {
+        for (let userId of data.userIds.split(",")) {
+            //默认密码为123456
+            const { error } = await SystemUserService.Update({
+                userId,
+                password: utils.MD5("123456"),
+            });
+            if (error) {
+                return response.fail(ctx, error);
+            }
+        }
+        ctx.state.operationLog.describe = "用户密码重置";
+        return response.success(ctx);
+    } catch (error) {
+        console.log(error);
+        return response.error(ctx, "系统异常");
+    }
+};
+
+//用户密码修改
+const PasswordUpdate = async (ctx) => {
+    const fromData = ctx.request.body;
+    const rules = {
+        userId: [{ type: "number", required: true, message: "用户Id不能为空" }],
+        oldPassword: [{ type: "string", required: true, message: "旧密码不能为空" }],
+        newPassword: [{ type: "string", required: true, message: "新密码不能为空" }],
+    };
+    const { data, error } = await validate(fromData, rules);
+    if (error) {
+        return response.fail(ctx, error);
+    }
+    try {
+        const getUserInfo = await SystemUserService.GetOne({ userId: data.userId });
+        if(!getUserInfo){
+            return response.fail(ctx, "该用户不存在");
+        }
+        if (utils.MD5(data.oldPassword) !== getUserInfo.password) {
+            return response.fail(ctx, "旧密码输入错误");
+        }
+        const { error } = await SystemUserService.Update({
+            userId: data.userId,
+            password: utils.MD5(data.newPassword),
+        });
+        if (error) {
+            return response.fail(ctx, error);
+        }
+        ctx.state.operationLog.describe = "用户密码修改";
+        return response.success(ctx);
+    } catch (error) {
+        console.log(error);
+        return response.error(ctx, "系统异常");
+    }
+};
+
 //用户批量删除
 const BatchDel = async (ctx) => {
     const { ids } = ctx.params;
@@ -216,7 +282,7 @@ const BatchDel = async (ctx) => {
         if (error) {
             return response.fail(ctx, error);
         }
-        ctx.state.operationLog.describe = '用户删除'
+        ctx.state.operationLog.describe = "用户删除";
         return response.success(ctx);
     } catch (error) {
         console.log(error);
@@ -268,4 +334,6 @@ export default {
     GetUserMenu,
     GetAll,
     GetListByPage,
+    PasswordReset,
+    PasswordUpdate,
 };

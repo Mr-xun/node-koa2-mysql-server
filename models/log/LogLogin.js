@@ -17,7 +17,7 @@ const LogLogin = DB.sequelize.define("log_login",{
         field: "id",
     },
     userId: {
-        type: Sequelize.STRING,
+        type: Sequelize.INTEGER,
         allowNull: false,
         comment: "用户Id",
         field: "user_id",

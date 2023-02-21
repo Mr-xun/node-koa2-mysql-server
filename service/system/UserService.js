@@ -110,7 +110,6 @@ const GetOne = async (where) => {
     return SystemUser.findOne({
         where,
         raw: true,
-        attributes: { exclude: ["password"] },
     });
 };
 

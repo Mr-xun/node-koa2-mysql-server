@@ -2,7 +2,7 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-04 15:28:48
  * @LastEditors: xunxiao
- * @LastEditTime: 2023-02-20 14:37:45
+ * @LastEditTime: 2023-02-21 15:35:00
  * @Description: SystemUserRoute
  */
 import Router from "koa-router";
@@ -38,5 +38,11 @@ router.get("/list", ApiAuthMiddleware("user:view"), sysUserCtl.GetListByPage);
 
 //用户删除
 router.delete("/delete/:ids", ApiAuthMiddleware("user:delete"), sysUserCtl.BatchDel);
+
+//用户密码重置
+router.put("/password/reset", ApiAuthMiddleware("user:passwordReset"), sysUserCtl.PasswordReset);
+
+//用户修改密码
+router.put("/password/update", ApiAuthMiddleware("user:update"), sysUserCtl.PasswordUpdate);
 
 export default router;

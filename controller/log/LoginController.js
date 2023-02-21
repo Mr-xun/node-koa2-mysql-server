@@ -2,7 +2,7 @@
  * @Author: xunxiao
  * @Date: 2023-02-17 16:11:51
  * @LastEditors: xunxiao
- * @LastEditTime: 2023-02-17 17:03:35
+ * @LastEditTime: 2023-02-21 09:24:44
  * @Description: LogLoginController
  */
 import utils from "@root/utils";
@@ -12,10 +12,10 @@ import LogLoginService from "@root/service/log/LoginService";
 //登录日志列表
 const GetListByPage = async (ctx) => {
     try {
-        let { userName = "", realName = "" } = ctx.query;
+        let { userName = "", realName = "", startTime = null, endTime = null } = ctx.query;
         let { limit, offset } = utils.setPager(ctx.query.pageNum, ctx.query.pageSize);
         let condition = {
-            where: { userName, realName },
+            where: { userName, realName, startTime, endTime },
             limit,
             offset,
         };
@@ -49,6 +49,7 @@ const BatchDel = async (ctx) => {
         if (error) {
             return response.fail(ctx, error);
         }
+        ctx.state.operationLog.describe = "登录日志删除";
         return response.success(ctx);
     } catch (error) {
         console.log(error);

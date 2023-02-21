@@ -2,7 +2,7 @@
  * @Author: xunxiao
  * @Date: 2023-02-17 14:56:12
  * @LastEditors: xunxiao
- * @LastEditTime: 2023-02-17 16:11:13
+ * @LastEditTime: 2023-02-21 09:12:47
  * @Description: LogLoginService
  */
 import { Op } from "sequelize";
@@ -27,15 +27,21 @@ const GetAll = () => {
 
 //登录日志列表分页
 const GetListByPage = ({ where, limit, offset }) => {
-    return LogLogin.findAndCountAll({
-        where: {
-            userName: {
-                [Op.like]: `%${where.userName}%`,
-            },
-            realName: {
-                [Op.like]: `%${where.realName}%`,
-            },
+    let opWhere = {
+        userName: {
+            [Op.like]: `%${where.userName}%`,
         },
+        realName: {
+            [Op.like]: `%${where.realName}%`,
+        },
+    };
+    if (where.startTime && where.endTime) {
+        opWhere.loginTime = {
+            [Op.between]: [`${where.startTime}`, `${where.endTime}`],
+        };
+    }
+    return LogLogin.findAndCountAll({
+        where: opWhere,
         limit,
         offset,
     });
@@ -45,5 +51,5 @@ export default {
     Create,
     BatchDel,
     GetAll,
-    GetListByPage
+    GetListByPage,
 };
