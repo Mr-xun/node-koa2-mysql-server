@@ -2,7 +2,7 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-17 17:00:56
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-12-03 17:18:08
+ * @LastEditTime: 2023-02-22 15:45:59
  * @Description: SystemRoleService
  */
 import DB from "@root/db";
@@ -10,7 +10,6 @@ import { Op } from "sequelize";
 import systemModel from "@root/models/system";
 const SystemRole = systemModel.SystemRole.scope("hiddenAttr");
 const SystemMenu = systemModel.SystemMenu;
-const SystemUser = systemModel.SystemUser;
 
 //角色创建
 const Create = async (data) => {

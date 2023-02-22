@@ -3,7 +3,7 @@
  * @Date: 2022-09-11 16:14:39
  * @LastEditors: xunxiao
  * @LastEditTime: 2022-11-09 15:05:08
- * @Description: 角色菜单关联表
+ * @Description: 角色菜单关联表 
  */
 import Sequelize from "sequelize";
 import DB from "@root/db";

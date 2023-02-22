@@ -113,7 +113,7 @@ const GetOne = async (where) => {
     });
 };
 
-//获取单个用户
+//根据id获取用户信息
 const GetUserById = async (userId) => {
     return SystemUser.findByPk(userId, {
         include: [

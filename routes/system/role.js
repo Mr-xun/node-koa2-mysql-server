@@ -6,25 +6,25 @@
  * @Description: SystemRoleRoute
  */
 import Router from "koa-router";
-import sysRoleCtl from "@root/controller/system/RoleController";
+import SysRoleCtl from "@root/controller/system/RoleController";
 import ApiAuthMiddleware from "@root/middlewares/ApiAuthMiddleware";
 
 const router = new Router();
 router.prefix("/api/system/role");
 
 //角色创建
-router.post("/create", ApiAuthMiddleware("role:create"), sysRoleCtl.Create);
+router.post("/create", ApiAuthMiddleware("role:create"), SysRoleCtl.Create);
 
 //角色修改
-router.put("/update", ApiAuthMiddleware("role:update"), sysRoleCtl.Update);
+router.put("/update", ApiAuthMiddleware("role:update"), SysRoleCtl.Update);
 
 //角色列表
-router.get("/list", ApiAuthMiddleware("role:view"), sysRoleCtl.GetListByPage);
+router.get("/list", ApiAuthMiddleware("role:view"), SysRoleCtl.GetListByPage);
 
 //所用角色
-router.get("/all", sysRoleCtl.GetAll);
+router.get("/all", SysRoleCtl.GetAll);
 
 //角色删除
-router.delete("/delete/:ids", ApiAuthMiddleware("role:delete"), sysRoleCtl.BatchDel);
+router.delete("/delete/:ids", ApiAuthMiddleware("role:delete"), SysRoleCtl.BatchDel);
 
 export default router;

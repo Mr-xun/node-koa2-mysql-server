@@ -7,19 +7,19 @@
  */
 
 import Router from "koa-router";
-import logLoginCtl from "@root/controller/log/LoginController";
+import LogLoginCtl from "@root/controller/log/LoginController";
 import ApiAuthMiddleware from "@root/middlewares/ApiAuthMiddleware";
 
 const router = new Router();
 router.prefix("/api/log/login");
 
 //所用登录日志
-router.get("/all", ApiAuthMiddleware("loginLog:view"), logLoginCtl.GetAll);
+router.get("/all", ApiAuthMiddleware("loginLog:view"), LogLoginCtl.GetAll);
 
 //登录日志列表
-router.get("/list", ApiAuthMiddleware("loginLog:view"), logLoginCtl.GetListByPage);
+router.get("/list", ApiAuthMiddleware("loginLog:view"), LogLoginCtl.GetListByPage);
 
 //登录日志删除
-router.delete("/delete/:ids", ApiAuthMiddleware("loginLog:delete"), logLoginCtl.BatchDel);
+router.delete("/delete/:ids", ApiAuthMiddleware("loginLog:delete"), LogLoginCtl.BatchDel);
 
 export default router;

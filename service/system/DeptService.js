@@ -14,6 +14,13 @@ const Create = async (data) => {
 
 //部门更新
 const Update = async (data) => {
+    const instanceData = await SystemDept.findByPk(data.deptId);
+    if (!instanceData) {
+        return {
+            result: false,
+            error: "该部门不存在",
+        };
+    }
     return SystemDept.update(data, { where: { id: data.deptId } });
 };
 

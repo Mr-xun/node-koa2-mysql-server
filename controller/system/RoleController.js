@@ -2,7 +2,7 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-17 16:44:55
  * @LastEditors: xunxiao
- * @LastEditTime: 2023-02-20 17:53:15
+ * @LastEditTime: 2023-02-22 13:12:07
  * @Description: SystemRoleController
  */
 import utils from "@root/utils";
@@ -39,7 +39,6 @@ const Create = async (ctx) => {
 };
 //角色修改
 const Update = async (ctx) => {
-    
     const fromData = ctx.request.body;
     const rules = {
         roleId: [{ type: "number", required: true, message: "角色id不能为空" }],

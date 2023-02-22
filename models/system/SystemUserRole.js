@@ -2,8 +2,8 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-11 16:14:39
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-11-09 14:04:46
- * @Description: System_UserRoleModel 用户角色表
+ * @LastEditTime: 2023-02-22 09:34:05
+ * @Description: System_UserRoleModel 用户角色关联表
  */
 import Sequelize from "sequelize";
 import DB from "@root/db";

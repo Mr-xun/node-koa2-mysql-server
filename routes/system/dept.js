@@ -6,22 +6,22 @@
  * @Description: SystemDeptRoute
  */
 import Router from "koa-router";
-import sysDeptCtl from "@root/controller/system/DeptController";
+import SysDeptCtl from "@root/controller/system/DeptController";
 import ApiAuthMiddleware from "@root/middlewares/ApiAuthMiddleware";
 
 const router = new Router();
 router.prefix("/api/system/dept");
 
 //部门创建
-router.post("/create", ApiAuthMiddleware("dept:delete"), sysDeptCtl.Create);
+router.post("/create", ApiAuthMiddleware("dept:delete"), SysDeptCtl.Create);
 
 //部门修改
-router.put("/update", ApiAuthMiddleware("dept:delete"), sysDeptCtl.Update);
+router.put("/update", ApiAuthMiddleware("dept:delete"), SysDeptCtl.Update);
 
 //部门列表tree结构
-router.get("/tree", sysDeptCtl.GetTree);
+router.get("/tree", SysDeptCtl.GetTree);
 
 //部门删除
-router.delete("/delete/:ids", ApiAuthMiddleware("dept:delete"), sysDeptCtl.BatchDel);
+router.delete("/delete/:ids", ApiAuthMiddleware("dept:delete"), SysDeptCtl.BatchDel);
 
 export default router;

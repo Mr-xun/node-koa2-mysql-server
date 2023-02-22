@@ -16,6 +16,13 @@ const Create = async (data) => {
 
 //菜单更新
 const Update = async (data) => {
+    const instanceData = await SystemMenu.findByPk(data.menuId);
+    if (!instanceData) {
+        return {
+            result: false,
+            error: "该菜单不存在",
+        };
+    }
     return SystemMenu.update(data, { where: { id: data.menuId } });
 };
 
@@ -44,11 +51,6 @@ const BatchDel = async (ids) => {
         t.rollback();
         throw new Error(error);
     }
-    return SystemMenu.destroy({
-        where: {
-            id: ids,
-        },
-    });
 };
 
 //获取单个菜单
