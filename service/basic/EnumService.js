@@ -2,7 +2,7 @@
  * @Author: xunxiao
  * @Date: 2023-02-22 13:58:17
  * @LastEditors: xunxiao
- * @LastEditTime: 2023-02-22 16:51:02
+ * @LastEditTime: 2023-02-23 10:58:54
  * @Description: BasicEnumService
  */
 import DB from "@root/db";
@@ -15,9 +15,9 @@ const BasicEnumType = basicModel.BasicEnumType.scope("hiddenAttr");
 const EnumCreate = async (data) => {
     const t = await DB.sequelize.transaction();
     try {
-        const enumType = await BasicEnumType.findByPk(data.typeId);
+        const enumTypeInstance = await BasicEnumType.findByPk(data.typeId);
         const newData = await BasicEnum.create(data, { transaction: t });
-        await enumType.setBasic_enums(newData, { transaction: t }); //通过setBasic_enums方法在basic_enum表关联typeId
+        await enumTypeInstance.addBasic_enums(newData, { transaction: t }); //通过setBasic_enums方法在basic_enum表关联typeId
         await t.commit();
         return {
             data: newData,
@@ -31,7 +31,7 @@ const EnumCreate = async (data) => {
 
 //枚举字典更新
 const EnumUpdate = async (data) => {
-    const instanceData = await BasicEnum.findByPk(data.typeId);
+    const instanceData = await BasicEnum.findByPk(data.enumId);
     if (!instanceData) {
         return {
             result: false,
@@ -40,7 +40,7 @@ const EnumUpdate = async (data) => {
     }
     return BasicEnum.update(data, {
         where: {
-            id: data.typeId,
+            id: data.enumId,
         },
     });
 };
@@ -60,23 +60,55 @@ const EnumGetOne = async (where) => {
 };
 
 //获取全部枚举字典
-const EnumGetAll = async (condition) => {
-    return BasicEnum.findAll(condition);
+const EnumGetAll = async (where) => {
+    return BasicEnum.findAll({
+        where,
+        include: {
+            model: BasicEnumType,
+            attributes: ["typeId", "typeCode", "typeName"],
+        },
+        attributes: { exclude: ["basicEnumTypeTypeId"] },
+    });
+};
+
+//获取全部枚举字典通过type
+const EnumGetAllByType = async (where) => {
+    return BasicEnum.findAll({
+        include: {
+            model: BasicEnumType,
+            where: {
+                typeId: {
+                    [Op.like]: `%${where.typeId}`,
+                },
+                typeCode: {
+                    [Op.like]: `%${where.typeCode}`,
+                },
+            },
+            attributes: ["typeId", "typeCode", "typeName"],
+        },
+        attributes: { exclude: ["basicEnumTypeTypeId"] },
+    });
 };
 
 //枚举字典列表分页
 const EnumListByPage = async ({ where, limit, offset }) => {
     return BasicEnum.findAndCountAll({
         where: {
-            typeName: {
-                [Op.like]: `%${where.typeName}%`,
+            enumName: {
+                [Op.like]: `%${where.enumName}%`,
             },
-            typeCode: {
-                [Op.like]: `%${where.typeCode}%`,
+            enumCode: {
+                [Op.like]: `%${where.enumCode}%`,
             },
+        },
+        include: {
+            model: BasicEnumType,
+            attributes: ["typeId", "typeCode", "typeName"],
         },
         limit,
         offset,
+        attributes: { exclude: ["basicEnumTypeTypeId"] },
+        distinct: true,
     });
 };
 export default {
@@ -85,5 +117,6 @@ export default {
     EnumBatchDelete,
     EnumGetOne,
     EnumGetAll,
+    EnumGetAllByType,
     EnumListByPage,
 };

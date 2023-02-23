@@ -2,7 +2,7 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-10 16:31:26
  * @LastEditors: xunxiao
- * @LastEditTime: 2023-02-21 15:34:19
+ * @LastEditTime: 2023-02-23 09:30:02
  * @Description: SystemUserController
  */
 import utils from "@root/utils";
@@ -207,7 +207,6 @@ const Update = async (ctx) => {
 //用户密码重置
 const PasswordReset = async (ctx) => {
     const fromData = ctx.request.body;
-    console.log(ctx.request.body, "ctx.request.body");
     const rules = {
         userIds: [{ type: "string", required: true, message: "用户Id集合不能为空" }],
     };

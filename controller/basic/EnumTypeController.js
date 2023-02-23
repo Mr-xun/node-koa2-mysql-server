@@ -2,7 +2,7 @@
  * @Author: xunxiao
  * @Date: 2023-02-22 10:19:50
  * @LastEditors: xunxiao
- * @LastEditTime: 2023-02-22 13:53:31
+ * @LastEditTime: 2023-02-23 10:38:26
  * @Description: BasicEnumTypeController
  */
 import utils from "@root/utils";
@@ -105,6 +105,22 @@ const EnumTypeGetAll = async (ctx) => {
     }
 };
 
+//获取全部枚举类型字典
+const EnumTypeAllDict = async (ctx) => {
+    try {
+        const rows = await BasicEnumTypeService.EnumTypeAllDict();
+        let list = rows.map((row) => row.dataValues);
+        list.forEach((item) => {
+            item.enumList = item.basic_enums;
+            delete item.basic_enums;
+        });
+        response.success(ctx, list);
+    } catch (error) {
+        console.log(error);
+        return response.error(ctx, "系统异常");
+    }
+};
+
 //枚举类型批量删除
 const EnumTypeBatchDelete = async (ctx) => {
     const { ids } = ctx.params;
@@ -130,5 +146,6 @@ export default {
     EnumTypeUpdate,
     EnumTypeListByPage,
     EnumTypeGetAll,
+    EnumTypeAllDict,
     EnumTypeBatchDelete,
 };

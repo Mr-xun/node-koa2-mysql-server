@@ -151,3 +151,6 @@
 [2023-02-22T17:23:58.778] [INFO] access - path:/api/basic/enum/create | method:POST | ua:apifox/1.0.0 (https://www.apifox.cn)
 [2023-02-22T17:25:09.151] [INFO] access - path:/api/basic/enum/create | method:POST | ua:apifox/1.0.0 (https://www.apifox.cn)
 [2023-02-22T17:25:35.039] [INFO] access - path:/api/basic/enum/create | method:POST | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-22T17:26:30.377] [INFO] access - path:/api/basic/enum/create | method:POST | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-22T17:26:36.384] [INFO] access - path:/api/basic/enum/create | method:POST | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-22T17:26:38.480] [INFO] access - path:/api/basic/enum/create | method:POST | ua:apifox/1.0.0 (https://www.apifox.cn)

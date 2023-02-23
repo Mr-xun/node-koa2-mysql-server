@@ -2,7 +2,7 @@
  * @Author: xunxiao
  * @Date: 2023-02-22 13:57:41
  * @LastEditors: xunxiao
- * @LastEditTime: 2023-02-22 17:25:29
+ * @LastEditTime: 2023-02-23 11:00:50
  * @Description: BasicEnumController
  */
 
@@ -55,23 +55,26 @@ const EnumUpdate = async (ctx) => {
     const fromData = ctx.request.body;
     const rules = {
         typeId: [{ type: "number", required: true, message: "枚举类型id不能为空" }],
-        typeCode: [{ type: "string", required: true, message: "枚举类型编码不能为空" }],
-        enumId: [{ type: "number", required: true, message: "枚举字典id不能为空" }],
-        enumName: [{ type: "string", required: true, message: "枚举字典名称不能为空" }],
-        enumCode: [{ type: "string", required: true, message: "枚举字典编码不能为空" }],
+        enumId: [{ type: "number", required: true, message: "字典id不能为空" }],
+        enumName: [{ type: "string", required: true, message: "字典名称不能为空" }],
+        enumCode: [{ type: "string", required: true, message: "字典编码不能为空" }],
     };
     const { data, error } = await validate(fromData, rules);
     if (error) {
         return response.fail(ctx, error);
     }
     try {
-        const existEnumByCode = await BasicEnumService.EnumGetOne({ enumCode: data.enumCode });
-        if (existEnumByCode && existEnumByCode.typeId != data.typeId) {
-            return response.fail(ctx, "该枚举字典编码已存在");
+        const enumTypeRow = await BasicEnumTypeService.EnumTypeGetById(data.typeId);
+        if (!enumTypeRow) {
+            return response.fail(ctx, "该枚举类型不存在");
         }
-        const existEnumByName = await BasicEnumService.EnumGetOne({ enumName: data.enumName });
-        if (existEnumByName && existEnumByName.typeId != data.typeId) {
-            return response.fail(ctx, "该枚举字典名称已存在");
+        for (let item of enumTypeRow.basic_enums) {
+            if (item.enumCode == data.enumCode && item.enumId != data.enumId) {
+                return response.fail(ctx, "该枚举类型下字典编码已存在");
+            }
+            if (item.enumName == data.enumName && item.enumId != data.enumId) {
+                return response.fail(ctx, "该枚举类型下字典名称已存在");
+            }
         }
         const { error } = await BasicEnumService.EnumUpdate(data);
         if (error) {
@@ -88,15 +91,22 @@ const EnumUpdate = async (ctx) => {
 //枚举字典列表
 const EnumListByPage = async (ctx) => {
     try {
-        let { typeCode = "", typeName = "" } = ctx.query;
+        let { enumCode = "", enumName = "" } = ctx.query;
         let { limit, offset } = utils.setPager(ctx.query.pageNum, ctx.query.pageSize);
         let condition = {
-            where: { typeCode, typeName },
+            where: { enumCode, enumName },
             limit,
             offset,
         };
         const { rows, count } = await BasicEnumService.EnumListByPage(condition);
-        response.success(ctx, paginate(rows, count, limit));
+        let list = rows.map((row) => row.dataValues);
+        list.forEach((item) => {
+            item.typeId = item.basic_enum_type?.dataValues?.typeId;
+            item.typeCode = item.basic_enum_type?.dataValues?.typeCode;
+            item.typeName = item.basic_enum_type?.dataValues?.typeName;
+            delete item.basic_enum_type;
+        });
+        response.success(ctx, paginate(list, count, limit));
     } catch (error) {
         console.log(error);
         return response.error(ctx, "系统异常");
@@ -107,6 +117,33 @@ const EnumListByPage = async (ctx) => {
 const EnumGetAll = async (ctx) => {
     try {
         const rows = await BasicEnumService.EnumGetAll();
+        let list = rows.map((row) => row.dataValues);
+        console.log(list,123)
+        list.forEach((item) => {
+            item.typeId = item.basic_enum_type?.dataValues?.typeId;
+            item.typeCode = item.basic_enum_type?.dataValues?.typeCode;
+            item.typeName = item.basic_enum_type?.dataValues?.typeName;
+            delete item.basic_enum_type;
+        });
+        response.success(ctx, rows);
+    } catch (error) {
+        console.log(error);
+        return response.error(ctx, "系统异常");
+    }
+};
+
+//通过typeCode获取枚举字典
+const EnumGetAllByType = async (ctx) => {
+    try {
+        let { typeId = "", typeCode = "" } = ctx.query;
+        const rows = await BasicEnumService.EnumGetAllByType({ typeId, typeCode });
+        let list = rows.map((row) => row.dataValues);
+        list.forEach((item) => {
+            item.typeId = item.basic_enum_type?.dataValues?.typeId;
+            item.typeCode = item.basic_enum_type?.dataValues?.typeCode;
+            item.typeName = item.basic_enum_type?.dataValues?.typeName;
+            delete item.basic_enum_type;
+        });
         response.success(ctx, rows);
     } catch (error) {
         console.log(error);
@@ -139,5 +176,6 @@ export default {
     EnumUpdate,
     EnumListByPage,
     EnumGetAll,
+    EnumGetAllByType,
     EnumBatchDelete,
 };
