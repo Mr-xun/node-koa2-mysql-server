@@ -2,7 +2,7 @@
  * @Author: xunxiao
  * @Date: 2023-02-17 14:56:12
  * @LastEditors: xunxiao
- * @LastEditTime: 2023-02-21 09:31:09
+ * @LastEditTime: 2023-02-24 15:26:05
  * @Description: LogOperationService
  */
 import { Op } from "sequelize";
@@ -45,6 +45,7 @@ const GetListByPage = ({ where, limit, offset }) => {
     }
     return LogOperation.findAndCountAll({
         where: opWhere,
+        order: [["createTime", "DESC"]],
         limit,
         offset,
     });

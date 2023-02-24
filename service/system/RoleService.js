@@ -2,7 +2,7 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-17 17:00:56
  * @LastEditors: xunxiao
- * @LastEditTime: 2023-02-22 15:45:59
+ * @LastEditTime: 2023-02-24 15:33:47
  * @Description: SystemRoleService
  */
 import DB from "@root/db";
@@ -128,6 +128,7 @@ const GetListByPage = ({ where, limit, offset }) => {
                 [Op.like]: `%${where.roleName}%`,
             },
         },
+        order: [["createTime", "DESC"]],
         limit,
         offset,
         distinct: true,

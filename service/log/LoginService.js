@@ -2,7 +2,7 @@
  * @Author: xunxiao
  * @Date: 2023-02-17 14:56:12
  * @LastEditors: xunxiao
- * @LastEditTime: 2023-02-21 09:12:47
+ * @LastEditTime: 2023-02-24 15:25:50
  * @Description: LogLoginService
  */
 import { Op } from "sequelize";
@@ -42,6 +42,7 @@ const GetListByPage = ({ where, limit, offset }) => {
     }
     return LogLogin.findAndCountAll({
         where: opWhere,
+        order: [["loginTime", "DESC"]],
         limit,
         offset,
     });

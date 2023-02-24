@@ -2,7 +2,7 @@
  * @Author: xunxiao
  * @Date: 2023-02-22 13:57:07
  * @LastEditors: xunxiao
- * @LastEditTime: 2023-02-23 11:03:29
+ * @LastEditTime: 2023-02-24 11:11:20
  * @Description: BasicEnumRoute
  */
 
@@ -26,7 +26,7 @@ router.get("/list", ApiAuthMiddleware("enum:view"), BasicEnumCtl.EnumListByPage)
 router.get("/all", BasicEnumCtl.EnumGetAll);
 
 //获取枚举字典通过type
-router.get("/allByType", ApiAuthMiddleware("enum:view"), BasicEnumCtl.EnumGetAllByType);
+router.get("/allByType", BasicEnumCtl.EnumGetAllByType);
 
 //枚举字典删除
 router.delete("/delete/:ids", ApiAuthMiddleware("enum:delete"), BasicEnumCtl.EnumBatchDelete);

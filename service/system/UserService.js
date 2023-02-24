@@ -2,7 +2,7 @@
  * @Author: xunxiao 17810204418@163.com
  * @Date: 2022-09-11 16:13:33
  * @LastEditors: xunxiao
- * @LastEditTime: 2022-12-07 08:56:45
+ * @LastEditTime: 2023-02-24 15:33:16
  * @Description: SystemUserService
  */
 import DB from "@root/db";
@@ -151,6 +151,7 @@ const GetListByPage = ({ where, limit, offset }) => {
                 [Op.like]: `%${where.realName}%`,
             },
         },
+        order: [["createTime", "DESC"]],
         limit,
         offset,
         attributes: { exclude: ["password"] },
