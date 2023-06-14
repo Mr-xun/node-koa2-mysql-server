@@ -1,10 +1,4 @@
-<!--
- * @Author: xunxiao
- * @Date: 2022-08-28 15:39:36
- * @LastEditors: xunxiao
- * @LastEditTime: 2023-02-23 11:11:01
- * @Description: 
--->
+
 <h1 align="center">Welcome to node-koa-mysql-server 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
@@ -20,7 +14,7 @@
 ## 平台简介
 
 - 一套 Node + Koa + MySQL 自我学习成长项目
-- - 后端采用 Node.js + Koa2 + Mysql 等实现接口封装，对应前端项目：[vue3-vite-elplus-web](https://github.com/Mr-xun/vue3-vite-elplus-web)。
+- 后端采用 Node.js + Koa2 + Mysql 等实现接口封装，对应前端项目：[vue3-vite-elplus-web](https://github.com/Mr-xun/vue3-vite-elplus-web)。
 - 前端采用 Vue3.x  + Vite2.x + Vuex + Element Plus + Tailwindcss
 - 权限使用 Jwt 认证。
 - 支持用户角色菜单权限设置，支持菜单按钮级别控制。

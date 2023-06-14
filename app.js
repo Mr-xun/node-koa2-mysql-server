@@ -2,7 +2,7 @@
  * @Author: xunxiao
  * @Date: 2022-09-13 11:14:22
  * @LastEditors: xunxiao
- * @LastEditTime: 2023-02-21 14:37:31
+ * @LastEditTime: 2023-02-27 18:26:27
  * @Description: entry
  */
 import Koa from "koa";
@@ -10,6 +10,7 @@ import views from "koa-views";
 import json from "koa-json";
 import onerror from "koa-onerror";
 import bodyparser from "koa-bodyparser";
+import koaBody from "koa-body";
 import logger from "koa-logger";
 import "module-alias/register";
 import "dotenv/config";
@@ -24,6 +25,7 @@ import router from "./routes";
 const app = new Koa();
 //连接数据库
 db.connect();
+
 
 app.use(
     cors({
@@ -45,9 +47,15 @@ app.use(
 onerror(app);
 
 // middlewares
+
 app.use(
-    bodyparser({
-        enableTypes: ["json", "form", "text"],
+    koaBody({
+        multipart: true,
+        formidable: {
+            maxFileSize: 200 * 1024 * 1024, //设置上传文件大小最大限制，默认 2M
+            // uploadDir: path.join(__dirname, '..', 'static/upload'), // 上传目录
+            keepExtensions: true,// 保留文件扩展名
+        },
     })
 );
 app.use(json());

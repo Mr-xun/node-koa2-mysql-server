@@ -1,0 +1,57 @@
+[2023-02-27T13:19:27.268] [INFO] access - path:/api/system/user/login | method:POST | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+[2023-02-27T13:19:27.499] [INFO] access - path:/api/system/user/info | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+[2023-02-27T13:19:27.502] [INFO] access - path:/api/system/user/menu | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+[2023-02-27T13:19:32.888] [INFO] access - path:/api/log/operation/list?pageSize=10&pageNum=1&total=0&page=1 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+[2023-02-27T13:19:40.296] [INFO] access - path:/api/log/login/list?pageSize=10&pageNum=1&total=0&page=1 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+[2023-02-27T13:19:49.542] [INFO] access - path:/api/basic/enumType/list?pageSize=10&pageNum=1&total=0&page=1 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+[2023-02-27T13:19:51.342] [INFO] access - path:/api/basic/enum/allByType?typeId=5 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+[2023-02-27T13:19:51.850] [INFO] access - path:/api/basic/enum/allByType?typeId=4 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+[2023-02-27T13:19:52.231] [INFO] access - path:/api/basic/enum/allByType?typeId=2 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+[2023-02-27T13:19:52.555] [INFO] access - path:/api/basic/enum/allByType?typeId=2 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+[2023-02-27T13:19:54.219] [INFO] access - path:/api/basic/enum/allByType?typeId=4 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+[2023-02-27T13:19:55.025] [INFO] access - path:/api/basic/enum/allByType?typeId=5 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+[2023-02-27T13:19:55.833] [INFO] access - path:/api/basic/enum/allByType?typeId=4 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+[2023-02-27T13:19:56.165] [INFO] access - path:/api/basic/enum/allByType?typeId=4 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+[2023-02-27T13:19:56.907] [INFO] access - path:/api/basic/enum/allByType?typeId=2 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+[2023-02-27T13:20:01.233] [INFO] access - path:/api/basic/enum/allByType?typeId=4 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+[2023-02-27T13:20:02.274] [INFO] access - path:/api/basic/enum/allByType?typeId=5 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+[2023-02-27T13:20:03.084] [INFO] access - path:/api/basic/enum/allByType?typeId=4 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+[2023-02-27T13:20:03.562] [INFO] access - path:/api/basic/enum/allByType?typeId=5 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+[2023-02-27T13:20:07.789] [INFO] access - path:/api/basic/enum/allByType?typeId=4 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+[2023-02-27T13:20:09.001] [INFO] access - path:/api/basic/enum/allByType?typeId=2 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+[2023-02-27T13:20:11.002] [INFO] access - path:/api/basic/enum/allByType?typeId=4 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+[2023-02-27T13:20:11.439] [INFO] access - path:/api/basic/enum/allByType?typeId=5 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+[2023-02-27T13:20:11.880] [INFO] access - path:/api/basic/enum/allByType?typeId=2 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+[2023-02-27T13:20:18.496] [INFO] access - path:/api/basic/enum/update | method:PUT | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+[2023-02-27T13:20:18.562] [INFO] access - path:/api/basic/enum/allByType?typeId=2 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+[2023-02-27T13:20:22.698] [INFO] access - path:/api/log/login/list?pageSize=10&pageNum=1&total=0&page=1 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+[2023-02-27T13:20:23.643] [INFO] access - path:/api/log/operation/list?pageSize=10&pageNum=1&total=0&page=1 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+[2023-02-27T14:24:43.991] [INFO] access - path:/api/log/operation/list?pageSize=10&pageNum=1&total=0&page=1 | method:GET | ua:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+[2023-02-27T17:58:46.480] [INFO] access - path:/api/storage/file/upload | method:POST | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-27T18:00:03.089] [INFO] access - path:/api/storage/file/upload | method:POST | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-27T18:01:57.347] [INFO] access - path:/api/storage/file/upload | method:POST | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-27T18:04:48.427] [INFO] access - path:/api/storage/file/upload | method:POST | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-27T18:05:49.857] [INFO] access - path:/api/storage/file/upload | method:POST | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-27T18:06:26.242] [INFO] access - path:/api/storage/file/upload | method:POST | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-27T18:06:50.966] [INFO] access - path:/api/storage/file/upload | method:POST | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-27T18:08:47.012] [INFO] access - path:/api/storage/file/upload | method:POST | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-27T18:09:50.872] [INFO] access - path:/api/storage/file/upload | method:POST | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-27T18:10:15.563] [INFO] access - path:/api/storage/file/upload | method:POST | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-27T18:13:32.629] [INFO] access - path:/api/storage/file/upload | method:POST | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-27T18:14:20.104] [INFO] access - path:/api/storage/file/upload | method:POST | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-27T18:14:46.528] [INFO] access - path:/api/storage/file/upload | method:POST | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-27T18:15:15.127] [INFO] access - path:/api/storage/file/upload | method:POST | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-27T18:15:17.288] [INFO] access - path:/api/storage/file/upload | method:POST | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-27T18:15:22.119] [INFO] access - path:/api/storage/file/upload | method:POST | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-27T18:15:52.888] [INFO] access - path:/api/storage/file/upload | method:POST | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-27T18:16:17.082] [INFO] access - path:/api/basic/enumType/create | method:POST | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-27T18:17:16.505] [INFO] access - path:/api/storage/file/upload | method:POST | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-27T18:17:22.584] [INFO] access - path:/api/storage/file/upload | method:POST | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-27T18:17:25.169] [INFO] access - path:/api/storage/file/upload | method:POST | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-27T18:17:48.216] [INFO] access - path:/api/storage/file/upload | method:POST | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-27T18:18:07.397] [INFO] access - path:/api/storage/file/upload | method:POST | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-27T18:21:51.912] [INFO] access - path:/api/storage/file/upload | method:POST | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-27T18:22:48.974] [INFO] access - path:/api/storage/file/upload | method:POST | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-27T18:23:25.224] [INFO] access - path:/api/storage/file/upload | method:POST | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-27T18:24:21.590] [INFO] access - path:/api/storage/file/upload | method:POST | ua:apifox/1.0.0 (https://www.apifox.cn)
+[2023-02-27T18:26:34.214] [INFO] access - path:/api/basic/enum/create | method:POST | ua:apifox/1.0.0 (https://www.apifox.cn)

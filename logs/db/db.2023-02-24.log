@@ -46272,3 +46272,967 @@
     keysEscaped: true
   }
 ]
+[2023-02-24T15:49:22.732] [INFO] db - [
+  'Executing (default): SELECT `system_user`.`id` AS `userId`, `system_user`.`user_name` AS `userName`, `system_user`.`real_name` AS `realName`, `system_user`.`gender`, `system_user`.`avatar`, `system_user`.`mobile`, `system_user`.`email`, `system_user`.`dept_id` AS `deptId`, `system_user`.`org_id` AS `orgId`, `system_user`.`status`, `system_user`.`description`, `system_user`.`last_login_time` AS `lastLoginTime`, `system_user`.`create_time` AS `createTime`, `system_user`.`update_time` AS `updateTime`, `system_roles`.`id` AS `system_roles.roleId`, `system_roles`.`id` AS `system_roles.id`, `system_roles`.`role_name` AS `system_roles.roleName`, `system_roles->system_menus`.`id` AS `system_roles.system_menus.menuId`, `system_roles->system_menus`.`menu_name` AS `system_roles.system_menus.menuName`, `system_roles->system_menus`.`parent_id` AS `system_roles.system_menus.parentId`, `system_roles->system_menus`.`path` AS `system_roles.system_menus.path`, `system_roles->system_menus`.`component` AS `system_roles.system_menus.component`, `system_roles->system_menus`.`perms` AS `system_roles.system_menus.perms`, `system_roles->system_menus`.`order_num` AS `system_roles.system_menus.orderNum`, `system_roles->system_menus`.`icon` AS `system_roles.system_menus.icon`, `system_roles->system_menus`.`type` AS `system_roles.system_menus.type` FROM `system_users` AS `system_user` LEFT OUTER JOIN ( `system_user_roles` AS `system_roles->system_user_role` INNER JOIN `system_roles` AS `system_roles` ON `system_roles`.`id` = `system_roles->system_user_role`.`role_id` AND (`system_roles->system_user_role`.`delete_time` IS NULL)) ON `system_user`.`id` = `system_roles->system_user_role`.`user_id` AND (`system_roles`.`delete_time` IS NULL) LEFT OUTER JOIN ( `system_role_menus` AS `system_roles->system_menus->system_role_menu` INNER JOIN `system_menus` AS `system_roles->system_menus` ON `system_roles->system_menus`.`id` = `system_roles->system_menus->system_role_menu`.`menu_id` AND (`system_roles->system_menus->system_role_menu`.`delete_time` IS NULL)) ON `system_roles`.`id` = `system_roles->system_menus->system_role_menu`.`role_id` AND (`system_roles->system_menus`.`delete_time` IS NULL) WHERE (`system_user`.`delete_time` IS NULL AND `system_user`.`id` = 1);',
+  {
+    plain: true,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    include: [ [Object] ],
+    attributes: [
+      [Array],       [Array],
+      [Array],       'gender',
+      'avatar',      'mobile',
+      'email',       [Array],
+      [Array],       'status',
+      'description', [Array],
+      [Array],       [Array]
+    ],
+    where: '(`system_user`.`delete_time` IS NULL AND `system_user`.`id` = 1)',
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'userId',      'userName',
+      'realName',    'gender',
+      'avatar',      'mobile',
+      'email',       'deptId',
+      'orgId',       'status',
+      'description', 'lastLoginTime',
+      'createTime',  'updateTime'
+    ],
+    hasJoin: true,
+    model: system_user,
+    includeNames: [ 'system_roles' ],
+    includeMap: { system_roles: [Object] },
+    hasSingleAssociation: true,
+    hasMultiAssociation: true,
+    topModel: system_user,
+    topLimit: undefined,
+    hasDuplicating: true,
+    hasRequired: false,
+    hasWhere: false,
+    hasIncludeWhere: false,
+    hasIncludeRequired: false,
+    subQuery: false,
+    tableNames: [
+      'system_users',
+      'system_roles',
+      'undefined',
+      'system_menus',
+      'system_role_menus',
+      'system_user_roles'
+    ],
+    type: 'SELECT',
+    keysEscaped: true
+  }
+]
+[2023-02-24T15:49:22.741] [INFO] db - [
+  "Executing (default): SELECT count(DISTINCT(`system_role`.`id`)) AS `count` FROM `system_roles` AS `system_role` LEFT OUTER JOIN ( `system_role_menus` AS `system_menus->system_role_menu` INNER JOIN `system_menus` AS `system_menus` ON `system_menus`.`id` = `system_menus->system_role_menu`.`menu_id` AND (`system_menus->system_role_menu`.`delete_time` IS NULL)) ON `system_role`.`id` = `system_menus->system_role_menu`.`role_id` AND (`system_menus`.`delete_time` IS NULL) WHERE (`system_role`.`delete_time` IS NULL AND `system_role`.`role_name` LIKE '%%');",
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    include: [ [Object] ],
+    where: "(`system_role`.`delete_time` IS NULL AND `system_role`.`role_name` LIKE '%%')",
+    order: null,
+    limit: null,
+    offset: null,
+    distinct: true,
+    hooks: true,
+    dataType: INTEGER {
+      options: {},
+      _length: undefined,
+      _zerofill: undefined,
+      _decimals: undefined,
+      _precision: undefined,
+      _scale: undefined,
+      _unsigned: undefined
+    },
+    includeIgnoreAttributes: false,
+    attributes: [ [Array] ],
+    model: system_role,
+    includeNames: [ 'system_menus' ],
+    includeMap: { system_menus: [Object] },
+    hasSingleAssociation: true,
+    hasMultiAssociation: true,
+    topModel: system_role,
+    topLimit: null,
+    hasDuplicating: true,
+    hasRequired: false,
+    hasWhere: false,
+    hasIncludeWhere: false,
+    hasIncludeRequired: false,
+    subQuery: false,
+    type: 'SELECT',
+    keysEscaped: true
+  }
+]
+[2023-02-24T15:49:22.742] [INFO] db - [
+  "Executing (default): SELECT `system_role`.*, `system_menus`.`id` AS `system_menus.menuId`, `system_menus`.`id` AS `system_menus.id` FROM (SELECT `system_role`.`id` AS `roleId`, `system_role`.`role_name` AS `roleName`, `system_role`.`remark`, `system_role`.`create_time` AS `createTime`, `system_role`.`update_time` AS `updateTime` FROM `system_roles` AS `system_role` WHERE (`system_role`.`delete_time` IS NULL AND `system_role`.`role_name` LIKE '%%') ORDER BY `system_role`.`create_time` DESC LIMIT 0, 10) AS `system_role` LEFT OUTER JOIN ( `system_role_menus` AS `system_menus->system_role_menu` INNER JOIN `system_menus` AS `system_menus` ON `system_menus`.`id` = `system_menus->system_role_menu`.`menu_id` AND (`system_menus->system_role_menu`.`delete_time` IS NULL)) ON `system_role`.`roleId` = `system_menus->system_role_menu`.`role_id` AND (`system_menus`.`delete_time` IS NULL) ORDER BY `createTime` DESC;",
+  {
+    plain: false,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    include: [ [Object] ],
+    where: "(`system_role`.`delete_time` IS NULL AND `system_role`.`role_name` LIKE '%%')",
+    order: [ [Array] ],
+    limit: 10,
+    offset: 0,
+    distinct: true,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [ [Array], [Array], 'remark', [Array], [Array] ],
+    originalAttributes: [ 'roleId', 'roleName', 'remark', 'createTime', 'updateTime' ],
+    hasJoin: true,
+    model: system_role,
+    includeNames: [ 'system_menus' ],
+    includeMap: { system_menus: [Object] },
+    hasSingleAssociation: true,
+    hasMultiAssociation: true,
+    topModel: system_role,
+    topLimit: 10,
+    hasDuplicating: true,
+    hasRequired: false,
+    hasWhere: false,
+    subQuery: true,
+    hasIncludeWhere: false,
+    hasIncludeRequired: false,
+    tableNames: [
+      'system_roles',
+      'system_menus',
+      'undefined',
+      'system_role_menus'
+    ],
+    type: 'SELECT',
+    keysEscaped: true
+  }
+]
+[2023-02-24T15:49:23.891] [INFO] db - [
+  'Executing (default): SELECT `id` AS `deptId`, `dept_name` AS `deptName`, `parent_id` AS `parentId`, `order_num` AS `orderNum`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_depts` AS `system_dept` WHERE (`system_dept`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [ [Array], [Array], [Array], [Array], [Array], [Array] ],
+    originalAttributes: [
+      'deptId',
+      'deptName',
+      'parentId',
+      'orderNum',
+      'createTime',
+      'updateTime'
+    ],
+    where: '(`system_dept`.`delete_time` IS NULL)',
+    tableNames: [ 'system_depts' ],
+    type: 'SELECT',
+    model: system_dept
+  }
+]
+[2023-02-24T15:49:23.898] [INFO] db - [
+  'Executing (default): SELECT `id` AS `roleId`, `role_name` AS `roleName`, `remark`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_roles` AS `system_role` WHERE (`system_role`.`delete_time` IS NULL);',
+  {
+    plain: false,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [ [Array], [Array], 'remark', [Array], [Array] ],
+    originalAttributes: [ 'roleId', 'roleName', 'remark', 'createTime', 'updateTime' ],
+    where: '(`system_role`.`delete_time` IS NULL)',
+    tableNames: [ 'system_roles' ],
+    type: 'SELECT',
+    model: system_role
+  }
+]
+[2023-02-24T15:49:23.902] [INFO] db - [
+  'Executing (default): SELECT `system_user`.`id` AS `userId`, `system_user`.`user_name` AS `userName`, `system_user`.`real_name` AS `realName`, `system_user`.`gender`, `system_user`.`avatar`, `system_user`.`mobile`, `system_user`.`email`, `system_user`.`dept_id` AS `deptId`, `system_user`.`org_id` AS `orgId`, `system_user`.`status`, `system_user`.`description`, `system_user`.`last_login_time` AS `lastLoginTime`, `system_user`.`create_time` AS `createTime`, `system_user`.`update_time` AS `updateTime`, `system_roles`.`id` AS `system_roles.roleId`, `system_roles`.`id` AS `system_roles.id`, `system_roles`.`role_name` AS `system_roles.roleName`, `system_roles->system_menus`.`id` AS `system_roles.system_menus.menuId`, `system_roles->system_menus`.`menu_name` AS `system_roles.system_menus.menuName`, `system_roles->system_menus`.`parent_id` AS `system_roles.system_menus.parentId`, `system_roles->system_menus`.`path` AS `system_roles.system_menus.path`, `system_roles->system_menus`.`component` AS `system_roles.system_menus.component`, `system_roles->system_menus`.`perms` AS `system_roles.system_menus.perms`, `system_roles->system_menus`.`order_num` AS `system_roles.system_menus.orderNum`, `system_roles->system_menus`.`icon` AS `system_roles.system_menus.icon`, `system_roles->system_menus`.`type` AS `system_roles.system_menus.type` FROM `system_users` AS `system_user` LEFT OUTER JOIN ( `system_user_roles` AS `system_roles->system_user_role` INNER JOIN `system_roles` AS `system_roles` ON `system_roles`.`id` = `system_roles->system_user_role`.`role_id` AND (`system_roles->system_user_role`.`delete_time` IS NULL)) ON `system_user`.`id` = `system_roles->system_user_role`.`user_id` AND (`system_roles`.`delete_time` IS NULL) LEFT OUTER JOIN ( `system_role_menus` AS `system_roles->system_menus->system_role_menu` INNER JOIN `system_menus` AS `system_roles->system_menus` ON `system_roles->system_menus`.`id` = `system_roles->system_menus->system_role_menu`.`menu_id` AND (`system_roles->system_menus->system_role_menu`.`delete_time` IS NULL)) ON `system_roles`.`id` = `system_roles->system_menus->system_role_menu`.`role_id` AND (`system_roles->system_menus`.`delete_time` IS NULL) WHERE (`system_user`.`delete_time` IS NULL AND `system_user`.`id` = 1);',
+  {
+    plain: true,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    include: [ [Object] ],
+    attributes: [
+      [Array],       [Array],
+      [Array],       'gender',
+      'avatar',      'mobile',
+      'email',       [Array],
+      [Array],       'status',
+      'description', [Array],
+      [Array],       [Array]
+    ],
+    where: '(`system_user`.`delete_time` IS NULL AND `system_user`.`id` = 1)',
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'userId',      'userName',
+      'realName',    'gender',
+      'avatar',      'mobile',
+      'email',       'deptId',
+      'orgId',       'status',
+      'description', 'lastLoginTime',
+      'createTime',  'updateTime'
+    ],
+    hasJoin: true,
+    model: system_user,
+    includeNames: [ 'system_roles' ],
+    includeMap: { system_roles: [Object] },
+    hasSingleAssociation: true,
+    hasMultiAssociation: true,
+    topModel: system_user,
+    topLimit: undefined,
+    hasDuplicating: true,
+    hasRequired: false,
+    hasWhere: false,
+    hasIncludeWhere: false,
+    hasIncludeRequired: false,
+    subQuery: false,
+    tableNames: [
+      'system_users',
+      'system_roles',
+      'undefined',
+      'system_menus',
+      'system_role_menus',
+      'system_user_roles'
+    ],
+    type: 'SELECT',
+    keysEscaped: true
+  }
+]
+[2023-02-24T15:49:23.914] [INFO] db - [
+  "Executing (default): SELECT count(DISTINCT(`system_user`.`id`)) AS `count` FROM `system_users` AS `system_user` LEFT OUTER JOIN ( `system_user_roles` AS `system_roles->system_user_role` INNER JOIN `system_roles` AS `system_roles` ON `system_roles`.`id` = `system_roles->system_user_role`.`role_id` AND (`system_roles->system_user_role`.`delete_time` IS NULL)) ON `system_user`.`id` = `system_roles->system_user_role`.`user_id` AND (`system_roles`.`delete_time` IS NULL) WHERE (`system_user`.`delete_time` IS NULL AND (`system_user`.`user_name` LIKE '%%' AND `system_user`.`real_name` LIKE '%%'));",
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: "(`system_user`.`delete_time` IS NULL AND (`system_user`.`user_name` LIKE '%%' AND `system_user`.`real_name` LIKE '%%'))",
+    order: null,
+    limit: null,
+    offset: null,
+    attributes: [ [Array] ],
+    include: [ [Object] ],
+    distinct: true,
+    hooks: true,
+    dataType: INTEGER {
+      options: {},
+      _length: undefined,
+      _zerofill: undefined,
+      _decimals: undefined,
+      _precision: undefined,
+      _scale: undefined,
+      _unsigned: undefined
+    },
+    includeIgnoreAttributes: false,
+    model: system_user,
+    includeNames: [ 'system_roles' ],
+    includeMap: { system_roles: [Object] },
+    hasSingleAssociation: true,
+    hasMultiAssociation: true,
+    topModel: system_user,
+    topLimit: null,
+    hasDuplicating: true,
+    hasRequired: false,
+    hasWhere: false,
+    hasIncludeWhere: false,
+    hasIncludeRequired: false,
+    subQuery: false,
+    type: 'SELECT',
+    keysEscaped: true
+  }
+]
+[2023-02-24T15:49:23.915] [INFO] db - [
+  "Executing (default): SELECT `system_user`.*, `system_roles`.`id` AS `system_roles.roleId`, `system_roles`.`id` AS `system_roles.id`, `system_roles`.`role_name` AS `system_roles.roleName` FROM (SELECT `system_user`.`id` AS `userId`, `system_user`.`user_name` AS `userName`, `system_user`.`real_name` AS `realName`, `system_user`.`gender`, `system_user`.`avatar`, `system_user`.`mobile`, `system_user`.`email`, `system_user`.`dept_id` AS `deptId`, `system_user`.`org_id` AS `orgId`, `system_user`.`status`, `system_user`.`description`, `system_user`.`last_login_time` AS `lastLoginTime`, `system_user`.`create_time` AS `createTime`, `system_user`.`update_time` AS `updateTime` FROM `system_users` AS `system_user` WHERE (`system_user`.`delete_time` IS NULL AND (`system_user`.`user_name` LIKE '%%' AND `system_user`.`real_name` LIKE '%%')) ORDER BY `system_user`.`create_time` DESC LIMIT 0, 10) AS `system_user` LEFT OUTER JOIN ( `system_user_roles` AS `system_roles->system_user_role` INNER JOIN `system_roles` AS `system_roles` ON `system_roles`.`id` = `system_roles->system_user_role`.`role_id` AND (`system_roles->system_user_role`.`delete_time` IS NULL)) ON `system_user`.`userId` = `system_roles->system_user_role`.`user_id` AND (`system_roles`.`delete_time` IS NULL) ORDER BY `createTime` DESC;",
+  {
+    plain: false,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: "(`system_user`.`delete_time` IS NULL AND (`system_user`.`user_name` LIKE '%%' AND `system_user`.`real_name` LIKE '%%'))",
+    order: [ [Array] ],
+    limit: 10,
+    offset: 0,
+    attributes: [
+      [Array],       [Array],
+      [Array],       'gender',
+      'avatar',      'mobile',
+      'email',       [Array],
+      [Array],       'status',
+      'description', [Array],
+      [Array],       [Array]
+    ],
+    include: [ [Object] ],
+    distinct: true,
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'userId',      'userName',
+      'realName',    'gender',
+      'avatar',      'mobile',
+      'email',       'deptId',
+      'orgId',       'status',
+      'description', 'lastLoginTime',
+      'createTime',  'updateTime'
+    ],
+    hasJoin: true,
+    model: system_user,
+    includeNames: [ 'system_roles' ],
+    includeMap: { system_roles: [Object] },
+    hasSingleAssociation: true,
+    hasMultiAssociation: true,
+    topModel: system_user,
+    topLimit: 10,
+    hasDuplicating: true,
+    hasRequired: false,
+    hasWhere: false,
+    subQuery: true,
+    hasIncludeWhere: false,
+    hasIncludeRequired: false,
+    tableNames: [
+      'system_users',
+      'system_roles',
+      'undefined',
+      'system_user_roles'
+    ],
+    type: 'SELECT',
+    keysEscaped: true
+  }
+]
+[2023-02-24T15:49:29.852] [INFO] db - [
+  "Executing (default): SELECT `id` AS `userId`, `user_name` AS `userName`, `real_name` AS `realName`, `password`, `gender`, `avatar`, `mobile`, `email`, `dept_id` AS `deptId`, `org_id` AS `orgId`, `status`, `description`, `last_login_time` AS `lastLoginTime`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_users` AS `system_user` WHERE (`system_user`.`delete_time` IS NULL AND (`system_user`.`password` = 'e10adc3949ba59abbe56e057f20f883e' AND `system_user`.`user_name` = 'xunxiao')) LIMIT 1;",
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: "(`system_user`.`delete_time` IS NULL AND (`system_user`.`password` = 'e10adc3949ba59abbe56e057f20f883e' AND `system_user`.`user_name` = 'xunxiao'))",
+    limit: 1,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],  [Array],
+      [Array],  'password',
+      'gender', 'avatar',
+      'mobile', 'email',
+      [Array],  [Array],
+      'status', 'description',
+      [Array],  [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'userId',        'userName',
+      'realName',      'password',
+      'gender',        'avatar',
+      'mobile',        'email',
+      'deptId',        'orgId',
+      'status',        'description',
+      'lastLoginTime', 'createTime',
+      'updateTime'
+    ],
+    tableNames: [ 'system_users' ],
+    type: 'SELECT',
+    model: system_user
+  }
+]
+[2023-02-24T15:49:29.868] [INFO] db - [
+  'Executing (default): INSERT INTO `log_logins` (`id`,`user_id`,`user_name`,`real_name`,`ua`,`browser`,`os`,`msg`,`status`,`last_login_time`,`create_time`,`update_time`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?,?,?);',
+  {
+    plain: false,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    hooks: true,
+    validate: true,
+    fields: [
+      'logId',       'userId',
+      'userName',    'realName',
+      'ip',          'location',
+      'ua',          'browser',
+      'os',          'msg',
+      'status',      'lastLoginTime',
+      'loginTime',   'updateTime',
+      'create_time', 'update_time',
+      'delete_time'
+    ],
+    defaultFields: [
+      'logId',       'userId',
+      'userName',    'realName',
+      'ip',          'location',
+      'ua',          'browser',
+      'os',          'msg',
+      'status',      'lastLoginTime',
+      'loginTime',   'updateTime',
+      'create_time', 'update_time',
+      'delete_time'
+    ],
+    returning: true,
+    hasTrigger: undefined,
+    dialect: 'mysql',
+    dialectModule: null,
+    dialectModulePath: null,
+    host: 'localhost',
+    protocol: 'tcp',
+    define: {
+      charset: 'utf8',
+      dialectOptions: [Object],
+      timestamps: true,
+      paranoid: true,
+      createdAt: 'create_time',
+      updatedAt: 'update_time',
+      deletedAt: 'delete_time',
+      underscored: true,
+      scopes: [Object]
+    },
+    query: {},
+    sync: {},
+    timezone: '+08:00',
+    standardConformingStrings: true,
+    omitNull: false,
+    native: false,
+    replication: false,
+    ssl: undefined,
+    pool: { max: 5, min: 0, idle: 30000 },
+    quoteIdentifiers: true,
+    retry: { max: 5, match: [Array] },
+    transactionType: 'DEFERRED',
+    isolationLevel: null,
+    databaseVersion: '8.0.29',
+    typeValidation: false,
+    benchmark: false,
+    minifyAliases: false,
+    logQueryParameters: false,
+    operatorAliases: false,
+    dialectOptions: { dateStrings: true, typeCast: true },
+    models: [
+      'D:\\Job\\YHKJ\\me\\code\\node-koa2-mysql-server\\,model\\**\\*.js'
+    ],
+    type: 'INSERT',
+    instance: log_login {
+      dataValues: [Object],
+      _previousDataValues: [Object],
+      uniqno: 1,
+      _changed: [Set],
+      _options: [Object],
+      isNewRecord: true
+    },
+    model: log_login,
+    bind: [
+      1,
+      'xunxiao',
+      '荀潇1',
+      'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+      'Chrome110.0.0.0',
+      'Windows10',
+      '登陆成功',
+      1,
+      '2023-02-21 15:41:05',
+      '2023-02-24 15:49:29',
+      '2023-02-24 15:49:29'
+    ]
+  }
+]
+[2023-02-24T15:49:29.876] [INFO] db - [
+  'Executing (ab967007-07ea-40ac-b1e6-bc18b7c86fae): START TRANSACTION;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'DEFERRED',
+    isolationLevel: null,
+    readOnly: false,
+    transaction: Transaction {
+      sequelize: [Sequelize],
+      savepoints: [],
+      _afterCommitHooks: [],
+      options: [Object],
+      parent: undefined,
+      name: undefined,
+      id: 'ab967007-07ea-40ac-b1e6-bc18b7c86fae',
+      connection: [Connection]
+    }
+  }
+]
+[2023-02-24T15:49:29.881] [INFO] db - [
+  'Executing (ab967007-07ea-40ac-b1e6-bc18b7c86fae): SELECT `id` AS `userId`, `user_name` AS `userName`, `real_name` AS `realName`, `password`, `gender`, `avatar`, `mobile`, `email`, `dept_id` AS `deptId`, `org_id` AS `orgId`, `status`, `description`, `last_login_time` AS `lastLoginTime`, `create_time` AS `createTime`, `update_time` AS `updateTime` FROM `system_users` AS `system_user` WHERE (`system_user`.`delete_time` IS NULL AND `system_user`.`id` = 1);',
+  {
+    plain: true,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    transaction: Transaction {
+      sequelize: [Sequelize],
+      savepoints: [],
+      _afterCommitHooks: [],
+      options: [Object],
+      parent: undefined,
+      name: undefined,
+      id: 'ab967007-07ea-40ac-b1e6-bc18b7c86fae',
+      connection: [Connection]
+    },
+    where: '(`system_user`.`delete_time` IS NULL AND `system_user`.`id` = 1)',
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],  [Array],
+      [Array],  'password',
+      'gender', 'avatar',
+      'mobile', 'email',
+      [Array],  [Array],
+      'status', 'description',
+      [Array],  [Array],
+      [Array]
+    ],
+    originalAttributes: [
+      'userId',        'userName',
+      'realName',      'password',
+      'gender',        'avatar',
+      'mobile',        'email',
+      'deptId',        'orgId',
+      'status',        'description',
+      'lastLoginTime', 'createTime',
+      'updateTime'
+    ],
+    tableNames: [ 'system_users' ],
+    type: 'SELECT',
+    model: system_user
+  }
+]
+[2023-02-24T15:49:29.884] [INFO] db - [
+  'Executing (default): UPDATE `system_users` SET `id`=?,`last_login_time`=?,`update_time`=? WHERE (`delete_time` IS NULL AND `id` = ?)',
+  {
+    plain: false,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: { [Symbol(and)]: [Array] },
+    validate: true,
+    hooks: true,
+    individualHooks: false,
+    returning: false,
+    force: false,
+    sideEffects: true,
+    type: 'BULKUPDATE',
+    fields: [ 'userId', 'lastLoginTime', 'update_time' ],
+    model: system_user,
+    skip: undefined,
+    hasTrigger: undefined,
+    dialect: 'mysql',
+    dialectModule: null,
+    dialectModulePath: null,
+    host: 'localhost',
+    protocol: 'tcp',
+    define: {
+      charset: 'utf8',
+      dialectOptions: [Object],
+      timestamps: true,
+      paranoid: true,
+      createdAt: 'create_time',
+      updatedAt: 'update_time',
+      deletedAt: 'delete_time',
+      underscored: true,
+      scopes: [Object]
+    },
+    query: {},
+    sync: {},
+    timezone: '+08:00',
+    standardConformingStrings: true,
+    omitNull: false,
+    native: false,
+    replication: false,
+    ssl: undefined,
+    pool: { max: 5, min: 0, idle: 30000 },
+    quoteIdentifiers: true,
+    retry: { max: 5, match: [Array] },
+    transactionType: 'DEFERRED',
+    isolationLevel: null,
+    databaseVersion: '8.0.29',
+    typeValidation: false,
+    benchmark: false,
+    minifyAliases: false,
+    logQueryParameters: false,
+    operatorAliases: false,
+    dialectOptions: { dateStrings: true, typeCast: true },
+    models: [
+      'D:\\Job\\YHKJ\\me\\code\\node-koa2-mysql-server\\,model\\**\\*.js'
+    ],
+    allowNull: [],
+    bind: [ 1, '2023-02-24 15:49:29', '2023-02-24 15:49:29', 1 ]
+  }
+]
+[2023-02-24T15:49:29.889] [INFO] db - [
+  'Executing (ab967007-07ea-40ac-b1e6-bc18b7c86fae): COMMIT;',
+  {
+    plain: false,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    type: 'DEFERRED',
+    isolationLevel: null,
+    readOnly: false,
+    transaction: Transaction {
+      sequelize: [Sequelize],
+      savepoints: [],
+      _afterCommitHooks: [],
+      options: [Object],
+      parent: undefined,
+      name: undefined,
+      id: 'ab967007-07ea-40ac-b1e6-bc18b7c86fae',
+      connection: [Connection],
+      finished: 'commit'
+    },
+    supportsSearchPath: false,
+    completesTransaction: true
+  }
+]
+[2023-02-24T15:49:29.906] [INFO] db - [
+  'Executing (default): SELECT `system_user`.`id` AS `userId`, `system_user`.`user_name` AS `userName`, `system_user`.`real_name` AS `realName`, `system_user`.`gender`, `system_user`.`avatar`, `system_user`.`mobile`, `system_user`.`email`, `system_user`.`dept_id` AS `deptId`, `system_user`.`org_id` AS `orgId`, `system_user`.`status`, `system_user`.`description`, `system_user`.`last_login_time` AS `lastLoginTime`, `system_user`.`create_time` AS `createTime`, `system_user`.`update_time` AS `updateTime`, `system_roles`.`id` AS `system_roles.roleId`, `system_roles`.`id` AS `system_roles.id`, `system_roles`.`role_name` AS `system_roles.roleName`, `system_roles->system_menus`.`id` AS `system_roles.system_menus.menuId`, `system_roles->system_menus`.`menu_name` AS `system_roles.system_menus.menuName`, `system_roles->system_menus`.`parent_id` AS `system_roles.system_menus.parentId`, `system_roles->system_menus`.`path` AS `system_roles.system_menus.path`, `system_roles->system_menus`.`component` AS `system_roles.system_menus.component`, `system_roles->system_menus`.`perms` AS `system_roles.system_menus.perms`, `system_roles->system_menus`.`order_num` AS `system_roles.system_menus.orderNum`, `system_roles->system_menus`.`icon` AS `system_roles.system_menus.icon`, `system_roles->system_menus`.`type` AS `system_roles.system_menus.type` FROM `system_users` AS `system_user` LEFT OUTER JOIN ( `system_user_roles` AS `system_roles->system_user_role` INNER JOIN `system_roles` AS `system_roles` ON `system_roles`.`id` = `system_roles->system_user_role`.`role_id` AND (`system_roles->system_user_role`.`delete_time` IS NULL)) ON `system_user`.`id` = `system_roles->system_user_role`.`user_id` AND (`system_roles`.`delete_time` IS NULL) LEFT OUTER JOIN ( `system_role_menus` AS `system_roles->system_menus->system_role_menu` INNER JOIN `system_menus` AS `system_roles->system_menus` ON `system_roles->system_menus`.`id` = `system_roles->system_menus->system_role_menu`.`menu_id` AND (`system_roles->system_menus->system_role_menu`.`delete_time` IS NULL)) ON `system_roles`.`id` = `system_roles->system_menus->system_role_menu`.`role_id` AND (`system_roles->system_menus`.`delete_time` IS NULL) WHERE (`system_user`.`delete_time` IS NULL AND `system_user`.`id` = 1);',
+  {
+    plain: true,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    include: [ [Object] ],
+    attributes: [
+      [Array],       [Array],
+      [Array],       'gender',
+      'avatar',      'mobile',
+      'email',       [Array],
+      [Array],       'status',
+      'description', [Array],
+      [Array],       [Array]
+    ],
+    where: '(`system_user`.`delete_time` IS NULL AND `system_user`.`id` = 1)',
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'userId',      'userName',
+      'realName',    'gender',
+      'avatar',      'mobile',
+      'email',       'deptId',
+      'orgId',       'status',
+      'description', 'lastLoginTime',
+      'createTime',  'updateTime'
+    ],
+    hasJoin: true,
+    model: system_user,
+    includeNames: [ 'system_roles' ],
+    includeMap: { system_roles: [Object] },
+    hasSingleAssociation: true,
+    hasMultiAssociation: true,
+    topModel: system_user,
+    topLimit: undefined,
+    hasDuplicating: true,
+    hasRequired: false,
+    hasWhere: false,
+    hasIncludeWhere: false,
+    hasIncludeRequired: false,
+    subQuery: false,
+    tableNames: [
+      'system_users',
+      'system_roles',
+      'undefined',
+      'system_menus',
+      'system_role_menus',
+      'system_user_roles'
+    ],
+    type: 'SELECT',
+    keysEscaped: true
+  }
+]
+[2023-02-24T15:49:29.916] [INFO] db - [
+  'Executing (default): SELECT `system_user`.`id` AS `userId`, `system_user`.`user_name` AS `userName`, `system_user`.`real_name` AS `realName`, `system_user`.`gender`, `system_user`.`avatar`, `system_user`.`mobile`, `system_user`.`email`, `system_user`.`dept_id` AS `deptId`, `system_user`.`org_id` AS `orgId`, `system_user`.`status`, `system_user`.`description`, `system_user`.`last_login_time` AS `lastLoginTime`, `system_user`.`create_time` AS `createTime`, `system_user`.`update_time` AS `updateTime`, `system_roles`.`id` AS `system_roles.roleId`, `system_roles`.`id` AS `system_roles.id`, `system_roles`.`role_name` AS `system_roles.roleName`, `system_roles->system_menus`.`id` AS `system_roles.system_menus.menuId`, `system_roles->system_menus`.`menu_name` AS `system_roles.system_menus.menuName`, `system_roles->system_menus`.`parent_id` AS `system_roles.system_menus.parentId`, `system_roles->system_menus`.`path` AS `system_roles.system_menus.path`, `system_roles->system_menus`.`component` AS `system_roles.system_menus.component`, `system_roles->system_menus`.`perms` AS `system_roles.system_menus.perms`, `system_roles->system_menus`.`order_num` AS `system_roles.system_menus.orderNum`, `system_roles->system_menus`.`icon` AS `system_roles.system_menus.icon`, `system_roles->system_menus`.`type` AS `system_roles.system_menus.type` FROM `system_users` AS `system_user` LEFT OUTER JOIN ( `system_user_roles` AS `system_roles->system_user_role` INNER JOIN `system_roles` AS `system_roles` ON `system_roles`.`id` = `system_roles->system_user_role`.`role_id` AND (`system_roles->system_user_role`.`delete_time` IS NULL)) ON `system_user`.`id` = `system_roles->system_user_role`.`user_id` AND (`system_roles`.`delete_time` IS NULL) LEFT OUTER JOIN ( `system_role_menus` AS `system_roles->system_menus->system_role_menu` INNER JOIN `system_menus` AS `system_roles->system_menus` ON `system_roles->system_menus`.`id` = `system_roles->system_menus->system_role_menu`.`menu_id` AND (`system_roles->system_menus->system_role_menu`.`delete_time` IS NULL)) ON `system_roles`.`id` = `system_roles->system_menus->system_role_menu`.`role_id` AND (`system_roles->system_menus`.`delete_time` IS NULL) WHERE (`system_user`.`delete_time` IS NULL AND `system_user`.`id` = 1);',
+  {
+    plain: true,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    include: [ [Object] ],
+    attributes: [
+      [Array],       [Array],
+      [Array],       'gender',
+      'avatar',      'mobile',
+      'email',       [Array],
+      [Array],       'status',
+      'description', [Array],
+      [Array],       [Array]
+    ],
+    where: '(`system_user`.`delete_time` IS NULL AND `system_user`.`id` = 1)',
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'userId',      'userName',
+      'realName',    'gender',
+      'avatar',      'mobile',
+      'email',       'deptId',
+      'orgId',       'status',
+      'description', 'lastLoginTime',
+      'createTime',  'updateTime'
+    ],
+    hasJoin: true,
+    model: system_user,
+    includeNames: [ 'system_roles' ],
+    includeMap: { system_roles: [Object] },
+    hasSingleAssociation: true,
+    hasMultiAssociation: true,
+    topModel: system_user,
+    topLimit: undefined,
+    hasDuplicating: true,
+    hasRequired: false,
+    hasWhere: false,
+    hasIncludeWhere: false,
+    hasIncludeRequired: false,
+    subQuery: false,
+    tableNames: [
+      'system_users',
+      'system_roles',
+      'undefined',
+      'system_menus',
+      'system_role_menus',
+      'system_user_roles'
+    ],
+    type: 'SELECT',
+    keysEscaped: true
+  }
+]
+[2023-02-24T15:49:34.393] [INFO] db - [
+  'Executing (default): SELECT `system_user`.`id` AS `userId`, `system_user`.`user_name` AS `userName`, `system_user`.`real_name` AS `realName`, `system_user`.`gender`, `system_user`.`avatar`, `system_user`.`mobile`, `system_user`.`email`, `system_user`.`dept_id` AS `deptId`, `system_user`.`org_id` AS `orgId`, `system_user`.`status`, `system_user`.`description`, `system_user`.`last_login_time` AS `lastLoginTime`, `system_user`.`create_time` AS `createTime`, `system_user`.`update_time` AS `updateTime`, `system_roles`.`id` AS `system_roles.roleId`, `system_roles`.`id` AS `system_roles.id`, `system_roles`.`role_name` AS `system_roles.roleName`, `system_roles->system_menus`.`id` AS `system_roles.system_menus.menuId`, `system_roles->system_menus`.`menu_name` AS `system_roles.system_menus.menuName`, `system_roles->system_menus`.`parent_id` AS `system_roles.system_menus.parentId`, `system_roles->system_menus`.`path` AS `system_roles.system_menus.path`, `system_roles->system_menus`.`component` AS `system_roles.system_menus.component`, `system_roles->system_menus`.`perms` AS `system_roles.system_menus.perms`, `system_roles->system_menus`.`order_num` AS `system_roles.system_menus.orderNum`, `system_roles->system_menus`.`icon` AS `system_roles.system_menus.icon`, `system_roles->system_menus`.`type` AS `system_roles.system_menus.type` FROM `system_users` AS `system_user` LEFT OUTER JOIN ( `system_user_roles` AS `system_roles->system_user_role` INNER JOIN `system_roles` AS `system_roles` ON `system_roles`.`id` = `system_roles->system_user_role`.`role_id` AND (`system_roles->system_user_role`.`delete_time` IS NULL)) ON `system_user`.`id` = `system_roles->system_user_role`.`user_id` AND (`system_roles`.`delete_time` IS NULL) LEFT OUTER JOIN ( `system_role_menus` AS `system_roles->system_menus->system_role_menu` INNER JOIN `system_menus` AS `system_roles->system_menus` ON `system_roles->system_menus`.`id` = `system_roles->system_menus->system_role_menu`.`menu_id` AND (`system_roles->system_menus->system_role_menu`.`delete_time` IS NULL)) ON `system_roles`.`id` = `system_roles->system_menus->system_role_menu`.`role_id` AND (`system_roles->system_menus`.`delete_time` IS NULL) WHERE (`system_user`.`delete_time` IS NULL AND `system_user`.`id` = 1);',
+  {
+    plain: true,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    include: [ [Object] ],
+    attributes: [
+      [Array],       [Array],
+      [Array],       'gender',
+      'avatar',      'mobile',
+      'email',       [Array],
+      [Array],       'status',
+      'description', [Array],
+      [Array],       [Array]
+    ],
+    where: '(`system_user`.`delete_time` IS NULL AND `system_user`.`id` = 1)',
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'userId',      'userName',
+      'realName',    'gender',
+      'avatar',      'mobile',
+      'email',       'deptId',
+      'orgId',       'status',
+      'description', 'lastLoginTime',
+      'createTime',  'updateTime'
+    ],
+    hasJoin: true,
+    model: system_user,
+    includeNames: [ 'system_roles' ],
+    includeMap: { system_roles: [Object] },
+    hasSingleAssociation: true,
+    hasMultiAssociation: true,
+    topModel: system_user,
+    topLimit: undefined,
+    hasDuplicating: true,
+    hasRequired: false,
+    hasWhere: false,
+    hasIncludeWhere: false,
+    hasIncludeRequired: false,
+    subQuery: false,
+    tableNames: [
+      'system_users',
+      'system_roles',
+      'undefined',
+      'system_menus',
+      'system_role_menus',
+      'system_user_roles'
+    ],
+    type: 'SELECT',
+    keysEscaped: true
+  }
+]
+[2023-02-24T15:49:34.399] [INFO] db - [
+  "Executing (default): SELECT count(*) AS `count` FROM `log_logins` AS `log_login` WHERE (`log_login`.`delete_time` IS NULL AND (`log_login`.`user_name` LIKE '%%' AND `log_login`.`real_name` LIKE '%%'));",
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: "(`log_login`.`delete_time` IS NULL AND (`log_login`.`user_name` LIKE '%%' AND `log_login`.`real_name` LIKE '%%'))",
+    order: null,
+    limit: null,
+    offset: null,
+    hooks: true,
+    dataType: INTEGER {
+      options: {},
+      _length: undefined,
+      _zerofill: undefined,
+      _decimals: undefined,
+      _precision: undefined,
+      _scale: undefined,
+      _unsigned: undefined
+    },
+    includeIgnoreAttributes: false,
+    attributes: [ [Array] ],
+    type: 'SELECT'
+  }
+]
+[2023-02-24T15:49:34.400] [INFO] db - [
+  "Executing (default): SELECT `id` AS `logId`, `user_id` AS `userId`, `user_name` AS `userName`, `real_name` AS `realName`, `ip`, `location`, `ua`, `browser`, `os`, `msg`, `status`, `last_login_time` AS `lastLoginTime`, `create_time` AS `loginTime`, `update_time` AS `updateTime` FROM `log_logins` AS `log_login` WHERE (`log_login`.`delete_time` IS NULL AND (`log_login`.`user_name` LIKE '%%' AND `log_login`.`real_name` LIKE '%%')) ORDER BY `loginTime` DESC LIMIT 0, 10;",
+  {
+    plain: false,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: "(`log_login`.`delete_time` IS NULL AND (`log_login`.`user_name` LIKE '%%' AND `log_login`.`real_name` LIKE '%%'))",
+    order: [ [Array] ],
+    limit: 10,
+    offset: 0,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],  [Array],
+      [Array],  [Array],
+      'ip',     'location',
+      'ua',     'browser',
+      'os',     'msg',
+      'status', [Array],
+      [Array],  [Array]
+    ],
+    originalAttributes: [
+      'logId',     'userId',
+      'userName',  'realName',
+      'ip',        'location',
+      'ua',        'browser',
+      'os',        'msg',
+      'status',    'lastLoginTime',
+      'loginTime', 'updateTime'
+    ],
+    tableNames: [ 'log_logins' ],
+    type: 'SELECT',
+    model: log_login
+  }
+]
+[2023-02-24T16:32:18.887] [INFO] db - [
+  'Executing (default): SELECT `system_user`.`id` AS `userId`, `system_user`.`user_name` AS `userName`, `system_user`.`real_name` AS `realName`, `system_user`.`gender`, `system_user`.`avatar`, `system_user`.`mobile`, `system_user`.`email`, `system_user`.`dept_id` AS `deptId`, `system_user`.`org_id` AS `orgId`, `system_user`.`status`, `system_user`.`description`, `system_user`.`last_login_time` AS `lastLoginTime`, `system_user`.`create_time` AS `createTime`, `system_user`.`update_time` AS `updateTime`, `system_roles`.`id` AS `system_roles.roleId`, `system_roles`.`id` AS `system_roles.id`, `system_roles`.`role_name` AS `system_roles.roleName`, `system_roles->system_menus`.`id` AS `system_roles.system_menus.menuId`, `system_roles->system_menus`.`menu_name` AS `system_roles.system_menus.menuName`, `system_roles->system_menus`.`parent_id` AS `system_roles.system_menus.parentId`, `system_roles->system_menus`.`path` AS `system_roles.system_menus.path`, `system_roles->system_menus`.`component` AS `system_roles.system_menus.component`, `system_roles->system_menus`.`perms` AS `system_roles.system_menus.perms`, `system_roles->system_menus`.`order_num` AS `system_roles.system_menus.orderNum`, `system_roles->system_menus`.`icon` AS `system_roles.system_menus.icon`, `system_roles->system_menus`.`type` AS `system_roles.system_menus.type` FROM `system_users` AS `system_user` LEFT OUTER JOIN ( `system_user_roles` AS `system_roles->system_user_role` INNER JOIN `system_roles` AS `system_roles` ON `system_roles`.`id` = `system_roles->system_user_role`.`role_id` AND (`system_roles->system_user_role`.`delete_time` IS NULL)) ON `system_user`.`id` = `system_roles->system_user_role`.`user_id` AND (`system_roles`.`delete_time` IS NULL) LEFT OUTER JOIN ( `system_role_menus` AS `system_roles->system_menus->system_role_menu` INNER JOIN `system_menus` AS `system_roles->system_menus` ON `system_roles->system_menus`.`id` = `system_roles->system_menus->system_role_menu`.`menu_id` AND (`system_roles->system_menus->system_role_menu`.`delete_time` IS NULL)) ON `system_roles`.`id` = `system_roles->system_menus->system_role_menu`.`role_id` AND (`system_roles->system_menus`.`delete_time` IS NULL) WHERE (`system_user`.`delete_time` IS NULL AND `system_user`.`id` = 1);',
+  {
+    plain: true,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    include: [ [Object] ],
+    attributes: [
+      [Array],       [Array],
+      [Array],       'gender',
+      'avatar',      'mobile',
+      'email',       [Array],
+      [Array],       'status',
+      'description', [Array],
+      [Array],       [Array]
+    ],
+    where: '(`system_user`.`delete_time` IS NULL AND `system_user`.`id` = 1)',
+    hooks: true,
+    rejectOnEmpty: false,
+    originalAttributes: [
+      'userId',      'userName',
+      'realName',    'gender',
+      'avatar',      'mobile',
+      'email',       'deptId',
+      'orgId',       'status',
+      'description', 'lastLoginTime',
+      'createTime',  'updateTime'
+    ],
+    hasJoin: true,
+    model: system_user,
+    includeNames: [ 'system_roles' ],
+    includeMap: { system_roles: [Object] },
+    hasSingleAssociation: true,
+    hasMultiAssociation: true,
+    topModel: system_user,
+    topLimit: undefined,
+    hasDuplicating: true,
+    hasRequired: false,
+    hasWhere: false,
+    hasIncludeWhere: false,
+    hasIncludeRequired: false,
+    subQuery: false,
+    tableNames: [
+      'system_users',
+      'system_roles',
+      'undefined',
+      'system_menus',
+      'system_role_menus',
+      'system_user_roles'
+    ],
+    type: 'SELECT',
+    keysEscaped: true
+  }
+]
+[2023-02-24T16:32:18.895] [INFO] db - [
+  "Executing (default): SELECT count(*) AS `count` FROM `log_logins` AS `log_login` WHERE (`log_login`.`delete_time` IS NULL AND (`log_login`.`user_name` LIKE '%%' AND `log_login`.`real_name` LIKE '%%'));",
+  {
+    plain: true,
+    raw: true,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: "(`log_login`.`delete_time` IS NULL AND (`log_login`.`user_name` LIKE '%%' AND `log_login`.`real_name` LIKE '%%'))",
+    order: null,
+    limit: null,
+    offset: null,
+    hooks: true,
+    dataType: INTEGER {
+      options: {},
+      _length: undefined,
+      _zerofill: undefined,
+      _decimals: undefined,
+      _precision: undefined,
+      _scale: undefined,
+      _unsigned: undefined
+    },
+    includeIgnoreAttributes: false,
+    attributes: [ [Array] ],
+    type: 'SELECT'
+  }
+]
+[2023-02-24T16:32:18.897] [INFO] db - [
+  "Executing (default): SELECT `id` AS `logId`, `user_id` AS `userId`, `user_name` AS `userName`, `real_name` AS `realName`, `ip`, `location`, `ua`, `browser`, `os`, `msg`, `status`, `last_login_time` AS `lastLoginTime`, `create_time` AS `loginTime`, `update_time` AS `updateTime` FROM `log_logins` AS `log_login` WHERE (`log_login`.`delete_time` IS NULL AND (`log_login`.`user_name` LIKE '%%' AND `log_login`.`real_name` LIKE '%%')) ORDER BY `loginTime` DESC LIMIT 0, 10;",
+  {
+    plain: false,
+    raw: false,
+    logging: [Function: logging],
+    showWarnings: false,
+    where: "(`log_login`.`delete_time` IS NULL AND (`log_login`.`user_name` LIKE '%%' AND `log_login`.`real_name` LIKE '%%'))",
+    order: [ [Array] ],
+    limit: 10,
+    offset: 0,
+    hooks: true,
+    rejectOnEmpty: false,
+    attributes: [
+      [Array],  [Array],
+      [Array],  [Array],
+      'ip',     'location',
+      'ua',     'browser',
+      'os',     'msg',
+      'status', [Array],
+      [Array],  [Array]
+    ],
+    originalAttributes: [
+      'logId',     'userId',
+      'userName',  'realName',
+      'ip',        'location',
+      'ua',        'browser',
+      'os',        'msg',
+      'status',    'lastLoginTime',
+      'loginTime', 'updateTime'
+    ],
+    tableNames: [ 'log_logins' ],
+    type: 'SELECT',
+    model: log_login
+  }
+]
